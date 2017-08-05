@@ -15,11 +15,13 @@
 		C44E3A281F346D1600C78E37 /* WidgetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A271F346D1600C78E37 /* WidgetsTests.m */; };
 		C44E3A331F346D1600C78E37 /* WidgetsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A321F346D1600C78E37 /* WidgetsUITests.m */; };
 		C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4C1F356D71003F06E6 /* EGTestViewController.m */; };
+		C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4F1F35965C003F06E6 /* EGIndicatorViewController.m */; };
+		C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF521F35989A003F06E6 /* GradientPeogressView.m */; };
+		C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF551F35993F003F06E6 /* UIColor+PDExtension.m */; };
 		C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A111F346D1600C78E37 /* AppDelegate.m */; };
 		C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48641F35578300942884 /* UIView+Extension.m */; };
 		C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48681F3557CF00942884 /* EGBasicViewController.m */; };
 		C4EC48781F355E8D00942884 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC486A1F3557CF00942884 /* ViewController.m */; };
-		C4EC487A1F355E8D00942884 /* EGIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC486D1F3557CF00942884 /* EGIndicatorView.m */; };
 		C4EC487B1F355E8D00942884 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A0E1F346D1600C78E37 /* main.m */; };
 		C4EC487F1F355F1000942884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EC487E1F355F1000942884 /* Main.storyboard */; };
 		C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48801F356BB100942884 /* EGSeperateScrollViewController.m */; };
@@ -67,6 +69,12 @@
 		C46B83CB1F346F5200782008 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		C499EF4B1F356D71003F06E6 /* EGTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTestViewController.h; sourceTree = "<group>"; };
 		C499EF4C1F356D71003F06E6 /* EGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTestViewController.m; sourceTree = "<group>"; };
+		C499EF4E1F35965C003F06E6 /* EGIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGIndicatorViewController.h; sourceTree = "<group>"; };
+		C499EF4F1F35965C003F06E6 /* EGIndicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGIndicatorViewController.m; sourceTree = "<group>"; };
+		C499EF511F35989A003F06E6 /* GradientPeogressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientPeogressView.h; sourceTree = "<group>"; };
+		C499EF521F35989A003F06E6 /* GradientPeogressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientPeogressView.m; sourceTree = "<group>"; };
+		C499EF541F35993F003F06E6 /* UIColor+PDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PDExtension.h"; sourceTree = "<group>"; };
+		C499EF551F35993F003F06E6 /* UIColor+PDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PDExtension.m"; sourceTree = "<group>"; };
 		C4EC48621F35578300942884 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
 		C4EC48631F35578300942884 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		C4EC48641F35578300942884 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
@@ -74,8 +82,6 @@
 		C4EC48681F3557CF00942884 /* EGBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGBasicViewController.m; sourceTree = "<group>"; };
 		C4EC48691F3557CF00942884 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C4EC486A1F3557CF00942884 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C4EC486C1F3557CF00942884 /* EGIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGIndicatorView.h; sourceTree = "<group>"; };
-		C4EC486D1F3557CF00942884 /* EGIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGIndicatorView.m; sourceTree = "<group>"; };
 		C4EC486F1F3557CF00942884 /* EGSeperateScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGSeperateScrollViewController.h; sourceTree = "<group>"; };
 		C4EC487E1F355F1000942884 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C4EC48801F356BB100942884 /* EGSeperateScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGSeperateScrollViewController.m; sourceTree = "<group>"; };
@@ -211,8 +217,8 @@
 				C4EC48611F35578300942884 /* Tools */,
 				C4EC48661F3557CF00942884 /* Basic */,
 				C4EC486E1F3557CF00942884 /* SeperateScroll */,
-				C499EF4A1F356D68003F06E6 /* Test */,
 				C4EC486B1F3557CF00942884 /* Indicator */,
+				C499EF4A1F356D68003F06E6 /* Test */,
 			);
 			path = WidgetClasses;
 			sourceTree = "<group>";
@@ -221,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				C4EC48621F35578300942884 /* UIConstants.h */,
+				C499EF541F35993F003F06E6 /* UIColor+PDExtension.h */,
+				C499EF551F35993F003F06E6 /* UIColor+PDExtension.m */,
 				C4EC48631F35578300942884 /* UIView+Extension.h */,
 				C4EC48641F35578300942884 /* UIView+Extension.m */,
 			);
@@ -242,8 +250,10 @@
 		C4EC486B1F3557CF00942884 /* Indicator */ = {
 			isa = PBXGroup;
 			children = (
-				C4EC486C1F3557CF00942884 /* EGIndicatorView.h */,
-				C4EC486D1F3557CF00942884 /* EGIndicatorView.m */,
+				C499EF4E1F35965C003F06E6 /* EGIndicatorViewController.h */,
+				C499EF4F1F35965C003F06E6 /* EGIndicatorViewController.m */,
+				C499EF511F35989A003F06E6 /* GradientPeogressView.h */,
+				C499EF521F35989A003F06E6 /* GradientPeogressView.m */,
 			);
 			path = Indicator;
 			sourceTree = "<group>";
@@ -541,12 +551,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */,
 				C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */,
 				C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */,
 				C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */,
+				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
 				C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */,
-				C4EC487A1F355E8D00942884 /* EGIndicatorView.m in Sources */,
+				C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */,
 				C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */,
 				C4EC487B1F355E8D00942884 /* main.m in Sources */,
 			);

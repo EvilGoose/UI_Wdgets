@@ -46,7 +46,6 @@ UITableViewDataSource
     return 10;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"widgesCellID"];
     if (!cell) {
@@ -66,7 +65,7 @@ UITableViewDataSource
     if (!_containerScrollView) {
         _containerScrollView = [[UIScrollView alloc]initWithFrame:SCREEN_BOUNDS];
         _containerScrollView.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT * 2);
-        _containerScrollView.backgroundColor = DEBUG_COLOR;
+        _containerScrollView.backgroundColor = ORANGE_COLOR;
         _containerScrollView.scrollEnabled = NO;
     }
     return _containerScrollView;
@@ -75,19 +74,19 @@ UITableViewDataSource
 - (UITableView *)topTableView {
     if (!_topTableView) {
         _topTableView = [[UITableView alloc]initWithFrame:SCREEN_BOUNDS];
-        _topTableView.backgroundColor = YELLOW_COLOR;
         _topTableView.delegate = self;
         _topTableView.dataSource = self;
-        MJRefreshAutoNormalFooter *mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        _topTableView.backgroundColor = CLEAR_COLOR;
+        MJRefreshBackNormalFooter *mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
             [UIView animateWithDuration:.5 animations:^{
                 self.containerScrollView.contentOffset = CGPointMake(0, SCREEN_HEIGHT);
             } completion:^(BOOL finished) {
                 [_topTableView.mj_footer endRefreshing];
             }];
         }];
-        mj_footer.automaticallyHidden = YES;
         mj_footer.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
-        mj_footer.stateLabel.text = @"查看详情";
+		mj_footer.automaticallyHidden = YES;
+        mj_footer.stateLabel.hidden = YES;
         _topTableView.mj_footer = mj_footer;
      }
     return _topTableView;
@@ -96,9 +95,9 @@ UITableViewDataSource
 - (UITableView *)bottomTableView {
     if (!_bottomTableView) {
         _bottomTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT)];
-        _bottomTableView.backgroundColor = ORANGE_COLOR;
         _bottomTableView.delegate = self;
         _bottomTableView.dataSource = self;
+        _bottomTableView.backgroundColor = CLEAR_COLOR;
         MJRefreshNormalHeader *mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [UIView animateWithDuration:.5 animations:^{
                 self.containerScrollView.contentOffset = CGPointZero;
@@ -107,7 +106,7 @@ UITableViewDataSource
             }];
         }];
         mj_header.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
-        mj_header.stateLabel.text = @"返回展示";
+        mj_header.stateLabel.hidden = YES;
         _bottomTableView.mj_header = mj_header;
     }
     return _bottomTableView;

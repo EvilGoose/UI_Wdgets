@@ -49,7 +49,12 @@ UITableViewDataSource
 
 - (NSArray <NSString *>*)widges {
     if (!_widges) {
-        _widges = @[@"EGSeperateScrollViewController"];
+        _widges = @[
+                    @"EGTestViewController",
+                    @"EGSeperateScrollViewController",
+                    @"EGIndicatorViewController",
+                    
+                    ];
     }
     return _widges;
 }
