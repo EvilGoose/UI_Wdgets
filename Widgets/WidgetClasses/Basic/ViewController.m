@@ -37,16 +37,19 @@ UITableViewDataSource
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"widgesCellID"];
     }
+    cell.textLabel.text = self.widges[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [self.navigationController pushViewController:[NSClassFromString(self.widges[indexPath.row]) new]
+                                         animated:YES];
+
 }
 
-- (NSArray *)widges {
+- (NSArray <NSString *>*)widges {
     if (!_widges) {
-        _widges = @[];
+        _widges = @[@"EGSeperateScrollViewController"];
     }
     return _widges;
 }

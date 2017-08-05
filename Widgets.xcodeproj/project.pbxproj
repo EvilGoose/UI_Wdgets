@@ -10,21 +10,19 @@
 		254FFB80A1022A46D559E7B0 /* libPods-WidgetsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB6D33A159A456C34ACD48 /* libPods-WidgetsTests.a */; };
 		59C443C74DE593B850480013 /* libPods-WidgetsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */; };
 		5A2AAFB7FE5522D3D7980DD5 /* libPods-Widgets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B06B64798A534068B82B7E5 /* libPods-Widgets.a */; };
-		C44E3A0F1F346D1600C78E37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A0E1F346D1600C78E37 /* main.m */; };
-		C44E3A121F346D1600C78E37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A111F346D1600C78E37 /* AppDelegate.m */; };
-		C44E3A151F346D1600C78E37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A141F346D1600C78E37 /* ViewController.m */; };
-		C44E3A181F346D1600C78E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44E3A161F346D1600C78E37 /* Main.storyboard */; };
 		C44E3A1A1F346D1600C78E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44E3A191F346D1600C78E37 /* Assets.xcassets */; };
 		C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44E3A1B1F346D1600C78E37 /* LaunchScreen.storyboard */; };
 		C44E3A281F346D1600C78E37 /* WidgetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A271F346D1600C78E37 /* WidgetsTests.m */; };
 		C44E3A331F346D1600C78E37 /* WidgetsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A321F346D1600C78E37 /* WidgetsUITests.m */; };
-		C46B83CE1F346FFF00782008 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B83CD1F346FFF00782008 /* UIView+Extension.m */; };
-		C46B83D31F34717E00782008 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B83D21F34717E00782008 /* EGBasicViewController.m */; };
-		C46B83D41F34717E00782008 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B83D21F34717E00782008 /* EGBasicViewController.m */; };
-		C46B83D51F34717E00782008 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B83D21F34717E00782008 /* EGBasicViewController.m */; };
-		C46B83D91F3471A600782008 /* EGIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B83D81F3471A600782008 /* EGIndicatorView.m */; };
-		C46B83DA1F3471A600782008 /* EGIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B83D81F3471A600782008 /* EGIndicatorView.m */; };
-		C46B83DB1F3471A600782008 /* EGIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B83D81F3471A600782008 /* EGIndicatorView.m */; };
+		C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4C1F356D71003F06E6 /* EGTestViewController.m */; };
+		C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A111F346D1600C78E37 /* AppDelegate.m */; };
+		C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48641F35578300942884 /* UIView+Extension.m */; };
+		C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48681F3557CF00942884 /* EGBasicViewController.m */; };
+		C4EC48781F355E8D00942884 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC486A1F3557CF00942884 /* ViewController.m */; };
+		C4EC487A1F355E8D00942884 /* EGIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC486D1F3557CF00942884 /* EGIndicatorView.m */; };
+		C4EC487B1F355E8D00942884 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A0E1F346D1600C78E37 /* main.m */; };
+		C4EC487F1F355F1000942884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EC487E1F355F1000942884 /* Main.storyboard */; };
+		C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48801F356BB100942884 /* EGSeperateScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +55,6 @@
 		C44E3A0E1F346D1600C78E37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C44E3A101F346D1600C78E37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C44E3A111F346D1600C78E37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C44E3A131F346D1600C78E37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C44E3A141F346D1600C78E37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C44E3A171F346D1600C78E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C44E3A191F346D1600C78E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C44E3A1C1F346D1600C78E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C44E3A1E1F346D1600C78E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,13 +65,20 @@
 		C44E3A321F346D1600C78E37 /* WidgetsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidgetsUITests.m; sourceTree = "<group>"; };
 		C44E3A341F346D1600C78E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C46B83CB1F346F5200782008 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
-		C46B83CC1F346FFF00782008 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		C46B83CD1F346FFF00782008 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		C46B83CF1F34702500782008 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
-		C46B83D11F34717E00782008 /* EGBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGBasicViewController.h; sourceTree = "<group>"; };
-		C46B83D21F34717E00782008 /* EGBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGBasicViewController.m; sourceTree = "<group>"; };
-		C46B83D71F3471A600782008 /* EGIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGIndicatorView.h; sourceTree = "<group>"; };
-		C46B83D81F3471A600782008 /* EGIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGIndicatorView.m; sourceTree = "<group>"; };
+		C499EF4B1F356D71003F06E6 /* EGTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTestViewController.h; sourceTree = "<group>"; };
+		C499EF4C1F356D71003F06E6 /* EGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTestViewController.m; sourceTree = "<group>"; };
+		C4EC48621F35578300942884 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
+		C4EC48631F35578300942884 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		C4EC48641F35578300942884 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		C4EC48671F3557CF00942884 /* EGBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGBasicViewController.h; sourceTree = "<group>"; };
+		C4EC48681F3557CF00942884 /* EGBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGBasicViewController.m; sourceTree = "<group>"; };
+		C4EC48691F3557CF00942884 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C4EC486A1F3557CF00942884 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C4EC486C1F3557CF00942884 /* EGIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGIndicatorView.h; sourceTree = "<group>"; };
+		C4EC486D1F3557CF00942884 /* EGIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGIndicatorView.m; sourceTree = "<group>"; };
+		C4EC486F1F3557CF00942884 /* EGSeperateScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGSeperateScrollViewController.h; sourceTree = "<group>"; };
+		C4EC487E1F355F1000942884 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C4EC48801F356BB100942884 /* EGSeperateScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGSeperateScrollViewController.m; sourceTree = "<group>"; };
 		F5D075557147398C0943D014 /* Pods-Widgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widgets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Widgets/Pods-Widgets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,8 +150,7 @@
 			children = (
 				C44E3A101F346D1600C78E37 /* AppDelegate.h */,
 				C44E3A111F346D1600C78E37 /* AppDelegate.m */,
-				C46B83D61F34718E00782008 /* Basic */,
-				C46B83D01F34709500782008 /* WidgetClasses */,
+				C4EC48541F35576900942884 /* WidgetClasses */,
 				C44E3A0D1F346D1600C78E37 /* Supporting Files */,
 			);
 			path = Widgets;
@@ -159,9 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				C46B83CB1F346F5200782008 /* PrefixHeader.pch */,
-				C46B83CF1F34702500782008 /* UIConstants.h */,
-				C46B83CC1F346FFF00782008 /* UIView+Extension.h */,
-				C46B83CD1F346FFF00782008 /* UIView+Extension.m */,
 				C44E3A0E1F346D1600C78E37 /* main.m */,
 				C44E3A191F346D1600C78E37 /* Assets.xcassets */,
 				C44E3A1B1F346D1600C78E37 /* LaunchScreen.storyboard */,
@@ -188,25 +186,13 @@
 			path = WidgetsUITests;
 			sourceTree = "<group>";
 		};
-		C46B83D01F34709500782008 /* WidgetClasses */ = {
+		C499EF4A1F356D68003F06E6 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				C46B83D71F3471A600782008 /* EGIndicatorView.h */,
-				C46B83D81F3471A600782008 /* EGIndicatorView.m */,
+				C499EF4B1F356D71003F06E6 /* EGTestViewController.h */,
+				C499EF4C1F356D71003F06E6 /* EGTestViewController.m */,
 			);
-			path = WidgetClasses;
-			sourceTree = "<group>";
-		};
-		C46B83D61F34718E00782008 /* Basic */ = {
-			isa = PBXGroup;
-			children = (
-				C44E3A131F346D1600C78E37 /* ViewController.h */,
-				C44E3A141F346D1600C78E37 /* ViewController.m */,
-				C44E3A161F346D1600C78E37 /* Main.storyboard */,
-				C46B83D11F34717E00782008 /* EGBasicViewController.h */,
-				C46B83D21F34717E00782008 /* EGBasicViewController.m */,
-			);
-			name = Basic;
+			path = Test;
 			sourceTree = "<group>";
 		};
 		C4D4761FFD3E873E89992480 /* Frameworks */ = {
@@ -217,6 +203,58 @@
 				1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4EC48541F35576900942884 /* WidgetClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C4EC48611F35578300942884 /* Tools */,
+				C4EC48661F3557CF00942884 /* Basic */,
+				C4EC486E1F3557CF00942884 /* SeperateScroll */,
+				C499EF4A1F356D68003F06E6 /* Test */,
+				C4EC486B1F3557CF00942884 /* Indicator */,
+			);
+			path = WidgetClasses;
+			sourceTree = "<group>";
+		};
+		C4EC48611F35578300942884 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C4EC48621F35578300942884 /* UIConstants.h */,
+				C4EC48631F35578300942884 /* UIView+Extension.h */,
+				C4EC48641F35578300942884 /* UIView+Extension.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C4EC48661F3557CF00942884 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				C4EC48671F3557CF00942884 /* EGBasicViewController.h */,
+				C4EC48681F3557CF00942884 /* EGBasicViewController.m */,
+				C4EC48691F3557CF00942884 /* ViewController.h */,
+				C4EC486A1F3557CF00942884 /* ViewController.m */,
+				C4EC487E1F355F1000942884 /* Main.storyboard */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		C4EC486B1F3557CF00942884 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				C4EC486C1F3557CF00942884 /* EGIndicatorView.h */,
+				C4EC486D1F3557CF00942884 /* EGIndicatorView.m */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		C4EC486E1F3557CF00942884 /* SeperateScroll */ = {
+			isa = PBXGroup;
+			children = (
+				C4EC486F1F3557CF00942884 /* EGSeperateScrollViewController.h */,
+				C4EC48801F356BB100942884 /* EGSeperateScrollViewController.m */,
+			);
+			path = SeperateScroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,9 +376,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EC487F1F355F1000942884 /* Main.storyboard in Resources */,
 				C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */,
 				C44E3A1A1F346D1600C78E37 /* Assets.xcassets in Resources */,
-				C44E3A181F346D1600C78E37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,12 +541,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C46B83D91F3471A600782008 /* EGIndicatorView.m in Sources */,
-				C46B83D31F34717E00782008 /* EGBasicViewController.m in Sources */,
-				C44E3A151F346D1600C78E37 /* ViewController.m in Sources */,
-				C44E3A121F346D1600C78E37 /* AppDelegate.m in Sources */,
-				C46B83CE1F346FFF00782008 /* UIView+Extension.m in Sources */,
-				C44E3A0F1F346D1600C78E37 /* main.m in Sources */,
+				C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */,
+				C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */,
+				C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */,
+				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
+				C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */,
+				C4EC487A1F355E8D00942884 /* EGIndicatorView.m in Sources */,
+				C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */,
+				C4EC487B1F355E8D00942884 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,9 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C46B83DA1F3471A600782008 /* EGIndicatorView.m in Sources */,
 				C44E3A281F346D1600C78E37 /* WidgetsTests.m in Sources */,
-				C46B83D41F34717E00782008 /* EGBasicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,9 +564,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C46B83DB1F3471A600782008 /* EGIndicatorView.m in Sources */,
 				C44E3A331F346D1600C78E37 /* WidgetsUITests.m in Sources */,
-				C46B83D51F34717E00782008 /* EGBasicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,14 +584,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C44E3A161F346D1600C78E37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C44E3A171F346D1600C78E37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C44E3A1B1F346D1600C78E37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -611,7 +639,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -652,6 +682,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
