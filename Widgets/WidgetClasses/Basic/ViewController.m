@@ -53,7 +53,8 @@ UITableViewDataSource
                     @"EGTestViewController",
                     @"EGSeperateScrollViewController",
                     @"EGIndicatorViewController",
-                    
+                    @"EGNaviBarViewController",
+                    @"EGCATextLayerController",
                     ];
     }
     return _widges;
