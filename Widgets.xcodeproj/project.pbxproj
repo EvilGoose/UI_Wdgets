@@ -20,6 +20,8 @@
 		C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4F1F35965C003F06E6 /* EGIndicatorViewController.m */; };
 		C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF521F35989A003F06E6 /* GradientPeogressView.m */; };
 		C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF551F35993F003F06E6 /* UIColor+PDExtension.m */; };
+		C4A300111F4E766500D23587 /* WRImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A3000E1F4E766500D23587 /* WRImageHelper.m */; };
+		C4A300121F4E766500D23587 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A300101F4E766500D23587 /* WRNavigationBar.m */; };
 		C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A111F346D1600C78E37 /* AppDelegate.m */; };
 		C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48641F35578300942884 /* UIView+Extension.m */; };
 		C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48681F3557CF00942884 /* EGBasicViewController.m */; };
@@ -81,6 +83,10 @@
 		C499EF521F35989A003F06E6 /* GradientPeogressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientPeogressView.m; sourceTree = "<group>"; };
 		C499EF541F35993F003F06E6 /* UIColor+PDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PDExtension.h"; sourceTree = "<group>"; };
 		C499EF551F35993F003F06E6 /* UIColor+PDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PDExtension.m"; sourceTree = "<group>"; };
+		C4A3000D1F4E766500D23587 /* WRImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRImageHelper.h; sourceTree = "<group>"; };
+		C4A3000E1F4E766500D23587 /* WRImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRImageHelper.m; sourceTree = "<group>"; };
+		C4A3000F1F4E766500D23587 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
+		C4A300101F4E766500D23587 /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
 		C4EC48621F35578300942884 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
 		C4EC48631F35578300942884 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		C4EC48641F35578300942884 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
@@ -181,6 +187,7 @@
 		C44E3A0D1F346D1600C78E37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4A3000B1F4E766500D23587 /* WRNavigationBar */,
 				C46B83CB1F346F5200782008 /* PrefixHeader.pch */,
 				C44E3A0E1F346D1600C78E37 /* main.m */,
 				C44E3A191F346D1600C78E37 /* Assets.xcassets */,
@@ -224,6 +231,25 @@
 				C499EF4C1F356D71003F06E6 /* EGTestViewController.m */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		C4A3000B1F4E766500D23587 /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				C4A3000C1F4E766500D23587 /* WRImageHelper */,
+				C4A3000F1F4E766500D23587 /* WRNavigationBar.h */,
+				C4A300101F4E766500D23587 /* WRNavigationBar.m */,
+			);
+			path = WRNavigationBar;
+			sourceTree = "<group>";
+		};
+		C4A3000C1F4E766500D23587 /* WRImageHelper */ = {
+			isa = PBXGroup;
+			children = (
+				C4A3000D1F4E766500D23587 /* WRImageHelper.h */,
+				C4A3000E1F4E766500D23587 /* WRImageHelper.m */,
+			);
+			path = WRImageHelper;
 			sourceTree = "<group>";
 		};
 		C4D4761FFD3E873E89992480 /* Frameworks */ = {
@@ -586,7 +612,9 @@
 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
 				C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */,
+				C4A300111F4E766500D23587 /* WRImageHelper.m in Sources */,
 				C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */,
+				C4A300121F4E766500D23587 /* WRNavigationBar.m in Sources */,
 				C464AD0D1F3EC4D400341AAF /* EGNaviBarViewController.m in Sources */,
 				C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */,
 				C4EC487B1F355E8D00942884 /* main.m in Sources */,
