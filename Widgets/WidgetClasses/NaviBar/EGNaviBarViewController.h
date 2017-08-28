@@ -11,7 +11,7 @@
 /**
  custom button with two titles
  */
-@interface GDUDoubleTitleButton : UIButton
+@interface EGDoubleTitleButton : UIButton
 
 /*top title*/
 @property (copy, nonatomic)NSString *topTitle;

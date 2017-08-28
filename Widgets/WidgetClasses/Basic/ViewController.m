@@ -55,6 +55,9 @@ UITableViewDataSource
                     @"EGIndicatorViewController",
                     @"EGNaviBarViewController",
                     @"EGCATextLayerController",
+                    @"EGImageSizeViewController",
+                    @"EGWaveViewController",
+                    @"EGMicroPhoneViewController"
                     ];
     }
     return _widges;
