@@ -338,7 +338,7 @@ const GLfloat kColorConversion601FullRange[] = {
 }
 
 #pragma mark -  OpenGL ES 2 shader compilation
-
+    //加载Shader文件
 - (BOOL)loadShaders
 {
     GLuint vertShader, fragShader;

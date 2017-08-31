@@ -48,7 +48,7 @@
 
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *mPreviewLayer;
 
-@property (nonatomic , weak) EGOpenGLView *mOpenGLView;
+@property (nonatomic , weak) IBOutlet EGOpenGLView *mOpenGLView;
 
  @property (nonatomic , strong) CADisplayLink *mDispalyLink;
 
@@ -60,10 +60,12 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
 
 #pragma mark - life cycle
 
+    //http://www.cocoachina.com/ios/20151123/14116.html
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.mOpenGLView = (EGOpenGLView *)self.view;
+ 
     [self.mOpenGLView setupGL];
 
     mDecodeQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
