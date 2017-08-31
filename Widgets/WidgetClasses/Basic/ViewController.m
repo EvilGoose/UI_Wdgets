@@ -62,6 +62,7 @@ UITableViewDataSource
                     @"EGMixAudioViewController",
                     @"EGMixVideoViewController",
                     @"EGMixAudioVideoViewController",
+                    @"EGSocketController"
                     ];
     }
     return _widges;

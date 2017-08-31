@@ -9,6 +9,7 @@ target 'Widgets' do
 	pod 'Masonry', '~> 1.0.0'
 	pod 'MJRefresh', '~> 3.1.7'
 	pod 'YYWebImage'
+	pod 'CocoaAsyncSocket' 
 
   target 'WidgetsTests' do
     inherit! :search_paths

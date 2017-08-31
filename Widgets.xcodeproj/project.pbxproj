@@ -10,6 +10,15 @@
 		254FFB80A1022A46D559E7B0 /* libPods-WidgetsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB6D33A159A456C34ACD48 /* libPods-WidgetsTests.a */; };
 		59C443C74DE593B850480013 /* libPods-WidgetsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */; };
 		C44013341F4B040E00BCC13E /* EGCATextLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44013331F4B040E00BCC13E /* EGCATextLayerController.m */; };
+		C4401FA61F5836C100581FE9 /* Movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA31F5836C100581FE9 /* Movie.mp4 */; };
+		C4401FA71F5836C100581FE9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA41F5836C100581FE9 /* Shader.fsh */; };
+		C4401FA81F5836C100581FE9 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA51F5836C100581FE9 /* Shader.vsh */; };
+		C4401FAB1F5836CC00581FE9 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = C4401FAA1F5836CC00581FE9 /* UIImage+Resize.m */; };
+		C4401FB01F5836F300581FE9 /* EGSocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4401FAE1F5836F300581FE9 /* EGSocketController.m */; };
+		C4401FB11F5836F300581FE9 /* EGSocketController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4401FAF1F5836F300581FE9 /* EGSocketController.xib */; };
+		C4401FB51F58371D00581FE9 /* Audio1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C4401FB21F58371D00581FE9 /* Audio1.m4a */; };
+		C4401FB61F58371D00581FE9 /* Audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4401FB31F58371D00581FE9 /* Audio2.mp3 */; };
+		C4401FB71F58371D00581FE9 /* Audio3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C4401FB41F58371D00581FE9 /* Audio3.m4a */; };
 		C44E3A1A1F346D1600C78E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44E3A191F346D1600C78E37 /* Assets.xcassets */; };
 		C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44E3A1B1F346D1600C78E37 /* LaunchScreen.storyboard */; };
 		C44E3A281F346D1600C78E37 /* WidgetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A271F346D1600C78E37 /* WidgetsTests.m */; };
@@ -18,19 +27,15 @@
 		C4553AA31F57E08100437E31 /* EGVideoCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4553AA21F57E08100437E31 /* EGVideoCaptureViewController.xib */; };
 		C4553AA61F57E48600437E31 /* EGOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4553AA51F57E48600437E31 /* EGOpenGLView.m */; };
 		C4553AAA1F57E55600437E31 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4553AA91F57E55600437E31 /* VideoToolbox.framework */; };
-		C4553AB51F57EA0700437E31 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C4553AB31F57EA0700437E31 /* Shader.fsh */; };
-		C4553AB61F57EA0700437E31 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C4553AB41F57EA0700437E31 /* Shader.vsh */; };
 		C456315F1F5680B5002164FE /* EGMixAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C456315B1F5680B5002164FE /* EGMixAudioViewController.m */; };
 		C45631601F5680B5002164FE /* EGMixVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C456315E1F5680B5002164FE /* EGMixVideoViewController.m */; };
 		C45631621F5680C8002164FE /* EGMixAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45631611F5680C8002164FE /* EGMixAudioViewController.xib */; };
-		C45631691F56832D002164FE /* Audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C45631681F56832D002164FE /* Audio2.mp3 */; };
 		C464AD0D1F3EC4D400341AAF /* EGNaviBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C464AD0C1F3EC4D400341AAF /* EGNaviBarViewController.m */; };
 		C47C6F321F514D5C00F7F653 /* EGImageSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47C6F301F514D5C00F7F653 /* EGImageSizeViewController.m */; };
 		C47C6F331F514D5C00F7F653 /* EGImageSizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C47C6F311F514D5C00F7F653 /* EGImageSizeViewController.xib */; };
 		C47C6F411F514E8C00F7F653 /* scenery1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C47C6F3E1F514E8C00F7F653 /* scenery1.jpg */; };
 		C47C6F421F514E8C00F7F653 /* scenery3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C47C6F3F1F514E8C00F7F653 /* scenery3.jpg */; };
 		C47C6F451F5150EF00F7F653 /* scenery2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C47C6F441F5150EF00F7F653 /* scenery2.jpg */; };
-		C47C6F4B1F515AF100F7F653 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = C47C6F4A1F515AF100F7F653 /* UIImage+Resize.m */; };
 		C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4C1F356D71003F06E6 /* EGTestViewController.m */; };
 		C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4F1F35965C003F06E6 /* EGIndicatorViewController.m */; };
 		C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF521F35989A003F06E6 /* GradientPeogressView.m */; };
@@ -49,6 +54,7 @@
 		C4EC487B1F355E8D00942884 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A0E1F346D1600C78E37 /* main.m */; };
 		C4EC487F1F355F1000942884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EC487E1F355F1000942884 /* Main.storyboard */; };
 		C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48801F356BB100942884 /* EGSeperateScrollViewController.m */; };
+		F00759BF06D305F00F774B6C /* libPods-Widgets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B06B64798A534068B82B7E5 /* libPods-Widgets.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +85,17 @@
 		5B06B64798A534068B82B7E5 /* libPods-Widgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44013321F4B040E00BCC13E /* EGCATextLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGCATextLayerController.h; sourceTree = "<group>"; };
 		C44013331F4B040E00BCC13E /* EGCATextLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGCATextLayerController.m; sourceTree = "<group>"; };
+		C4401FA31F5836C100581FE9 /* Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.mp4; sourceTree = "<group>"; };
+		C4401FA41F5836C100581FE9 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		C4401FA51F5836C100581FE9 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		C4401FA91F5836CC00581FE9 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		C4401FAA1F5836CC00581FE9 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		C4401FAD1F5836F300581FE9 /* EGSocketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGSocketController.h; sourceTree = "<group>"; };
+		C4401FAE1F5836F300581FE9 /* EGSocketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGSocketController.m; sourceTree = "<group>"; };
+		C4401FAF1F5836F300581FE9 /* EGSocketController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGSocketController.xib; sourceTree = "<group>"; };
+		C4401FB21F58371D00581FE9 /* Audio1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Audio1.m4a; sourceTree = "<group>"; };
+		C4401FB31F58371D00581FE9 /* Audio2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Audio2.mp3; sourceTree = "<group>"; };
+		C4401FB41F58371D00581FE9 /* Audio3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Audio3.m4a; sourceTree = "<group>"; };
 		C44E3A0A1F346D1600C78E37 /* Widgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Widgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44E3A0E1F346D1600C78E37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C44E3A101F346D1600C78E37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,18 +116,11 @@
 		C4553AA51F57E48600437E31 /* EGOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOpenGLView.m; sourceTree = "<group>"; };
 		C4553AA71F57E4C400437E31 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		C4553AA91F57E55600437E31 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		C4553AB31F57EA0700437E31 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
-		C4553AB41F57EA0700437E31 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
-		C4553AC11F57F04B00437E31 /* yyj.h264 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yyj.h264; sourceTree = "<group>"; };
-		C45631491F5669D7002164FE /* Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.mp4; sourceTree = "<group>"; };
 		C456315A1F5680B5002164FE /* EGMixAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMixAudioViewController.h; sourceTree = "<group>"; };
 		C456315B1F5680B5002164FE /* EGMixAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMixAudioViewController.m; sourceTree = "<group>"; };
 		C456315D1F5680B5002164FE /* EGMixVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMixVideoViewController.h; sourceTree = "<group>"; };
 		C456315E1F5680B5002164FE /* EGMixVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMixVideoViewController.m; sourceTree = "<group>"; };
 		C45631611F5680C8002164FE /* EGMixAudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGMixAudioViewController.xib; sourceTree = "<group>"; };
-		C45631681F56832D002164FE /* Audio2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Audio2.mp3; sourceTree = "<group>"; };
-		C456316A1F5684CB002164FE /* Audio1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Audio1.m4a; sourceTree = "<group>"; };
-		C456316B1F5685CA002164FE /* Audio3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Audio3.m4a; sourceTree = "<group>"; };
 		C464AD0B1F3EC4D400341AAF /* EGNaviBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGNaviBarViewController.h; sourceTree = "<group>"; };
 		C464AD0C1F3EC4D400341AAF /* EGNaviBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGNaviBarViewController.m; sourceTree = "<group>"; };
 		C46B83CB1F346F5200782008 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
@@ -120,8 +130,6 @@
 		C47C6F3E1F514E8C00F7F653 /* scenery1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenery1.jpg; sourceTree = "<group>"; };
 		C47C6F3F1F514E8C00F7F653 /* scenery3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenery3.jpg; sourceTree = "<group>"; };
 		C47C6F441F5150EF00F7F653 /* scenery2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenery2.jpg; sourceTree = "<group>"; };
-		C47C6F491F515AF100F7F653 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
-		C47C6F4A1F515AF100F7F653 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		C499EF4B1F356D71003F06E6 /* EGTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTestViewController.h; sourceTree = "<group>"; };
 		C499EF4C1F356D71003F06E6 /* EGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTestViewController.m; sourceTree = "<group>"; };
 		C499EF4E1F35965C003F06E6 /* EGIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGIndicatorViewController.h; sourceTree = "<group>"; };
@@ -163,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4553AAA1F57E55600437E31 /* VideoToolbox.framework in Frameworks */,
+				F00759BF06D305F00F774B6C /* libPods-Widgets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +216,29 @@
 			path = CATextLayer;
 			sourceTree = "<group>";
 		};
+		C4401FA21F5836C100581FE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4401FB21F58371D00581FE9 /* Audio1.m4a */,
+				C4401FB31F58371D00581FE9 /* Audio2.mp3 */,
+				C4401FB41F58371D00581FE9 /* Audio3.m4a */,
+				C4401FA31F5836C100581FE9 /* Movie.mp4 */,
+				C4401FA41F5836C100581FE9 /* Shader.fsh */,
+				C4401FA51F5836C100581FE9 /* Shader.vsh */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4401FAC1F5836E000581FE9 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				C4401FAD1F5836F300581FE9 /* EGSocketController.h */,
+				C4401FAE1F5836F300581FE9 /* EGSocketController.m */,
+				C4401FAF1F5836F300581FE9 /* EGSocketController.xib */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
 		C44E3A011F346D1600C78E37 = {
 			isa = PBXGroup;
 			children = (
@@ -244,15 +276,7 @@
 		C44E3A0D1F346D1600C78E37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C4553AC11F57F04B00437E31 /* yyj.h264 */,
-				C45631491F5669D7002164FE /* Movie.mp4 */,
-				C45631681F56832D002164FE /* Audio2.mp3 */,
-				C456316A1F5684CB002164FE /* Audio1.m4a */,
-				C456316B1F5685CA002164FE /* Audio3.m4a */,
-				C4553AB31F57EA0700437E31 /* Shader.fsh */,
-				C4553AB41F57EA0700437E31 /* Shader.vsh */,
-				C47C6F491F515AF100F7F653 /* UIImage+Resize.h */,
-				C47C6F4A1F515AF100F7F653 /* UIImage+Resize.m */,
+				C4401FA21F5836C100581FE9 /* Resources */,
 				C47C6F3D1F514E8C00F7F653 /* scenery */,
 				C4A3000B1F4E766500D23587 /* WRNavigationBar */,
 				C46B83CB1F346F5200782008 /* PrefixHeader.pch */,
@@ -416,6 +440,7 @@
 		C4EC48541F35576900942884 /* WidgetClasses */ = {
 			isa = PBXGroup;
 			children = (
+				C4401FAC1F5836E000581FE9 /* Socket */,
 				C45631591F5680B5002164FE /* MixAudio */,
 				C456315C1F5680B5002164FE /* MixVideo */,
 				C4CDA6561F54452A005150A6 /* MixAudioVideo */,
@@ -425,23 +450,26 @@
 				C47C6F2E1F514D3400F7F653 /* ImageSize */,
 				C440132E1F4B03A000BCC13E /* CATextLayer */,
 				C464AD0A1F3EC4C400341AAF /* NaviBar */,
-				C4EC48611F35578300942884 /* Tools */,
 				C4EC486E1F3557CF00942884 /* SeperateScroll */,
 				C4EC486B1F3557CF00942884 /* Indicator */,
 				C499EF4A1F356D68003F06E6 /* Test */,
+				C4EC48611F35578300942884 /* Categories */,
 			);
 			path = WidgetClasses;
 			sourceTree = "<group>";
 		};
-		C4EC48611F35578300942884 /* Tools */ = {
+		C4EC48611F35578300942884 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				C4EC48621F35578300942884 /* UIConstants.h */,
+				C4401FA91F5836CC00581FE9 /* UIImage+Resize.h */,
+				C4401FAA1F5836CC00581FE9 /* UIImage+Resize.m */,
 				C499EF541F35993F003F06E6 /* UIColor+PDExtension.h */,
 				C499EF551F35993F003F06E6 /* UIColor+PDExtension.m */,
 				C4EC48631F35578300942884 /* UIView+Extension.h */,
 				C4EC48641F35578300942884 /* UIView+Extension.m */,
 			);
+			name = Categories;
 			path = Tools;
 			sourceTree = "<group>";
 		};
@@ -597,6 +625,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4401FB11F5836F300581FE9 /* EGSocketController.xib in Resources */,
 				C45631621F5680C8002164FE /* EGMixAudioViewController.xib in Resources */,
 				C4EC487F1F355F1000942884 /* Main.storyboard in Resources */,
 				C4553AA31F57E08100437E31 /* EGVideoCaptureViewController.xib in Resources */,
@@ -604,11 +633,14 @@
 				C47C6F411F514E8C00F7F653 /* scenery1.jpg in Resources */,
 				C47C6F451F5150EF00F7F653 /* scenery2.jpg in Resources */,
 				C47C6F421F514E8C00F7F653 /* scenery3.jpg in Resources */,
-				C45631691F56832D002164FE /* Audio2.mp3 in Resources */,
 				C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */,
-				C4553AB51F57EA0700437E31 /* Shader.fsh in Resources */,
-				C4553AB61F57EA0700437E31 /* Shader.vsh in Resources */,
+				C4401FA61F5836C100581FE9 /* Movie.mp4 in Resources */,
+				C4401FB51F58371D00581FE9 /* Audio1.m4a in Resources */,
+				C4401FB61F58371D00581FE9 /* Audio2.mp3 in Resources */,
+				C4401FA71F5836C100581FE9 /* Shader.fsh in Resources */,
 				C44E3A1A1F346D1600C78E37 /* Assets.xcassets in Resources */,
+				C4401FA81F5836C100581FE9 /* Shader.vsh in Resources */,
+				C4401FB71F58371D00581FE9 /* Audio3.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,9 +667,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Widgets/Pods-Widgets-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -665,13 +700,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WidgetsUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71CF611527A928A1DC81C982 /* [CP] Copy Pods Resources */ = {
@@ -695,13 +733,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Widgets-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		73B57776D3B758C3ABA4E600 /* [CP] Copy Pods Resources */ = {
@@ -755,13 +796,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WidgetsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -776,6 +820,7 @@
 				C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */,
 				C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */,
 				C44013341F4B040E00BCC13E /* EGCATextLayerController.m in Sources */,
+				C4401FAB1F5836CC00581FE9 /* UIImage+Resize.m in Sources */,
 				C4CDA64E1F53F15B005150A6 /* EGMicroPhoneHelper.m in Sources */,
 				C4CDA6441F53E26D005150A6 /* EGWaveViewController.m in Sources */,
 				C4CDA64B1F53EFA5005150A6 /* EGMicroPhoneViewController.m in Sources */,
@@ -790,11 +835,11 @@
 				C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */,
 				C4CDA6471F53E283005150A6 /* EGWaveView.m in Sources */,
 				C47C6F321F514D5C00F7F653 /* EGImageSizeViewController.m in Sources */,
+				C4401FB01F5836F300581FE9 /* EGSocketController.m in Sources */,
 				C4A300121F4E766500D23587 /* WRNavigationBar.m in Sources */,
 				C464AD0D1F3EC4D400341AAF /* EGNaviBarViewController.m in Sources */,
 				C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */,
 				C4CDA6591F544548005150A6 /* EGMixAudioVideoViewController.m in Sources */,
-				C47C6F4B1F515AF100F7F653 /* UIImage+Resize.m in Sources */,
 				C4EC487B1F355E8D00942884 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
