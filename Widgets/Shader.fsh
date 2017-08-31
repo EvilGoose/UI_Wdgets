@@ -25,7 +25,7 @@ void main()
 	rgb = colorConversionMatrix * yuv;
 
 	gl_FragColor = vec4(rgb,1);
-//    gl_FragColor = vec4(1, 0, 0, 1);
+//    gl_FragColor = vec4(.1, 0.2, 0.1, 1);
 }
 
     /*

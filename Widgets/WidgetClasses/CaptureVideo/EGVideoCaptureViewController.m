@@ -61,6 +61,7 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
 #pragma mark - life cycle
 
     //http://www.cocoachina.com/ios/20151123/14116.html
+    //http://www.cocoachina.com/game/20141127/10335.html
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -131,14 +132,11 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
     
     [self initVideoToolBox];
     [self.mCaptureSession startRunning];
-    
 }
 
 - (void)initVideoToolBox {
-    
     frameID = 0;
     dispatch_sync(mEncodeQueue, ^{
-        
         int width = 480, height = 640;
         OSStatus status = VTCompressionSessionCreate(NULL,
                                                      width,
@@ -323,8 +321,7 @@ void didCompressH264(void *outputCallbackRefCon, void *sourceFrameRefCon, OSStat
 
 #pragma mark - decode action
 
-void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSStatus status, VTDecodeInfoFlags infoFlags, CVImageBufferRef pixelBuffer, CMTime presentationTimeStamp, CMTime presentationDuration ){
-    
+void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSStatus status, VTDecodeInfoFlags infoFlags, CVImageBufferRef pixelBuffer, CMTime presentationTimeStamp, CMTime presentationDuration ) {
     CVPixelBufferRef *outputPixelBuffer = (CVPixelBufferRef *)sourceFrameRefCon;
     *outputPixelBuffer = CVPixelBufferRetain(pixelBuffer);
 }
@@ -347,6 +344,7 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
     [self.mDispalyLink setPaused:YES];
 }
 
+    //下面这个方法，适应窗口可能造成形变
 - (void)updateFrame {
     if (inputStream) {
         dispatch_sync(mDecodeQueue, ^{
@@ -382,6 +380,14 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
                     mPPS = malloc(mPPSSize);
                     memcpy(mPPS, packetBuffer + 4, mPPSSize);
                     break;
+                case 0x01:// P
+                    NSLog(@"Nal type is P");
+                    pixelBuffer = [self decode];
+                    break;
+                case 0x06: // SEI
+                    NSLog(@"Nal type is SEI");
+                    pixelBuffer = [self decode];
+                 	break;
                 default:
                     NSLog(@"Nal type is B/P frame");
                     pixelBuffer = [self decode];
@@ -468,7 +474,7 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
                                                       &mDecodeSession);
                 CFRelease(attrs);
             } else {
-                NSLog(@"IOS8VT: reset decoder session failed status=%d", status);
+                NSLog(@"IOS VT: reset decoder session failed status=%d", status);
             }
         }
     }
@@ -505,11 +511,11 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
                                                                           &flagOut);
                 
                 if(decodeStatus == kVTInvalidSessionErr) {
-                    NSLog(@"IOS8VT: Invalid session, reset decoder session");
+                    NSLog(@"IOS VT: Invalid session, reset decoder session");
                 } else if(decodeStatus == kVTVideoDecoderBadDataErr) {
-                    NSLog(@"IOS8VT: decode failed status=%d(Bad data)", (int)decodeStatus);
+                    NSLog(@"IOS VT: decode failed status=%d(Bad data)", (int)decodeStatus);
                 } else if(decodeStatus != noErr) {
-                    NSLog(@"IOS8VT: decode failed status=%d", (int)decodeStatus);
+                    NSLog(@"IOS VT: decode failed status=%d", (int)decodeStatus);
                 }
                 
                 CFRelease(sampleBuffer);
