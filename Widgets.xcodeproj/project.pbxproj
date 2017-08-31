@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		254FFB80A1022A46D559E7B0 /* libPods-WidgetsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB6D33A159A456C34ACD48 /* libPods-WidgetsTests.a */; };
 		59C443C74DE593B850480013 /* libPods-WidgetsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */; };
-		5A2AAFB7FE5522D3D7980DD5 /* libPods-Widgets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B06B64798A534068B82B7E5 /* libPods-Widgets.a */; };
 		C44013341F4B040E00BCC13E /* EGCATextLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44013331F4B040E00BCC13E /* EGCATextLayerController.m */; };
 		C44E3A1A1F346D1600C78E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44E3A191F346D1600C78E37 /* Assets.xcassets */; };
 		C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44E3A1B1F346D1600C78E37 /* LaunchScreen.storyboard */; };
 		C44E3A281F346D1600C78E37 /* WidgetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A271F346D1600C78E37 /* WidgetsTests.m */; };
 		C44E3A331F346D1600C78E37 /* WidgetsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A321F346D1600C78E37 /* WidgetsUITests.m */; };
+		C4553AA11F57E07000437E31 /* EGVideoCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4553AA01F57E07000437E31 /* EGVideoCaptureViewController.m */; };
+		C4553AA31F57E08100437E31 /* EGVideoCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4553AA21F57E08100437E31 /* EGVideoCaptureViewController.xib */; };
+		C4553AA61F57E48600437E31 /* EGOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4553AA51F57E48600437E31 /* EGOpenGLView.m */; };
+		C4553AAA1F57E55600437E31 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4553AA91F57E55600437E31 /* VideoToolbox.framework */; };
+		C4553AB51F57EA0700437E31 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C4553AB31F57EA0700437E31 /* Shader.fsh */; };
+		C4553AB61F57EA0700437E31 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C4553AB41F57EA0700437E31 /* Shader.vsh */; };
+		C456315F1F5680B5002164FE /* EGMixAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C456315B1F5680B5002164FE /* EGMixAudioViewController.m */; };
+		C45631601F5680B5002164FE /* EGMixVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C456315E1F5680B5002164FE /* EGMixVideoViewController.m */; };
+		C45631621F5680C8002164FE /* EGMixAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45631611F5680C8002164FE /* EGMixAudioViewController.xib */; };
+		C45631691F56832D002164FE /* Audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C45631681F56832D002164FE /* Audio2.mp3 */; };
 		C464AD0D1F3EC4D400341AAF /* EGNaviBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C464AD0C1F3EC4D400341AAF /* EGNaviBarViewController.m */; };
 		C47C6F321F514D5C00F7F653 /* EGImageSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47C6F301F514D5C00F7F653 /* EGImageSizeViewController.m */; };
 		C47C6F331F514D5C00F7F653 /* EGImageSizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C47C6F311F514D5C00F7F653 /* EGImageSizeViewController.xib */; };
@@ -32,6 +41,7 @@
 		C4CDA6471F53E283005150A6 /* EGWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA6461F53E283005150A6 /* EGWaveView.m */; };
 		C4CDA64B1F53EFA5005150A6 /* EGMicroPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA64A1F53EFA5005150A6 /* EGMicroPhoneViewController.m */; };
 		C4CDA64E1F53F15B005150A6 /* EGMicroPhoneHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA64D1F53F15B005150A6 /* EGMicroPhoneHelper.m */; };
+		C4CDA6591F544548005150A6 /* EGMixAudioVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA6581F544548005150A6 /* EGMixAudioVideoViewController.m */; };
 		C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A111F346D1600C78E37 /* AppDelegate.m */; };
 		C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48641F35578300942884 /* UIView+Extension.m */; };
 		C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48681F3557CF00942884 /* EGBasicViewController.m */; };
@@ -82,6 +92,25 @@
 		C44E3A2E1F346D1600C78E37 /* WidgetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44E3A321F346D1600C78E37 /* WidgetsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidgetsUITests.m; sourceTree = "<group>"; };
 		C44E3A341F346D1600C78E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4553A9F1F57E07000437E31 /* EGVideoCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGVideoCaptureViewController.h; sourceTree = "<group>"; };
+		C4553AA01F57E07000437E31 /* EGVideoCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGVideoCaptureViewController.m; sourceTree = "<group>"; };
+		C4553AA21F57E08100437E31 /* EGVideoCaptureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGVideoCaptureViewController.xib; sourceTree = "<group>"; };
+		C4553AA41F57E48600437E31 /* EGOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOpenGLView.h; sourceTree = "<group>"; };
+		C4553AA51F57E48600437E31 /* EGOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOpenGLView.m; sourceTree = "<group>"; };
+		C4553AA71F57E4C400437E31 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		C4553AA91F57E55600437E31 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		C4553AB31F57EA0700437E31 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		C4553AB41F57EA0700437E31 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		C4553AC11F57F04B00437E31 /* yyj.h264 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yyj.h264; sourceTree = "<group>"; };
+		C45631491F5669D7002164FE /* Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.mp4; sourceTree = "<group>"; };
+		C456315A1F5680B5002164FE /* EGMixAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMixAudioViewController.h; sourceTree = "<group>"; };
+		C456315B1F5680B5002164FE /* EGMixAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMixAudioViewController.m; sourceTree = "<group>"; };
+		C456315D1F5680B5002164FE /* EGMixVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMixVideoViewController.h; sourceTree = "<group>"; };
+		C456315E1F5680B5002164FE /* EGMixVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMixVideoViewController.m; sourceTree = "<group>"; };
+		C45631611F5680C8002164FE /* EGMixAudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGMixAudioViewController.xib; sourceTree = "<group>"; };
+		C45631681F56832D002164FE /* Audio2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Audio2.mp3; sourceTree = "<group>"; };
+		C456316A1F5684CB002164FE /* Audio1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Audio1.m4a; sourceTree = "<group>"; };
+		C456316B1F5685CA002164FE /* Audio3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Audio3.m4a; sourceTree = "<group>"; };
 		C464AD0B1F3EC4D400341AAF /* EGNaviBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGNaviBarViewController.h; sourceTree = "<group>"; };
 		C464AD0C1F3EC4D400341AAF /* EGNaviBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGNaviBarViewController.m; sourceTree = "<group>"; };
 		C46B83CB1F346F5200782008 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
@@ -113,6 +142,8 @@
 		C4CDA64A1F53EFA5005150A6 /* EGMicroPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMicroPhoneViewController.m; sourceTree = "<group>"; };
 		C4CDA64C1F53F15B005150A6 /* EGMicroPhoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMicroPhoneHelper.h; sourceTree = "<group>"; };
 		C4CDA64D1F53F15B005150A6 /* EGMicroPhoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMicroPhoneHelper.m; sourceTree = "<group>"; };
+		C4CDA6571F544548005150A6 /* EGMixAudioVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMixAudioVideoViewController.h; sourceTree = "<group>"; };
+		C4CDA6581F544548005150A6 /* EGMixAudioVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMixAudioVideoViewController.m; sourceTree = "<group>"; };
 		C4EC48621F35578300942884 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
 		C4EC48631F35578300942884 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		C4EC48641F35578300942884 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
@@ -131,7 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A2AAFB7FE5522D3D7980DD5 /* libPods-Widgets.a in Frameworks */,
+				C4553AAA1F57E55600437E31 /* VideoToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +244,13 @@
 		C44E3A0D1F346D1600C78E37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4553AC11F57F04B00437E31 /* yyj.h264 */,
+				C45631491F5669D7002164FE /* Movie.mp4 */,
+				C45631681F56832D002164FE /* Audio2.mp3 */,
+				C456316A1F5684CB002164FE /* Audio1.m4a */,
+				C456316B1F5685CA002164FE /* Audio3.m4a */,
+				C4553AB31F57EA0700437E31 /* Shader.fsh */,
+				C4553AB41F57EA0700437E31 /* Shader.vsh */,
 				C47C6F491F515AF100F7F653 /* UIImage+Resize.h */,
 				C47C6F4A1F515AF100F7F653 /* UIImage+Resize.m */,
 				C47C6F3D1F514E8C00F7F653 /* scenery */,
@@ -242,6 +280,37 @@
 				C44E3A341F346D1600C78E37 /* Info.plist */,
 			);
 			path = WidgetsUITests;
+			sourceTree = "<group>";
+		};
+		C4553A9E1F57E04C00437E31 /* CaptureVideo */ = {
+			isa = PBXGroup;
+			children = (
+				C4553A9F1F57E07000437E31 /* EGVideoCaptureViewController.h */,
+				C4553AA01F57E07000437E31 /* EGVideoCaptureViewController.m */,
+				C4553AA21F57E08100437E31 /* EGVideoCaptureViewController.xib */,
+				C4553AA41F57E48600437E31 /* EGOpenGLView.h */,
+				C4553AA51F57E48600437E31 /* EGOpenGLView.m */,
+			);
+			path = CaptureVideo;
+			sourceTree = "<group>";
+		};
+		C45631591F5680B5002164FE /* MixAudio */ = {
+			isa = PBXGroup;
+			children = (
+				C456315A1F5680B5002164FE /* EGMixAudioViewController.h */,
+				C456315B1F5680B5002164FE /* EGMixAudioViewController.m */,
+				C45631611F5680C8002164FE /* EGMixAudioViewController.xib */,
+			);
+			path = MixAudio;
+			sourceTree = "<group>";
+		};
+		C456315C1F5680B5002164FE /* MixVideo */ = {
+			isa = PBXGroup;
+			children = (
+				C456315D1F5680B5002164FE /* EGMixVideoViewController.h */,
+				C456315E1F5680B5002164FE /* EGMixVideoViewController.m */,
+			);
+			path = MixVideo;
 			sourceTree = "<group>";
 		};
 		C464AD0A1F3EC4C400341AAF /* NaviBar */ = {
@@ -323,9 +392,20 @@
 			path = Microphone;
 			sourceTree = "<group>";
 		};
+		C4CDA6561F54452A005150A6 /* MixAudioVideo */ = {
+			isa = PBXGroup;
+			children = (
+				C4CDA6571F544548005150A6 /* EGMixAudioVideoViewController.h */,
+				C4CDA6581F544548005150A6 /* EGMixAudioVideoViewController.m */,
+			);
+			path = MixAudioVideo;
+			sourceTree = "<group>";
+		};
 		C4D4761FFD3E873E89992480 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4553AA91F57E55600437E31 /* VideoToolbox.framework */,
+				C4553AA71F57E4C400437E31 /* CoreVideo.framework */,
 				5B06B64798A534068B82B7E5 /* libPods-Widgets.a */,
 				27FB6D33A159A456C34ACD48 /* libPods-WidgetsTests.a */,
 				1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */,
@@ -336,6 +416,10 @@
 		C4EC48541F35576900942884 /* WidgetClasses */ = {
 			isa = PBXGroup;
 			children = (
+				C45631591F5680B5002164FE /* MixAudio */,
+				C456315C1F5680B5002164FE /* MixVideo */,
+				C4CDA6561F54452A005150A6 /* MixAudioVideo */,
+				C4553A9E1F57E04C00437E31 /* CaptureVideo */,
 				C4CDA6481F53EF8F005150A6 /* Microphone */,
 				C4CDA6411F53E256005150A6 /* WaveAnimation */,
 				C47C6F2E1F514D3400F7F653 /* ImageSize */,
@@ -513,13 +597,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45631621F5680C8002164FE /* EGMixAudioViewController.xib in Resources */,
 				C4EC487F1F355F1000942884 /* Main.storyboard in Resources */,
-				C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */,
-				C47C6F411F514E8C00F7F653 /* scenery1.jpg in Resources */,
-				C47C6F421F514E8C00F7F653 /* scenery3.jpg in Resources */,
-				C44E3A1A1F346D1600C78E37 /* Assets.xcassets in Resources */,
-				C47C6F451F5150EF00F7F653 /* scenery2.jpg in Resources */,
+				C4553AA31F57E08100437E31 /* EGVideoCaptureViewController.xib in Resources */,
 				C47C6F331F514D5C00F7F653 /* EGImageSizeViewController.xib in Resources */,
+				C47C6F411F514E8C00F7F653 /* scenery1.jpg in Resources */,
+				C47C6F451F5150EF00F7F653 /* scenery2.jpg in Resources */,
+				C47C6F421F514E8C00F7F653 /* scenery3.jpg in Resources */,
+				C45631691F56832D002164FE /* Audio2.mp3 in Resources */,
+				C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */,
+				C4553AB51F57EA0700437E31 /* Shader.fsh in Resources */,
+				C4553AB61F57EA0700437E31 /* Shader.vsh in Resources */,
+				C44E3A1A1F346D1600C78E37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,17 +771,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C456315F1F5680B5002164FE /* EGMixAudioViewController.m in Sources */,
+				C4553AA61F57E48600437E31 /* EGOpenGLView.m in Sources */,
 				C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */,
 				C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */,
 				C44013341F4B040E00BCC13E /* EGCATextLayerController.m in Sources */,
 				C4CDA64E1F53F15B005150A6 /* EGMicroPhoneHelper.m in Sources */,
 				C4CDA6441F53E26D005150A6 /* EGWaveViewController.m in Sources */,
 				C4CDA64B1F53EFA5005150A6 /* EGMicroPhoneViewController.m in Sources */,
+				C4553AA11F57E07000437E31 /* EGVideoCaptureViewController.m in Sources */,
 				C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */,
 				C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */,
 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
 				C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */,
+				C45631601F5680B5002164FE /* EGMixVideoViewController.m in Sources */,
 				C4A300111F4E766500D23587 /* WRImageHelper.m in Sources */,
 				C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */,
 				C4CDA6471F53E283005150A6 /* EGWaveView.m in Sources */,
@@ -700,6 +793,7 @@
 				C4A300121F4E766500D23587 /* WRNavigationBar.m in Sources */,
 				C464AD0D1F3EC4D400341AAF /* EGNaviBarViewController.m in Sources */,
 				C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */,
+				C4CDA6591F544548005150A6 /* EGMixAudioVideoViewController.m in Sources */,
 				C47C6F4B1F515AF100F7F653 /* UIImage+Resize.m in Sources */,
 				C4EC487B1F355E8D00942884 /* main.m in Sources */,
 			);

@@ -57,7 +57,11 @@ UITableViewDataSource
                     @"EGCATextLayerController",
                     @"EGImageSizeViewController",
                     @"EGWaveViewController",
-                    @"EGMicroPhoneViewController"
+                    @"EGMicroPhoneViewController",
+                    @"EGVideoCaptureViewController",
+                    @"EGMixAudioViewController",
+                    @"EGMixVideoViewController",
+                    @"EGMixAudioVideoViewController",
                     ];
     }
     return _widges;

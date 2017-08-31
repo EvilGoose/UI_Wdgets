@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EGMixAudioViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="6hu-ez-uJB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95z-IP-zw8">
+                    <rect key="frame" x="16" y="571" width="343" height="34"/>
+                    <color key="backgroundColor" red="0.15626253640000001" green="0.301562147" blue="0.36593829309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Mix"/>
+                    <connections>
+                        <action selector="mixAction:" destination="-1" eventType="touchUpInside" id="g9p-o5-3f9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAV-xU-THM">
+                    <rect key="frame" x="16" y="521" width="343" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.15626253640000001" green="0.301562147" blue="0.36593829309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Add"/>
+                    <connections>
+                        <action selector="mixAction:" destination="-1" eventType="touchUpInside" id="CxM-sS-I3U"/>
+                    </connections>
+                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wev-W9-KNJ">
+                    <rect key="frame" x="16" y="259" width="343" height="2"/>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BI-Yz-xl0">
+                    <rect key="frame" x="16" y="619" width="343" height="34"/>
+                    <color key="backgroundColor" red="0.15626253637009913" green="0.30156214701833634" blue="0.36593829314720816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Play"/>
+                    <connections>
+                        <action selector="playAction:" destination="-1" eventType="touchUpInside" id="nWt-k6-lX8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wev-W9-KNJ" firstAttribute="trailing" secondItem="95z-IP-zw8" secondAttribute="trailing" id="2US-0j-htp"/>
+                <constraint firstItem="Wev-W9-KNJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="4DQ-4Q-ycb"/>
+                <constraint firstItem="3BI-Yz-xl0" firstAttribute="top" secondItem="95z-IP-zw8" secondAttribute="bottom" constant="10" id="8BY-dT-dcc"/>
+                <constraint firstItem="95z-IP-zw8" firstAttribute="leading" secondItem="3BI-Yz-xl0" secondAttribute="leading" id="HH4-Bo-l8f"/>
+                <constraint firstItem="95z-IP-zw8" firstAttribute="top" secondItem="Wev-W9-KNJ" secondAttribute="bottom" constant="310" id="IB3-A1-t6x"/>
+                <constraint firstItem="Wev-W9-KNJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KKp-ak-DhI"/>
+                <constraint firstAttribute="bottom" secondItem="3BI-Yz-xl0" secondAttribute="bottom" constant="18" id="TIm-SW-GXV"/>
+                <constraint firstItem="95z-IP-zw8" firstAttribute="trailing" secondItem="3BI-Yz-xl0" secondAttribute="trailing" id="t4q-S8-tR4"/>
+                <constraint firstItem="Wev-W9-KNJ" firstAttribute="leading" secondItem="95z-IP-zw8" secondAttribute="leading" id="vfX-Xt-Lg8"/>
+            </constraints>
+            <point key="canvasLocation" x="-788.5" y="-174.5"/>
+        </view>
+    </objects>
+</document>
