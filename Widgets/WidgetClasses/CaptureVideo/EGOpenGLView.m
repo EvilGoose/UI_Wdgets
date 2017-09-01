@@ -208,9 +208,9 @@ const GLfloat kColorConversion601FullRange[] = {
         if ([EAGLContext currentContext] != _context) {
             [EAGLContext setCurrentContext:_context]; // 非常重要的一行代码
         }
+        
         [self cleanUpTextures];
-        
-        
+
         /*
          Use the color attachment of the pixel buffer to determine the appropriate color conversion matrix.
          */

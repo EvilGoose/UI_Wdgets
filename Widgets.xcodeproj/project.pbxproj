@@ -36,6 +36,7 @@
 		C47C6F411F514E8C00F7F653 /* scenery1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C47C6F3E1F514E8C00F7F653 /* scenery1.jpg */; };
 		C47C6F421F514E8C00F7F653 /* scenery3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C47C6F3F1F514E8C00F7F653 /* scenery3.jpg */; };
 		C47C6F451F5150EF00F7F653 /* scenery2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C47C6F441F5150EF00F7F653 /* scenery2.jpg */; };
+		C4968D771F5931BB005DC969 /* EGOpenGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4968D761F5931BB005DC969 /* EGOpenGLLayer.m */; };
 		C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4C1F356D71003F06E6 /* EGTestViewController.m */; };
 		C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4F1F35965C003F06E6 /* EGIndicatorViewController.m */; };
 		C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF521F35989A003F06E6 /* GradientPeogressView.m */; };
@@ -130,6 +131,8 @@
 		C47C6F3E1F514E8C00F7F653 /* scenery1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenery1.jpg; sourceTree = "<group>"; };
 		C47C6F3F1F514E8C00F7F653 /* scenery3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenery3.jpg; sourceTree = "<group>"; };
 		C47C6F441F5150EF00F7F653 /* scenery2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenery2.jpg; sourceTree = "<group>"; };
+		C4968D751F5931BB005DC969 /* EGOpenGLLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOpenGLLayer.h; sourceTree = "<group>"; };
+		C4968D761F5931BB005DC969 /* EGOpenGLLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOpenGLLayer.m; sourceTree = "<group>"; };
 		C499EF4B1F356D71003F06E6 /* EGTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTestViewController.h; sourceTree = "<group>"; };
 		C499EF4C1F356D71003F06E6 /* EGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTestViewController.m; sourceTree = "<group>"; };
 		C499EF4E1F35965C003F06E6 /* EGIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGIndicatorViewController.h; sourceTree = "<group>"; };
@@ -314,6 +317,8 @@
 				C4553AA21F57E08100437E31 /* EGVideoCaptureViewController.xib */,
 				C4553AA41F57E48600437E31 /* EGOpenGLView.h */,
 				C4553AA51F57E48600437E31 /* EGOpenGLView.m */,
+				C4968D751F5931BB005DC969 /* EGOpenGLLayer.h */,
+				C4968D761F5931BB005DC969 /* EGOpenGLLayer.m */,
 			);
 			path = CaptureVideo;
 			sourceTree = "<group>";
@@ -824,6 +829,7 @@
 				C4CDA64E1F53F15B005150A6 /* EGMicroPhoneHelper.m in Sources */,
 				C4CDA6441F53E26D005150A6 /* EGWaveViewController.m in Sources */,
 				C4CDA64B1F53EFA5005150A6 /* EGMicroPhoneViewController.m in Sources */,
+				C4968D771F5931BB005DC969 /* EGOpenGLLayer.m in Sources */,
 				C4553AA11F57E07000437E31 /* EGVideoCaptureViewController.m in Sources */,
 				C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */,
 				C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */,

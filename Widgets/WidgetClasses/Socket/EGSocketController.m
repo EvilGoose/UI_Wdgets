@@ -105,6 +105,8 @@ GCDAsyncSocketDelegate
     NSString *receiverStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     dispatch_async(dispatch_get_main_queue(), ^{
         self.resultPresentView.text = [self.resultPresentView.text stringByAppendingFormat:@"%@\n", receiverStr];
+        
+        
     });
 }
 

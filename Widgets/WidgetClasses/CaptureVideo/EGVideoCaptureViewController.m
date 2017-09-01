@@ -9,15 +9,17 @@
 #import "EGVideoCaptureViewController.h"
 #import <VideoToolbox/VideoToolbox.h>
 #import <AVFoundation/AVFoundation.h>
+
 #import "EGOpenGLView.h"
+#import "EGOpenGLLayer.h"
 
 #define FILE_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"test.h264"]
 
 @interface EGVideoCaptureViewController ()
 <AVCaptureVideoDataOutputSampleBufferDelegate>
 {
-    dispatch_queue_t mCaptureQueue;
-    dispatch_queue_t mEncodeQueue;
+    dispatch_queue_t captureQueue;
+    dispatch_queue_t encodeQueue;
     NSFileHandle *fileHandle;
     VTCompressionSessionRef EncodingSession;
     int frameID;
@@ -40,17 +42,20 @@
     
 }
 
-@property (nonatomic, strong) AVCaptureSession *mCaptureSession; //负责输入和输出设备之间的数据传递
+@property (nonatomic, strong) AVCaptureSession *captureSession; //负责输入和输出设备之间的数据传递
 
-@property (nonatomic, strong) AVCaptureDeviceInput *mCaptureDeviceInput;//负责从AVCaptureDevice获得输入数据
+@property (nonatomic, strong) AVCaptureDeviceInput *captureDeviceInput;//负责从AVCaptureDevice获得输入数据
 
-@property (nonatomic, strong) AVCaptureVideoDataOutput *mCaptureDeviceOutput;
+@property (nonatomic, strong) AVCaptureVideoDataOutput *captureDataOutput;
 
-@property (nonatomic, strong) AVCaptureVideoPreviewLayer *mPreviewLayer;
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer *capturePreviewLayer;
 
 @property (nonatomic , weak) IBOutlet EGOpenGLView *mOpenGLView;
 
- @property (nonatomic , strong) CADisplayLink *mDispalyLink;
+/**EGOpenGLLayer*/
+@property (strong, nonatomic)EGOpenGLLayer *displayLayer;
+
+@property (nonatomic , strong) CADisplayLink *mDispalyLink;
 
 @end
 
@@ -66,9 +71,15 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
- 
-    [self.mOpenGLView setupGL];
+        //TODO: -- Layer Test
+}
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.mOpenGLView.layer addSublayer:self.displayLayer];
+    
+    [self.mOpenGLView setupGL];
+    
     mDecodeQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     self.mDispalyLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateFrame)];
     [self.mDispalyLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
@@ -96,11 +107,11 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
 #pragma mark - Capture actions
 
 - (void)startCapture {
-    self.mCaptureSession = [[AVCaptureSession alloc] init];
-    self.mCaptureSession.sessionPreset = AVCaptureSessionPreset640x480;
+    self.captureSession = [[AVCaptureSession alloc] init];
+    self.captureSession.sessionPreset = AVCaptureSessionPreset640x480;
     
-    mEncodeQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    mCaptureQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    encodeQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    captureQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     AVCaptureDevice *inputCamera = nil;
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
@@ -110,29 +121,29 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
         }
     }
     
-    self.mCaptureDeviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:inputCamera error:nil];
+    self.captureDeviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:inputCamera error:nil];
     
-    if ([self.mCaptureSession canAddInput:self.mCaptureDeviceInput]) {
-        [self.mCaptureSession addInput:self.mCaptureDeviceInput];
+    if ([self.captureSession canAddInput:self.captureDeviceInput]) {
+        [self.captureSession addInput:self.captureDeviceInput];
     }
     
-    self.mCaptureDeviceOutput = [[AVCaptureVideoDataOutput alloc] init];
-    [self.mCaptureDeviceOutput setAlwaysDiscardsLateVideoFrames:NO];
+    self.captureDataOutput = [[AVCaptureVideoDataOutput alloc] init];
+    [self.captureDataOutput setAlwaysDiscardsLateVideoFrames:NO];
     
-    [self.mCaptureDeviceOutput setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
-    [self.mCaptureDeviceOutput setSampleBufferDelegate:self queue:mCaptureQueue];
+    [self.captureDataOutput setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
+    [self.captureDataOutput setSampleBufferDelegate:self queue:captureQueue];
     
-    if ([self.mCaptureSession canAddOutput:self.mCaptureDeviceOutput]) {
-        [self.mCaptureSession addOutput:self.mCaptureDeviceOutput];
+    if ([self.captureSession canAddOutput:self.captureDataOutput]) {
+        [self.captureSession addOutput:self.captureDataOutput];
     }
     
-    AVCaptureConnection *connection = [self.mCaptureDeviceOutput connectionWithMediaType:AVMediaTypeVideo];
+    AVCaptureConnection *connection = [self.captureDataOutput connectionWithMediaType:AVMediaTypeVideo];
     [connection setVideoOrientation:AVCaptureVideoOrientationPortrait];
     
-    self.mPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.mCaptureSession];
-    [self.mPreviewLayer setVideoGravity:AVLayerVideoGravityResizeAspect];
-    [self.mPreviewLayer setFrame:self.mOpenGLView.frame];
-    [self.view.layer addSublayer:self.mPreviewLayer];
+    self.capturePreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.captureSession];
+    [self.capturePreviewLayer setVideoGravity:AVLayerVideoGravityResizeAspect];
+    [self.capturePreviewLayer setFrame:self.mOpenGLView.frame];
+    [self.view.layer addSublayer:self.capturePreviewLayer];
     
     [[NSFileManager defaultManager] removeItemAtPath:FILE_PATH error:nil];
     [[NSFileManager defaultManager] createFileAtPath:FILE_PATH contents:nil attributes:nil];
@@ -140,13 +151,14 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
     fileHandle = [NSFileHandle fileHandleForWritingAtPath:FILE_PATH];
     
     [self initVideoToolBox];
-    [self.mCaptureSession startRunning];
+    [self.captureSession startRunning];
  }
 
 - (void)initVideoToolBox {
     frameID = 0;
-    dispatch_sync(mEncodeQueue, ^{
-        int width = 480, height = 640;
+    dispatch_sync(encodeQueue, ^{
+        int width = SCREEN_HEIGHT < SCREEN_WIDTH ?  SCREEN_HEIGHT : SCREEN_WIDTH;
+        int height = SCREEN_HEIGHT > SCREEN_WIDTH ?  SCREEN_HEIGHT : SCREEN_WIDTH;
         OSStatus status = VTCompressionSessionCreate(NULL,
                                                      width,
                                                      height,
@@ -289,10 +301,10 @@ void didCompressH264(void *outputCallbackRefCon, void *sourceFrameRefCon, OSStat
 }
 
 - (void)stopCapture {
-    [self.mCaptureSession stopRunning];
-    [self.mPreviewLayer removeFromSuperlayer];
+    [self.captureSession stopRunning];
     [self EndVideoToolBox];
     [fileHandle closeFile];
+    [self.capturePreviewLayer removeFromSuperlayer];
     fileHandle = NULL;
 }
 
@@ -306,7 +318,7 @@ void didCompressH264(void *outputCallbackRefCon, void *sourceFrameRefCon, OSStat
 #pragma mark - delegate
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
-    dispatch_sync(mEncodeQueue, ^{
+    dispatch_sync(encodeQueue, ^{
         CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
             // 帧时间，如果不设置会导致时间轴过长。
         CMTime presentationTimeStamp = CMTimeMake(frameID++, 1000);
@@ -404,7 +416,11 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
             
             if(pixelBuffer) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.mOpenGLView displayPixelBuffer:pixelBuffer];
+                    
+                        //TODO: -- Layer Test
+                    
+//                    [self.mOpenGLView displayPixelBuffer:pixelBuffer];
+                    self.displayLayer.pixelBuffer = pixelBuffer;
                     CVPixelBufferRelease(pixelBuffer);
                 });
             }
@@ -525,8 +541,7 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
                 } else if(decodeStatus != noErr) {
                     NSLog(@"IOS VT: decode failed status=%d", (int)decodeStatus);
                 }
-                
-                CFRelease(sampleBuffer);
+                 CFRelease(sampleBuffer);
             }
             CFRelease(blockBuffer);
         }
@@ -550,6 +565,13 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
     free(mSPS);
     free(mPPS);
     mSPSSize = mPPSSize = 0;
+}
+
+- (EGOpenGLLayer *)displayLayer {
+    if (!_displayLayer) {
+        _displayLayer = [[EGOpenGLLayer alloc]initWithFrame:self.mOpenGLView.bounds];
+    }
+    return _displayLayer;
 }
 
 @end
