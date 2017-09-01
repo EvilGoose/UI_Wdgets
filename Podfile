@@ -10,7 +10,8 @@ target 'Widgets' do
 	pod 'MJRefresh', '~> 3.1.7'
 	pod 'YYWebImage'
 	pod 'CocoaAsyncSocket' 
-
+	pod 'MBProgressHUD', '~> 1.0.0'
+ 
   target 'WidgetsTests' do
     inherit! :search_paths
     # Pods for testing

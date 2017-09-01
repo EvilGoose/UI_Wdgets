@@ -53,7 +53,7 @@
 @property (nonatomic , weak) IBOutlet EGOpenGLView *mOpenGLView;
 
 /**EGOpenGLLayer*/
-@property (strong, nonatomic)EGOpenGLLayer *displayLayer;
+@property (nonatomic , strong) EGOpenGLLayer *displayLayer;
 
 @property (nonatomic , strong) CADisplayLink *mDispalyLink;
 
@@ -130,7 +130,12 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
     self.captureDataOutput = [[AVCaptureVideoDataOutput alloc] init];
     [self.captureDataOutput setAlwaysDiscardsLateVideoFrames:NO];
     
-    [self.captureDataOutput setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
+    [self.captureDataOutput
+     setVideoSettings:
+     [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange]
+	forKey:(id)
+      kCVPixelBufferPixelFormatTypeKey]];
+    
     [self.captureDataOutput setSampleBufferDelegate:self queue:captureQueue];
     
     if ([self.captureSession canAddOutput:self.captureDataOutput]) {
