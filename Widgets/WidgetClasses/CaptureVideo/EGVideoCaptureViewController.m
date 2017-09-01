@@ -59,7 +59,7 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
 @implementation EGVideoCaptureViewController
 
 #pragma mark - life cycle
-
+    //OpenGL 相关
     //http://www.cocoachina.com/ios/20151123/14116.html
     //http://www.cocoachina.com/game/20141127/10335.html
 
@@ -88,6 +88,11 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
     [self.mDispalyLink setPaused:NO];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self stopClick:nil];
+}
+
 #pragma mark - Capture actions
 
 - (void)startCapture {
@@ -106,6 +111,7 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
     }
     
     self.mCaptureDeviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:inputCamera error:nil];
+    
     if ([self.mCaptureSession canAddInput:self.mCaptureDeviceInput]) {
         [self.mCaptureSession addInput:self.mCaptureDeviceInput];
     }
@@ -115,24 +121,27 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
     
     [self.mCaptureDeviceOutput setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
     [self.mCaptureDeviceOutput setSampleBufferDelegate:self queue:mCaptureQueue];
+    
     if ([self.mCaptureSession canAddOutput:self.mCaptureDeviceOutput]) {
         [self.mCaptureSession addOutput:self.mCaptureDeviceOutput];
     }
+    
     AVCaptureConnection *connection = [self.mCaptureDeviceOutput connectionWithMediaType:AVMediaTypeVideo];
     [connection setVideoOrientation:AVCaptureVideoOrientationPortrait];
     
     self.mPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.mCaptureSession];
     [self.mPreviewLayer setVideoGravity:AVLayerVideoGravityResizeAspect];
-    [self.mPreviewLayer setFrame:CGRectMake(0, 60, SCREEN_WIDTH, SCREEN_HEIGHT * .5)];
+    [self.mPreviewLayer setFrame:self.mOpenGLView.frame];
     [self.view.layer addSublayer:self.mPreviewLayer];
     
-     [[NSFileManager defaultManager] removeItemAtPath:FILE_PATH error:nil];
+    [[NSFileManager defaultManager] removeItemAtPath:FILE_PATH error:nil];
     [[NSFileManager defaultManager] createFileAtPath:FILE_PATH contents:nil attributes:nil];
+    
     fileHandle = [NSFileHandle fileHandleForWritingAtPath:FILE_PATH];
     
     [self initVideoToolBox];
     [self.mCaptureSession startRunning];
-}
+ }
 
 - (void)initVideoToolBox {
     frameID = 0;
@@ -330,7 +339,7 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
     inputStream = [[NSInputStream alloc] initWithFileAtPath:FILE_PATH];
     [inputStream open];
     inputSize = 0;
-    inputMaxSize = 640 * 480 * 3 * 4;
+    inputMaxSize = self.mOpenGLView.height * self.mOpenGLView.width * 9 * 16;
     inputBuffer = malloc(inputMaxSize);
 }
 
@@ -344,7 +353,6 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
     [self.mDispalyLink setPaused:YES];
 }
 
-    //下面这个方法，适应窗口可能造成形变
 - (void)updateFrame {
     if (inputStream) {
         dispatch_sync(mDecodeQueue, ^{
