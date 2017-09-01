@@ -36,16 +36,17 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tK7-IM-u1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="275"/>
+            <point key="canvasLocation" x="1036" y="358"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PfY-x4-bNa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yqx-9Y-wka" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VM7-MR-EG3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VM7-MR-EG3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.77451638320000005" blue="0.36412023519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -54,7 +55,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xab-Mx-t7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="275"/>
+            <point key="canvasLocation" x="44" y="358"/>
         </scene>
     </scenes>
 </document>

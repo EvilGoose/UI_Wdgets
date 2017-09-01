@@ -24,9 +24,12 @@ UITableViewDataSource
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.title = @"EG WIDGES";
+    self.title = @"EG WIDGETS";
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.widges.count;
@@ -57,12 +60,12 @@ UITableViewDataSource
                     @"EGCATextLayerController",
                     @"EGImageSizeViewController",
                     @"EGWaveViewController",
+                    @"EGSocketController",
                     @"EGMicroPhoneViewController",
                     @"EGVideoCaptureViewController",
                     @"EGMixAudioViewController",
                     @"EGMixVideoViewController",
                     @"EGMixAudioVideoViewController",
-                    @"EGSocketController"
                     ];
     }
     return _widges;

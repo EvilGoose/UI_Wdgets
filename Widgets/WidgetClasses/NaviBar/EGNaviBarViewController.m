@@ -399,8 +399,6 @@ UITableViewDataSource
     
         // 设置导航栏按钮和标题颜色
     [self wr_setNavBarTintColor:[UIColor whiteColor]];
-    
-    
 }
 
 - (UIImageView*)findHairlineImageViewUnder:(UIView*)view
