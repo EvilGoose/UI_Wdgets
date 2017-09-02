@@ -71,14 +71,13 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-        //TODO: -- Layer Test
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self.mOpenGLView.layer addSublayer:self.displayLayer];
+    [self.mOpenGLView.layer addSublayer:self.displayLayer];//use a layer
     
-    [self.mOpenGLView setupGL];
+    [self.mOpenGLView setupGL];//use g
     
     mDecodeQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     self.mDispalyLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateFrame)];

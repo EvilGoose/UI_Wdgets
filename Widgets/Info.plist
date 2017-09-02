@@ -42,5 +42,7 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIViewGroupOpacity</key>
+	<true/>
 </dict>
 </plist>

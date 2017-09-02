@@ -37,7 +37,7 @@ enum
 
     // Color Conversion Constants (YUV to RGB) including adjustment from 16-235/16-240 (video range)
 
-    // BT.601, which is the standard for SDTV.
+// BT.601, which is the standard for SDTV.
 const GLfloat kColorConversion601_layer[] = {
     1.164,  1.164, 1.164,
     0.0, -0.392, 2.017,
@@ -67,6 +67,7 @@ const GLfloat kColorConversion709_layer[] = {
     
     const GLfloat *_preferredConversion;
 }
+
 @property GLuint program;
 
 @end
@@ -75,7 +76,7 @@ const GLfloat kColorConversion709_layer[] = {
 
 @synthesize pixelBuffer = _pixelBuffer;
 
--(CVPixelBufferRef) pixelBuffer
+- (CVPixelBufferRef) pixelBuffer
 {
     return _pixelBuffer;
 }

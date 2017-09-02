@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		254FFB80A1022A46D559E7B0 /* libPods-WidgetsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB6D33A159A456C34ACD48 /* libPods-WidgetsTests.a */; };
 		59C443C74DE593B850480013 /* libPods-WidgetsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */; };
-		C44013341F4B040E00BCC13E /* EGCATextLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44013331F4B040E00BCC13E /* EGCATextLayerController.m */; };
 		C4401FA61F5836C100581FE9 /* Movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA31F5836C100581FE9 /* Movie.mp4 */; };
 		C4401FA71F5836C100581FE9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA41F5836C100581FE9 /* Shader.fsh */; };
 		C4401FA81F5836C100581FE9 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA51F5836C100581FE9 /* Shader.vsh */; };
@@ -43,11 +42,29 @@
 		C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF551F35993F003F06E6 /* UIColor+PDExtension.m */; };
 		C4A300111F4E766500D23587 /* WRImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A3000E1F4E766500D23587 /* WRImageHelper.m */; };
 		C4A300121F4E766500D23587 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A300101F4E766500D23587 /* WRNavigationBar.m */; };
+		C4CC0BCA1F5A51BB00B3BBDC /* EGLayerBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BC91F5A51BB00B3BBDC /* EGLayerBasicViewController.m */; };
+		C4CC0BCC1F5A53EF00B3BBDC /* stocking.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4CC0BCB1F5A53EF00B3BBDC /* stocking.jpeg */; };
+		C4CC0BCE1F5A544800B3BBDC /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CC0BCD1F5A544800B3BBDC /* car.png */; };
+		C4CC0BD11F5A586D00B3BBDC /* EGLayerContentRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BD01F5A586D00B3BBDC /* EGLayerContentRectViewController.m */; };
+		C4CC0BD31F5A58D000B3BBDC /* icons.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CC0BD21F5A58D000B3BBDC /* icons.png */; };
+		C4CC0BD51F5A734100B3BBDC /* strech.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CC0BD41F5A734100B3BBDC /* strech.png */; };
+		C4CC0BD81F5A77EE00B3BBDC /* EGCustomeDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BD71F5A77EE00B3BBDC /* EGCustomeDrawViewController.m */; };
+		C4CC0BDB1F5A7A0600B3BBDC /* EGGraphicsGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BDA1F5A7A0600B3BBDC /* EGGraphicsGeometryViewController.m */; };
+		C4CC0BDE1F5A806E00B3BBDC /* EGLayerMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BDD1F5A806E00B3BBDC /* EGLayerMaskViewController.m */; };
+		C4CC0BE01F5A94F200B3BBDC /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CC0BDF1F5A94F200B3BBDC /* heart.png */; };
+		C4CC0BE31F5A971F00B3BBDC /* EGStretchFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BE21F5A971F00B3BBDC /* EGStretchFilterViewController.m */; };
+		C4CC0BE51F5A97BF00B3BBDC /* Digits.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CC0BE41F5A97BF00B3BBDC /* Digits.png */; };
+		C4CC0BE71F5A989D00B3BBDC /* EGStretchFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CC0BE61F5A989D00B3BBDC /* EGStretchFilterViewController.xib */; };
+		C4CC0BEB1F5AA27F00B3BBDC /* EGTransparentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BE91F5AA27F00B3BBDC /* EGTransparentViewController.m */; };
+		C4CC0BEF1F5AA44900B3BBDC /* EGViewTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BEE1F5AA44900B3BBDC /* EGViewTransformController.m */; };
+		C4CC0BF21F5AACB700B3BBDC /* EGCAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BF11F5AACB700B3BBDC /* EGCAShapeLayerViewController.m */; };
+		C4CC0BF51F5AAEFD00B3BBDC /* EGCATextLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0BF41F5AAEFD00B3BBDC /* EGCATextLayerController.m */; };
 		C4CDA6441F53E26D005150A6 /* EGWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA6431F53E26D005150A6 /* EGWaveViewController.m */; };
 		C4CDA6471F53E283005150A6 /* EGWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA6461F53E283005150A6 /* EGWaveView.m */; };
 		C4CDA64B1F53EFA5005150A6 /* EGMicroPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA64A1F53EFA5005150A6 /* EGMicroPhoneViewController.m */; };
 		C4CDA64E1F53F15B005150A6 /* EGMicroPhoneHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA64D1F53F15B005150A6 /* EGMicroPhoneHelper.m */; };
 		C4CDA6591F544548005150A6 /* EGMixAudioVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA6581F544548005150A6 /* EGMixAudioVideoViewController.m */; };
+		C4D1B6C51F5A4BB900C13025 /* EGLayerUsageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1B6C41F5A4BB900C13025 /* EGLayerUsageController.m */; };
 		C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A111F346D1600C78E37 /* AppDelegate.m */; };
 		C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48641F35578300942884 /* UIView+Extension.m */; };
 		C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48681F3557CF00942884 /* EGBasicViewController.m */; };
@@ -84,9 +101,7 @@
 		3C095E3689F97A29EF51E993 /* Pods-WidgetsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WidgetsUITests/Pods-WidgetsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		481366FA6B0AC55743DAD056 /* Pods-Widgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Widgets/Pods-Widgets.debug.xcconfig"; sourceTree = "<group>"; };
 		5B06B64798A534068B82B7E5 /* libPods-Widgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C44013321F4B040E00BCC13E /* EGCATextLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGCATextLayerController.h; sourceTree = "<group>"; };
-		C44013331F4B040E00BCC13E /* EGCATextLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGCATextLayerController.m; sourceTree = "<group>"; };
-		C4401FA31F5836C100581FE9 /* Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.mp4; sourceTree = "<group>"; };
+		C4401FA31F5836C100581FE9 /* Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Movie.mp4; path = ../Resources/Movie.mp4; sourceTree = "<group>"; };
 		C4401FA41F5836C100581FE9 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
 		C4401FA51F5836C100581FE9 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
 		C4401FA91F5836CC00581FE9 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
@@ -145,6 +160,33 @@
 		C4A3000E1F4E766500D23587 /* WRImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRImageHelper.m; sourceTree = "<group>"; };
 		C4A3000F1F4E766500D23587 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
 		C4A300101F4E766500D23587 /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
+		C4CC0BC81F5A51BB00B3BBDC /* EGLayerBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGLayerBasicViewController.h; sourceTree = "<group>"; };
+		C4CC0BC91F5A51BB00B3BBDC /* EGLayerBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGLayerBasicViewController.m; sourceTree = "<group>"; };
+		C4CC0BCB1F5A53EF00B3BBDC /* stocking.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stocking.jpeg; sourceTree = "<group>"; };
+		C4CC0BCD1F5A544800B3BBDC /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		C4CC0BCF1F5A586D00B3BBDC /* EGLayerContentRectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGLayerContentRectViewController.h; sourceTree = "<group>"; };
+		C4CC0BD01F5A586D00B3BBDC /* EGLayerContentRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGLayerContentRectViewController.m; sourceTree = "<group>"; };
+		C4CC0BD21F5A58D000B3BBDC /* icons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icons.png; sourceTree = "<group>"; };
+		C4CC0BD41F5A734100B3BBDC /* strech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strech.png; sourceTree = "<group>"; };
+		C4CC0BD61F5A77EE00B3BBDC /* EGCustomeDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGCustomeDrawViewController.h; sourceTree = "<group>"; };
+		C4CC0BD71F5A77EE00B3BBDC /* EGCustomeDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGCustomeDrawViewController.m; sourceTree = "<group>"; };
+		C4CC0BD91F5A7A0600B3BBDC /* EGGraphicsGeometryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGGraphicsGeometryViewController.h; sourceTree = "<group>"; };
+		C4CC0BDA1F5A7A0600B3BBDC /* EGGraphicsGeometryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGGraphicsGeometryViewController.m; sourceTree = "<group>"; };
+		C4CC0BDC1F5A806E00B3BBDC /* EGLayerMaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGLayerMaskViewController.h; sourceTree = "<group>"; };
+		C4CC0BDD1F5A806E00B3BBDC /* EGLayerMaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGLayerMaskViewController.m; sourceTree = "<group>"; };
+		C4CC0BDF1F5A94F200B3BBDC /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		C4CC0BE11F5A971F00B3BBDC /* EGStretchFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGStretchFilterViewController.h; sourceTree = "<group>"; };
+		C4CC0BE21F5A971F00B3BBDC /* EGStretchFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGStretchFilterViewController.m; sourceTree = "<group>"; };
+		C4CC0BE41F5A97BF00B3BBDC /* Digits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Digits.png; sourceTree = "<group>"; };
+		C4CC0BE61F5A989D00B3BBDC /* EGStretchFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGStretchFilterViewController.xib; sourceTree = "<group>"; };
+		C4CC0BE81F5AA27F00B3BBDC /* EGTransparentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTransparentViewController.h; sourceTree = "<group>"; };
+		C4CC0BE91F5AA27F00B3BBDC /* EGTransparentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTransparentViewController.m; sourceTree = "<group>"; };
+		C4CC0BED1F5AA44900B3BBDC /* EGViewTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGViewTransformController.h; sourceTree = "<group>"; };
+		C4CC0BEE1F5AA44900B3BBDC /* EGViewTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGViewTransformController.m; sourceTree = "<group>"; };
+		C4CC0BF01F5AACB700B3BBDC /* EGCAShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGCAShapeLayerViewController.h; sourceTree = "<group>"; };
+		C4CC0BF11F5AACB700B3BBDC /* EGCAShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGCAShapeLayerViewController.m; sourceTree = "<group>"; };
+		C4CC0BF31F5AAEFD00B3BBDC /* EGCATextLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGCATextLayerController.h; path = CATextLayer/EGCATextLayerController.h; sourceTree = "<group>"; };
+		C4CC0BF41F5AAEFD00B3BBDC /* EGCATextLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGCATextLayerController.m; path = CATextLayer/EGCATextLayerController.m; sourceTree = "<group>"; };
 		C4CDA6421F53E26D005150A6 /* EGWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGWaveViewController.h; sourceTree = "<group>"; };
 		C4CDA6431F53E26D005150A6 /* EGWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGWaveViewController.m; sourceTree = "<group>"; };
 		C4CDA6451F53E283005150A6 /* EGWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGWaveView.h; sourceTree = "<group>"; };
@@ -155,6 +197,8 @@
 		C4CDA64D1F53F15B005150A6 /* EGMicroPhoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMicroPhoneHelper.m; sourceTree = "<group>"; };
 		C4CDA6571F544548005150A6 /* EGMixAudioVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMixAudioVideoViewController.h; sourceTree = "<group>"; };
 		C4CDA6581F544548005150A6 /* EGMixAudioVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMixAudioVideoViewController.m; sourceTree = "<group>"; };
+		C4D1B6C31F5A4BB900C13025 /* EGLayerUsageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGLayerUsageController.h; sourceTree = "<group>"; };
+		C4D1B6C41F5A4BB900C13025 /* EGLayerUsageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGLayerUsageController.m; sourceTree = "<group>"; };
 		C4EC48621F35578300942884 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
 		C4EC48631F35578300942884 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		C4EC48641F35578300942884 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
@@ -210,24 +254,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C440132E1F4B03A000BCC13E /* CATextLayer */ = {
-			isa = PBXGroup;
-			children = (
-				C44013321F4B040E00BCC13E /* EGCATextLayerController.h */,
-				C44013331F4B040E00BCC13E /* EGCATextLayerController.m */,
-			);
-			path = CATextLayer;
-			sourceTree = "<group>";
-		};
 		C4401FA21F5836C100581FE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C47C6F3D1F514E8C00F7F653 /* scenery */,
 				C4401FB21F58371D00581FE9 /* Audio1.m4a */,
 				C4401FB31F58371D00581FE9 /* Audio2.mp3 */,
 				C4401FB41F58371D00581FE9 /* Audio3.m4a */,
-				C4401FA31F5836C100581FE9 /* Movie.mp4 */,
 				C4401FA41F5836C100581FE9 /* Shader.fsh */,
 				C4401FA51F5836C100581FE9 /* Shader.vsh */,
+				C4CC0BE41F5A97BF00B3BBDC /* Digits.png */,
+				C4CC0BD21F5A58D000B3BBDC /* icons.png */,
+				C4CC0BD41F5A734100B3BBDC /* strech.png */,
+				C4CC0BCB1F5A53EF00B3BBDC /* stocking.jpeg */,
+				C4CC0BCD1F5A544800B3BBDC /* car.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -280,7 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				C4401FA21F5836C100581FE9 /* Resources */,
-				C47C6F3D1F514E8C00F7F653 /* scenery */,
 				C4A3000B1F4E766500D23587 /* WRNavigationBar */,
 				C46B83CB1F346F5200782008 /* PrefixHeader.pch */,
 				C44E3A0E1F346D1600C78E37 /* main.m */,
@@ -364,11 +403,14 @@
 		C47C6F3D1F514E8C00F7F653 /* scenery */ = {
 			isa = PBXGroup;
 			children = (
+				C4CC0BDF1F5A94F200B3BBDC /* heart.png */,
+				C4401FA31F5836C100581FE9 /* Movie.mp4 */,
 				C47C6F3E1F514E8C00F7F653 /* scenery1.jpg */,
 				C47C6F441F5150EF00F7F653 /* scenery2.jpg */,
 				C47C6F3F1F514E8C00F7F653 /* scenery3.jpg */,
 			);
-			path = scenery;
+			name = scenery;
+			path = ../scenery;
 			sourceTree = "<group>";
 		};
 		C499EF4A1F356D68003F06E6 /* Test */ = {
@@ -397,6 +439,34 @@
 				C4A3000E1F4E766500D23587 /* WRImageHelper.m */,
 			);
 			path = WRImageHelper;
+			sourceTree = "<group>";
+		};
+		C4CC0BC71F5A517E00B3BBDC /* SubControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4CC0BC81F5A51BB00B3BBDC /* EGLayerBasicViewController.h */,
+				C4CC0BC91F5A51BB00B3BBDC /* EGLayerBasicViewController.m */,
+				C4CC0BCF1F5A586D00B3BBDC /* EGLayerContentRectViewController.h */,
+				C4CC0BD01F5A586D00B3BBDC /* EGLayerContentRectViewController.m */,
+				C4CC0BD61F5A77EE00B3BBDC /* EGCustomeDrawViewController.h */,
+				C4CC0BD71F5A77EE00B3BBDC /* EGCustomeDrawViewController.m */,
+				C4CC0BD91F5A7A0600B3BBDC /* EGGraphicsGeometryViewController.h */,
+				C4CC0BDA1F5A7A0600B3BBDC /* EGGraphicsGeometryViewController.m */,
+				C4CC0BDC1F5A806E00B3BBDC /* EGLayerMaskViewController.h */,
+				C4CC0BDD1F5A806E00B3BBDC /* EGLayerMaskViewController.m */,
+				C4CC0BE11F5A971F00B3BBDC /* EGStretchFilterViewController.h */,
+				C4CC0BE21F5A971F00B3BBDC /* EGStretchFilterViewController.m */,
+				C4CC0BE61F5A989D00B3BBDC /* EGStretchFilterViewController.xib */,
+				C4CC0BE81F5AA27F00B3BBDC /* EGTransparentViewController.h */,
+				C4CC0BE91F5AA27F00B3BBDC /* EGTransparentViewController.m */,
+				C4CC0BED1F5AA44900B3BBDC /* EGViewTransformController.h */,
+				C4CC0BEE1F5AA44900B3BBDC /* EGViewTransformController.m */,
+				C4CC0BF01F5AACB700B3BBDC /* EGCAShapeLayerViewController.h */,
+				C4CC0BF11F5AACB700B3BBDC /* EGCAShapeLayerViewController.m */,
+				C4CC0BF31F5AAEFD00B3BBDC /* EGCATextLayerController.h */,
+				C4CC0BF41F5AAEFD00B3BBDC /* EGCATextLayerController.m */,
+			);
+			path = SubControllers;
 			sourceTree = "<group>";
 		};
 		C4CDA6411F53E256005150A6 /* WaveAnimation */ = {
@@ -430,6 +500,16 @@
 			path = MixAudioVideo;
 			sourceTree = "<group>";
 		};
+		C4D1B6C21F5A4B8A00C13025 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C4D1B6C31F5A4BB900C13025 /* EGLayerUsageController.h */,
+				C4D1B6C41F5A4BB900C13025 /* EGLayerUsageController.m */,
+				C4CC0BC71F5A517E00B3BBDC /* SubControllers */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
 		C4D4761FFD3E873E89992480 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +525,7 @@
 		C4EC48541F35576900942884 /* WidgetClasses */ = {
 			isa = PBXGroup;
 			children = (
+				C4D1B6C21F5A4B8A00C13025 /* Layer */,
 				C4553A9E1F57E04C00437E31 /* CaptureVideo */,
 				C4401FAC1F5836E000581FE9 /* Socket */,
 				C45631591F5680B5002164FE /* MixAudio */,
@@ -453,7 +534,6 @@
 				C4CDA6481F53EF8F005150A6 /* Microphone */,
 				C4CDA6411F53E256005150A6 /* WaveAnimation */,
 				C47C6F2E1F514D3400F7F653 /* ImageSize */,
-				C440132E1F4B03A000BCC13E /* CATextLayer */,
 				C464AD0A1F3EC4C400341AAF /* NaviBar */,
 				C4EC486E1F3557CF00942884 /* SeperateScroll */,
 				C4EC486B1F3557CF00942884 /* Indicator */,
@@ -632,19 +712,26 @@
 			files = (
 				C4401FB11F5836F300581FE9 /* EGSocketController.xib in Resources */,
 				C45631621F5680C8002164FE /* EGMixAudioViewController.xib in Resources */,
+				C4CC0BCC1F5A53EF00B3BBDC /* stocking.jpeg in Resources */,
 				C4EC487F1F355F1000942884 /* Main.storyboard in Resources */,
+				C4CC0BE01F5A94F200B3BBDC /* heart.png in Resources */,
 				C4553AA31F57E08100437E31 /* EGVideoCaptureViewController.xib in Resources */,
 				C47C6F331F514D5C00F7F653 /* EGImageSizeViewController.xib in Resources */,
 				C47C6F411F514E8C00F7F653 /* scenery1.jpg in Resources */,
 				C47C6F451F5150EF00F7F653 /* scenery2.jpg in Resources */,
 				C47C6F421F514E8C00F7F653 /* scenery3.jpg in Resources */,
 				C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */,
+				C4CC0BE51F5A97BF00B3BBDC /* Digits.png in Resources */,
 				C4401FA61F5836C100581FE9 /* Movie.mp4 in Resources */,
 				C4401FB51F58371D00581FE9 /* Audio1.m4a in Resources */,
+				C4CC0BCE1F5A544800B3BBDC /* car.png in Resources */,
+				C4CC0BD31F5A58D000B3BBDC /* icons.png in Resources */,
 				C4401FB61F58371D00581FE9 /* Audio2.mp3 in Resources */,
+				C4CC0BD51F5A734100B3BBDC /* strech.png in Resources */,
 				C4401FA71F5836C100581FE9 /* Shader.fsh in Resources */,
 				C44E3A1A1F346D1600C78E37 /* Assets.xcassets in Resources */,
 				C4401FA81F5836C100581FE9 /* Shader.vsh in Resources */,
+				C4CC0BE71F5A989D00B3BBDC /* EGStretchFilterViewController.xib in Resources */,
 				C4401FB71F58371D00581FE9 /* Audio3.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -821,18 +908,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C456315F1F5680B5002164FE /* EGMixAudioViewController.m in Sources */,
+				C4D1B6C51F5A4BB900C13025 /* EGLayerUsageController.m in Sources */,
 				C4553AA61F57E48600437E31 /* EGOpenGLView.m in Sources */,
 				C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */,
 				C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */,
-				C44013341F4B040E00BCC13E /* EGCATextLayerController.m in Sources */,
+				C4CC0BF21F5AACB700B3BBDC /* EGCAShapeLayerViewController.m in Sources */,
+				C4CC0BEF1F5AA44900B3BBDC /* EGViewTransformController.m in Sources */,
 				C4401FAB1F5836CC00581FE9 /* UIImage+Resize.m in Sources */,
 				C4CDA64E1F53F15B005150A6 /* EGMicroPhoneHelper.m in Sources */,
 				C4CDA6441F53E26D005150A6 /* EGWaveViewController.m in Sources */,
+				C4CC0BD81F5A77EE00B3BBDC /* EGCustomeDrawViewController.m in Sources */,
 				C4CDA64B1F53EFA5005150A6 /* EGMicroPhoneViewController.m in Sources */,
+				C4CC0BD11F5A586D00B3BBDC /* EGLayerContentRectViewController.m in Sources */,
+				C4CC0BEB1F5AA27F00B3BBDC /* EGTransparentViewController.m in Sources */,
 				C4968D771F5931BB005DC969 /* EGOpenGLLayer.m in Sources */,
 				C4553AA11F57E07000437E31 /* EGVideoCaptureViewController.m in Sources */,
 				C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */,
 				C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */,
+				C4CC0BCA1F5A51BB00B3BBDC /* EGLayerBasicViewController.m in Sources */,
 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
 				C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */,
@@ -841,11 +934,15 @@
 				C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */,
 				C4CDA6471F53E283005150A6 /* EGWaveView.m in Sources */,
 				C47C6F321F514D5C00F7F653 /* EGImageSizeViewController.m in Sources */,
+				C4CC0BDB1F5A7A0600B3BBDC /* EGGraphicsGeometryViewController.m in Sources */,
 				C4401FB01F5836F300581FE9 /* EGSocketController.m in Sources */,
 				C4A300121F4E766500D23587 /* WRNavigationBar.m in Sources */,
 				C464AD0D1F3EC4D400341AAF /* EGNaviBarViewController.m in Sources */,
 				C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */,
+				C4CC0BDE1F5A806E00B3BBDC /* EGLayerMaskViewController.m in Sources */,
+				C4CC0BF51F5AAEFD00B3BBDC /* EGCATextLayerController.m in Sources */,
 				C4CDA6591F544548005150A6 /* EGMixAudioVideoViewController.m in Sources */,
+				C4CC0BE31F5A971F00B3BBDC /* EGStretchFilterViewController.m in Sources */,
 				C4EC487B1F355E8D00942884 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -995,7 +1092,7 @@
 				DEVELOPMENT_TEAM = 8PLB35PLP3;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = Widgets/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evilGoose.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1013,7 +1110,7 @@
 				DEVELOPMENT_TEAM = 8PLB35PLP3;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = Widgets/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evilGoose.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";

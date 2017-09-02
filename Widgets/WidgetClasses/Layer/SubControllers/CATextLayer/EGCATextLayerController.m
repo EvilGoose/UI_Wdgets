@@ -14,15 +14,24 @@
 /**label*/
 @property (strong, nonatomic)UILabel *labelView;
 
+/**label*/
+@property (strong, nonatomic)UILabel *labelView1;
+
 @end
 
 @implementation EGCATextLayerController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.labelView = [[UILabel alloc]initWithFrame:CGRectMake(10,60, 300, 400)];
+    self.labelView = [[UILabel alloc]initWithFrame:CGRectMake(10,60, SCREEN_WIDTH, 300)];
     self.labelView.numberOfLines = 0;
+    
+    
+    self.labelView1 = [[UILabel alloc]initWithFrame:CGRectMake(10,310, SCREEN_WIDTH, 300)];
+    self.labelView1.numberOfLines = 0;
+    
     [self.view addSubview:self.labelView];
+    [self.view addSubview:self.labelView1];
     [self showSomeTextWithAttributs];
 }
 

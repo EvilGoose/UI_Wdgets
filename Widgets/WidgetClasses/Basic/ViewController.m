@@ -40,7 +40,7 @@ UITableViewDataSource
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"widgesCellID"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"widgesCellID"];
-    }
+    }    
     cell.textLabel.text = self.widges[indexPath.row];
     return cell;
 }
@@ -58,7 +58,6 @@ UITableViewDataSource
                     @"EGSeperateScrollViewController",
                     @"EGIndicatorViewController",
                     @"EGNaviBarViewController",
-                    @"EGCATextLayerController",
                     @"EGImageSizeViewController",
                     @"EGWaveViewController",
                     @"EGSocketController",
@@ -67,6 +66,7 @@ UITableViewDataSource
                     @"EGMixAudioViewController",
                     @"EGMixVideoViewController",
                     @"EGMixAudioVideoViewController",
+                    @"EGLayerUsageController",
                     ];
     }
     return _widges;

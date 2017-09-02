@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EGStretchFilterViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="6gm-JM-ti0"/>
+                <outletCollection property="digitViews" destination="10w-oT-x9S" id="94m-2P-7cK"/>
+                <outletCollection property="digitViews" destination="eJp-nI-EVV" id="bBP-ue-iyz"/>
+                <outletCollection property="digitViews" destination="00j-qZ-rHa" id="AzR-Ce-CaP"/>
+                <outletCollection property="digitViews" destination="GnG-Jh-omY" id="ZsJ-Du-bGQ"/>
+                <outletCollection property="digitViews" destination="hTl-pH-Rjw" id="Z1Z-xb-CkI"/>
+                <outletCollection property="digitViews" destination="nlY-vg-QPh" id="lYC-k9-W3r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Fb4-Yd-lop">
+                    <rect key="frame" x="8" y="95" width="818" height="120"/>
+                    <subviews>
+                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="10w-oT-x9S">
+                            <rect key="frame" x="0.0" y="0.0" width="115.5" height="120"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="eJp-nI-EVV">
+                            <rect key="frame" x="140.5" y="0.0" width="115.5" height="120"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="00j-qZ-rHa">
+                            <rect key="frame" x="281" y="0.0" width="115.5" height="120"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="GnG-Jh-omY">
+                            <rect key="frame" x="421.5" y="0.0" width="115.5" height="120"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTl-pH-Rjw">
+                            <rect key="frame" x="562" y="0.0" width="115.5" height="120"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlY-vg-QPh">
+                            <rect key="frame" x="702.5" y="0.0" width="115.5" height="120"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.65000396573604058" green="0.60968603032297131" blue="0.19954169642821412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="zg3-oZ-mln"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.58556075507614214" green="0.58556075507614214" blue="0.58556075507614214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fb4-Yd-lop" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="0c4-wg-hAd"/>
+                <constraint firstItem="Fb4-Yd-lop" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8T8-eW-rlR"/>
+                <constraint firstItem="Fb4-Yd-lop" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="95" id="tU4-MH-8YX"/>
+            </constraints>
+            <point key="canvasLocation" x="-343.5" y="-18.5"/>
+        </view>
+    </objects>
+</document>
