@@ -79,7 +79,11 @@ UITableViewDataSource
                        @"EGViewTransformController",
                        @"EGCAShapeLayerViewController",
                        @"EGCATextLayerController",
-
+                       @"EGGradientLayerViewController",
+                       @"EGReplicatorLayerViewController",
+                       @"EGScrollLayerViewController",
+                       @"EGEmitterLayerViewController",
+                       @"EGEAGLLayerViewController"
                        ];
     }
     return _dataArray;

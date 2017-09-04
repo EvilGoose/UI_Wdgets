@@ -26,6 +26,12 @@
 		C4553AA31F57E08100437E31 /* EGVideoCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4553AA21F57E08100437E31 /* EGVideoCaptureViewController.xib */; };
 		C4553AA61F57E48600437E31 /* EGOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4553AA51F57E48600437E31 /* EGOpenGLView.m */; };
 		C4553AAA1F57E55600437E31 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4553AA91F57E55600437E31 /* VideoToolbox.framework */; };
+		C45571671F5D4C3100AB1C95 /* EGGradientLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C45571661F5D4C3100AB1C95 /* EGGradientLayerViewController.m */; };
+		C455716A1F5D527500AB1C95 /* EGReplicatorLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C45571691F5D527500AB1C95 /* EGReplicatorLayerViewController.m */; };
+		C455716D1F5D6BC500AB1C95 /* EGScrollLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C455716C1F5D6BC500AB1C95 /* EGScrollLayerViewController.m */; };
+		C45571701F5D707000AB1C95 /* EGTiledLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C455716F1F5D707000AB1C95 /* EGTiledLayerViewController.m */; };
+		C455719E1F5D80CC00AB1C95 /* EGEmitterLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C455719D1F5D80CC00AB1C95 /* EGEmitterLayerViewController.m */; };
+		C45571A41F5D84CD00AB1C95 /* EGEAGLLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C45571A31F5D84CC00AB1C95 /* EGEAGLLayerViewController.m */; };
 		C456315F1F5680B5002164FE /* EGMixAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C456315B1F5680B5002164FE /* EGMixAudioViewController.m */; };
 		C45631601F5680B5002164FE /* EGMixVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C456315E1F5680B5002164FE /* EGMixVideoViewController.m */; };
 		C45631621F5680C8002164FE /* EGMixAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45631611F5680C8002164FE /* EGMixAudioViewController.xib */; };
@@ -132,6 +138,18 @@
 		C4553AA51F57E48600437E31 /* EGOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOpenGLView.m; sourceTree = "<group>"; };
 		C4553AA71F57E4C400437E31 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		C4553AA91F57E55600437E31 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		C45571651F5D4C3100AB1C95 /* EGGradientLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGGradientLayerViewController.h; sourceTree = "<group>"; };
+		C45571661F5D4C3100AB1C95 /* EGGradientLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGGradientLayerViewController.m; sourceTree = "<group>"; };
+		C45571681F5D527500AB1C95 /* EGReplicatorLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGReplicatorLayerViewController.h; sourceTree = "<group>"; };
+		C45571691F5D527500AB1C95 /* EGReplicatorLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGReplicatorLayerViewController.m; sourceTree = "<group>"; };
+		C455716B1F5D6BC500AB1C95 /* EGScrollLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGScrollLayerViewController.h; sourceTree = "<group>"; };
+		C455716C1F5D6BC500AB1C95 /* EGScrollLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGScrollLayerViewController.m; sourceTree = "<group>"; };
+		C455716E1F5D707000AB1C95 /* EGTiledLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTiledLayerViewController.h; sourceTree = "<group>"; };
+		C455716F1F5D707000AB1C95 /* EGTiledLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTiledLayerViewController.m; sourceTree = "<group>"; };
+		C455719C1F5D80CC00AB1C95 /* EGEmitterLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGEmitterLayerViewController.h; sourceTree = "<group>"; };
+		C455719D1F5D80CC00AB1C95 /* EGEmitterLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGEmitterLayerViewController.m; sourceTree = "<group>"; };
+		C45571A21F5D84CC00AB1C95 /* EGEAGLLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGEAGLLayerViewController.h; sourceTree = "<group>"; };
+		C45571A31F5D84CC00AB1C95 /* EGEAGLLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGEAGLLayerViewController.m; sourceTree = "<group>"; };
 		C456315A1F5680B5002164FE /* EGMixAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMixAudioViewController.h; sourceTree = "<group>"; };
 		C456315B1F5680B5002164FE /* EGMixAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMixAudioViewController.m; sourceTree = "<group>"; };
 		C456315D1F5680B5002164FE /* EGMixVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMixVideoViewController.h; sourceTree = "<group>"; };
@@ -465,6 +483,18 @@
 				C4CC0BF11F5AACB700B3BBDC /* EGCAShapeLayerViewController.m */,
 				C4CC0BF31F5AAEFD00B3BBDC /* EGCATextLayerController.h */,
 				C4CC0BF41F5AAEFD00B3BBDC /* EGCATextLayerController.m */,
+				C45571651F5D4C3100AB1C95 /* EGGradientLayerViewController.h */,
+				C45571661F5D4C3100AB1C95 /* EGGradientLayerViewController.m */,
+				C45571681F5D527500AB1C95 /* EGReplicatorLayerViewController.h */,
+				C45571691F5D527500AB1C95 /* EGReplicatorLayerViewController.m */,
+				C455716B1F5D6BC500AB1C95 /* EGScrollLayerViewController.h */,
+				C455716C1F5D6BC500AB1C95 /* EGScrollLayerViewController.m */,
+				C455716E1F5D707000AB1C95 /* EGTiledLayerViewController.h */,
+				C455716F1F5D707000AB1C95 /* EGTiledLayerViewController.m */,
+				C455719C1F5D80CC00AB1C95 /* EGEmitterLayerViewController.h */,
+				C455719D1F5D80CC00AB1C95 /* EGEmitterLayerViewController.m */,
+				C45571A21F5D84CC00AB1C95 /* EGEAGLLayerViewController.h */,
+				C45571A31F5D84CC00AB1C95 /* EGEAGLLayerViewController.m */,
 			);
 			path = SubControllers;
 			sourceTree = "<group>";
@@ -907,6 +937,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45571671F5D4C3100AB1C95 /* EGGradientLayerViewController.m in Sources */,
 				C456315F1F5680B5002164FE /* EGMixAudioViewController.m in Sources */,
 				C4D1B6C51F5A4BB900C13025 /* EGLayerUsageController.m in Sources */,
 				C4553AA61F57E48600437E31 /* EGOpenGLView.m in Sources */,
@@ -914,21 +945,25 @@
 				C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */,
 				C4CC0BF21F5AACB700B3BBDC /* EGCAShapeLayerViewController.m in Sources */,
 				C4CC0BEF1F5AA44900B3BBDC /* EGViewTransformController.m in Sources */,
+				C455716A1F5D527500AB1C95 /* EGReplicatorLayerViewController.m in Sources */,
 				C4401FAB1F5836CC00581FE9 /* UIImage+Resize.m in Sources */,
 				C4CDA64E1F53F15B005150A6 /* EGMicroPhoneHelper.m in Sources */,
 				C4CDA6441F53E26D005150A6 /* EGWaveViewController.m in Sources */,
 				C4CC0BD81F5A77EE00B3BBDC /* EGCustomeDrawViewController.m in Sources */,
 				C4CDA64B1F53EFA5005150A6 /* EGMicroPhoneViewController.m in Sources */,
 				C4CC0BD11F5A586D00B3BBDC /* EGLayerContentRectViewController.m in Sources */,
+				C455716D1F5D6BC500AB1C95 /* EGScrollLayerViewController.m in Sources */,
 				C4CC0BEB1F5AA27F00B3BBDC /* EGTransparentViewController.m in Sources */,
 				C4968D771F5931BB005DC969 /* EGOpenGLLayer.m in Sources */,
 				C4553AA11F57E07000437E31 /* EGVideoCaptureViewController.m in Sources */,
+				C45571701F5D707000AB1C95 /* EGTiledLayerViewController.m in Sources */,
 				C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */,
 				C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */,
 				C4CC0BCA1F5A51BB00B3BBDC /* EGLayerBasicViewController.m in Sources */,
 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
 				C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */,
+				C45571A41F5D84CD00AB1C95 /* EGEAGLLayerViewController.m in Sources */,
 				C45631601F5680B5002164FE /* EGMixVideoViewController.m in Sources */,
 				C4A300111F4E766500D23587 /* WRImageHelper.m in Sources */,
 				C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */,
@@ -942,6 +977,7 @@
 				C4CC0BDE1F5A806E00B3BBDC /* EGLayerMaskViewController.m in Sources */,
 				C4CC0BF51F5AAEFD00B3BBDC /* EGCATextLayerController.m in Sources */,
 				C4CDA6591F544548005150A6 /* EGMixAudioVideoViewController.m in Sources */,
+				C455719E1F5D80CC00AB1C95 /* EGEmitterLayerViewController.m in Sources */,
 				C4CC0BE31F5A971F00B3BBDC /* EGStretchFilterViewController.m in Sources */,
 				C4EC487B1F355E8D00942884 /* main.m in Sources */,
 			);
