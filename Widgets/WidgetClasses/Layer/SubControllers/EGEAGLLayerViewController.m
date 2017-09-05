@@ -24,6 +24,7 @@
  GLKit囊括了很多额外的工作，比如设置顶点和片段着色器，这些都以类C语言叫做GLSL自包含在程序中，同时在运行时载入到图形硬件中
  
  */
+
 @interface EGEAGLLayerViewController ()
 
 @property (nonatomic, strong) EAGLContext *glContext;
@@ -41,6 +42,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
         //set up context
     self.glContext = [[EAGLContext alloc] initWithAPI: kEAGLRenderingAPIOpenGLES2];
     [EAGLContext setCurrentContext:self.glContext];
@@ -61,8 +63,12 @@
     [self drawFrame];
 }
 
-- (void)setUpBuffers
-{
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self tearDownBuffers];
+}
+
+- (void)setUpBuffers {
         //set up frame buffer
     glGenFramebuffers(1, &_framebuffer);
     glBindFramebuffer(GL_FRAMEBUFFER, _framebuffer);
@@ -81,8 +87,7 @@
     }
 }
 
-- (void)tearDownBuffers
-{
+- (void)tearDownBuffers {
     if (_framebuffer) {
             //delete framebuffer
         glDeleteFramebuffers(1, &_framebuffer);
@@ -129,14 +134,7 @@
     [self.glContext presentRenderbuffer:GL_RENDERBUFFER];
 }
 
-- (void)viewDidUnload
-{
-    [self tearDownBuffers];
-    [super viewDidUnload];
-}
-
-- (void)dealloc
-{
+- (void)dealloc {
     [self tearDownBuffers];
     [EAGLContext setCurrentContext:nil];
 }

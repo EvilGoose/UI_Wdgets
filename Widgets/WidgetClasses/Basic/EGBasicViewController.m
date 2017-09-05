@@ -25,6 +25,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (self.title == nil) {
+        self.title = NSStringFromClass(self.class);
+    }
+}
+
 /*
 #pragma mark - Navigation
 

@@ -1,4 +1,5 @@
-//
+
+    //
 //  EGVideoCaptureViewController.m
 //  Widgets
 //
@@ -9,6 +10,9 @@
 #import "EGVideoCaptureViewController.h"
 #import <VideoToolbox/VideoToolbox.h>
 #import <AVFoundation/AVFoundation.h>
+#import <GCDAsyncSocket.h>
+
+#import "MBProgressHUD+Extension.h"
 
 #import "EGOpenGLView.h"
 #import "EGOpenGLLayer.h"
@@ -16,7 +20,8 @@
 #define FILE_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"test.h264"]
 
 @interface EGVideoCaptureViewController ()
-<AVCaptureVideoDataOutputSampleBufferDelegate>
+<AVCaptureVideoDataOutputSampleBufferDelegate,
+GCDAsyncSocketDelegate>
 {
     dispatch_queue_t captureQueue;
     dispatch_queue_t encodeQueue;
@@ -39,9 +44,9 @@
     
     uint8_t*       packetBuffer;
     long           packetSize;
-    
-}
 
+    GCDAsyncSocket *_socket;
+}
 @property (nonatomic, strong) AVCaptureSession *captureSession; //负责输入和输出设备之间的数据传递
 
 @property (nonatomic, strong) AVCaptureDeviceInput *captureDeviceInput;//负责从AVCaptureDevice获得输入数据
@@ -83,6 +88,23 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
     self.mDispalyLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateFrame)];
     [self.mDispalyLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     [self.mDispalyLink setPaused:YES];
+}
+
+- (IBAction)socketBuildAction:(UIButton *)sender {
+    _socket =
+    [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
+    
+        //连接
+    NSError *error = nil;
+    
+    [_socket acceptOnPort:2345 error:&error];
+    
+     if (error) {
+        NSLog(@"建立链接 error : %@",error);
+    }
+    
+    [_socket readDataWithTimeout:-1 tag:0];
+
 }
 
 - (IBAction)capture:(UIButton *)sender {
@@ -352,7 +374,9 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
 }
 
 - (void)onInputStart {
-    inputStream = [[NSInputStream alloc] initWithFileAtPath:FILE_PATH];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"mtv" ofType:@"h264"];
+    inputStream = [[NSInputStream alloc] initWithFileAtPath:path];
     [inputStream open];
     inputSize = 0;
     inputMaxSize = self.mOpenGLView.height * self.mOpenGLView.width * 9 * 16;
@@ -576,6 +600,30 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
         _displayLayer = [[EGOpenGLLayer alloc]initWithFrame:self.mOpenGLView.bounds];
     }
     return _displayLayer;
+}
+#pragma mark - delegate
+    //连接成功
+-(void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [MBProgressHUD showSuccess:@"succeed!
+         "];
+     });
+}
+
+    //断开连接
+-(void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (err) {
+            
+         }else{
+             
+         }
+    });
+}
+
+    //读取数据
+-(void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
+    
 }
 
 @end

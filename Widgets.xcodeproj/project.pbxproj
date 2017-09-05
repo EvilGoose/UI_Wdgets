@@ -18,6 +18,9 @@
 		C4401FB51F58371D00581FE9 /* Audio1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C4401FB21F58371D00581FE9 /* Audio1.m4a */; };
 		C4401FB61F58371D00581FE9 /* Audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4401FB31F58371D00581FE9 /* Audio2.mp3 */; };
 		C4401FB71F58371D00581FE9 /* Audio3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C4401FB41F58371D00581FE9 /* Audio3.m4a */; };
+		C4497CC21F5ECB11005DF8A7 /* EGHardDecoderController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4497CC11F5ECB11005DF8A7 /* EGHardDecoderController.m */; };
+		C4497CC51F5ED91B005DF8A7 /* mtv.h264 in Resources */ = {isa = PBXBuildFile; fileRef = C4497CC41F5ED91B005DF8A7 /* mtv.h264 */; };
+		C4497CC81F5EDDF8005DF8A7 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4497CC71F5EDDF8005DF8A7 /* MBProgressHUD+Extension.m */; };
 		C44E3A1A1F346D1600C78E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44E3A191F346D1600C78E37 /* Assets.xcassets */; };
 		C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44E3A1B1F346D1600C78E37 /* LaunchScreen.storyboard */; };
 		C44E3A281F346D1600C78E37 /* WidgetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A271F346D1600C78E37 /* WidgetsTests.m */; };
@@ -118,6 +121,11 @@
 		C4401FB21F58371D00581FE9 /* Audio1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Audio1.m4a; sourceTree = "<group>"; };
 		C4401FB31F58371D00581FE9 /* Audio2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Audio2.mp3; sourceTree = "<group>"; };
 		C4401FB41F58371D00581FE9 /* Audio3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Audio3.m4a; sourceTree = "<group>"; };
+		C4497CC01F5ECB11005DF8A7 /* EGHardDecoderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGHardDecoderController.h; sourceTree = "<group>"; };
+		C4497CC11F5ECB11005DF8A7 /* EGHardDecoderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGHardDecoderController.m; sourceTree = "<group>"; };
+		C4497CC41F5ED91B005DF8A7 /* mtv.h264 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mtv.h264; sourceTree = "<group>"; };
+		C4497CC61F5EDDF8005DF8A7 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		C4497CC71F5EDDF8005DF8A7 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
 		C44E3A0A1F346D1600C78E37 /* Widgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Widgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44E3A0E1F346D1600C78E37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C44E3A101F346D1600C78E37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -281,6 +289,7 @@
 				C4401FB41F58371D00581FE9 /* Audio3.m4a */,
 				C4401FA41F5836C100581FE9 /* Shader.fsh */,
 				C4401FA51F5836C100581FE9 /* Shader.vsh */,
+				C4497CC41F5ED91B005DF8A7 /* mtv.h264 */,
 				C4CC0BE41F5A97BF00B3BBDC /* Digits.png */,
 				C4CC0BD21F5A58D000B3BBDC /* icons.png */,
 				C4CC0BD41F5A734100B3BBDC /* strech.png */,
@@ -495,6 +504,8 @@
 				C455719D1F5D80CC00AB1C95 /* EGEmitterLayerViewController.m */,
 				C45571A21F5D84CC00AB1C95 /* EGEAGLLayerViewController.h */,
 				C45571A31F5D84CC00AB1C95 /* EGEAGLLayerViewController.m */,
+				C4497CC01F5ECB11005DF8A7 /* EGHardDecoderController.h */,
+				C4497CC11F5ECB11005DF8A7 /* EGHardDecoderController.m */,
 			);
 			path = SubControllers;
 			sourceTree = "<group>";
@@ -583,6 +594,8 @@
 				C499EF551F35993F003F06E6 /* UIColor+PDExtension.m */,
 				C4EC48631F35578300942884 /* UIView+Extension.h */,
 				C4EC48641F35578300942884 /* UIView+Extension.m */,
+				C4497CC61F5EDDF8005DF8A7 /* MBProgressHUD+Extension.h */,
+				C4497CC71F5EDDF8005DF8A7 /* MBProgressHUD+Extension.m */,
 			);
 			name = Categories;
 			path = Tools;
@@ -749,6 +762,7 @@
 				C47C6F331F514D5C00F7F653 /* EGImageSizeViewController.xib in Resources */,
 				C47C6F411F514E8C00F7F653 /* scenery1.jpg in Resources */,
 				C47C6F451F5150EF00F7F653 /* scenery2.jpg in Resources */,
+				C4497CC51F5ED91B005DF8A7 /* mtv.h264 in Resources */,
 				C47C6F421F514E8C00F7F653 /* scenery3.jpg in Resources */,
 				C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */,
 				C4CC0BE51F5A97BF00B3BBDC /* Digits.png in Resources */,
@@ -954,6 +968,7 @@
 				C4CC0BD11F5A586D00B3BBDC /* EGLayerContentRectViewController.m in Sources */,
 				C455716D1F5D6BC500AB1C95 /* EGScrollLayerViewController.m in Sources */,
 				C4CC0BEB1F5AA27F00B3BBDC /* EGTransparentViewController.m in Sources */,
+				C4497CC21F5ECB11005DF8A7 /* EGHardDecoderController.m in Sources */,
 				C4968D771F5931BB005DC969 /* EGOpenGLLayer.m in Sources */,
 				C4553AA11F57E07000437E31 /* EGVideoCaptureViewController.m in Sources */,
 				C45571701F5D707000AB1C95 /* EGTiledLayerViewController.m in Sources */,
@@ -962,6 +977,7 @@
 				C4CC0BCA1F5A51BB00B3BBDC /* EGLayerBasicViewController.m in Sources */,
 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
+				C4497CC81F5EDDF8005DF8A7 /* MBProgressHUD+Extension.m in Sources */,
 				C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */,
 				C45571A41F5D84CD00AB1C95 /* EGEAGLLayerViewController.m in Sources */,
 				C45631601F5680B5002164FE /* EGMixVideoViewController.m in Sources */,

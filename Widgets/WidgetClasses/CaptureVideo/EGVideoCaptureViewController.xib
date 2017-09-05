@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,8 +26,16 @@
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KrT-zd-0D8">
                     <rect key="frame" x="20" y="613" width="335" height="34"/>
                     <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMI-tl-vjn">
+                            <rect key="frame" x="0.0" y="0.0" width="69" height="34"/>
+                            <color key="backgroundColor" red="0.40389269590377808" green="0.40394294261932373" blue="0.40387016534805298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Socket"/>
+                            <connections>
+                                <action selector="socketBuildAction:" destination="-1" eventType="touchUpInside" id="ben-Zv-y9g"/>
+                            </connections>
+                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aL-0a-wgr">
-                            <rect key="frame" x="0.0" y="0.0" width="98.5" height="34"/>
+                            <rect key="frame" x="89" y="0.0" width="68.5" height="34"/>
                             <color key="backgroundColor" red="0.40470336289999997" green="0.40470336289999997" blue="0.40470336289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Capture"/>
                             <connections>
@@ -36,15 +43,15 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIC-lw-pcY">
-                            <rect key="frame" x="118.5" y="0.0" width="98" height="34"/>
-                            <color key="backgroundColor" red="0.40470336294416243" green="0.40470336294416243" blue="0.40470336294416243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <rect key="frame" x="177.5" y="0.0" width="69" height="34"/>
+                            <color key="backgroundColor" red="0.40389269590377808" green="0.40394294261932373" blue="0.40387016534805298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Stop"/>
                             <connections>
                                 <action selector="stopClick:" destination="-1" eventType="touchUpInside" id="eEV-O5-ck7"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqQ-PU-4AI">
-                            <rect key="frame" x="236.5" y="0.0" width="98.5" height="34"/>
+                            <rect key="frame" x="266.5" y="0.0" width="68.5" height="34"/>
                             <color key="backgroundColor" red="0.40470336289999997" green="0.40470336289999997" blue="0.40470336289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Play"/>
                             <connections>
