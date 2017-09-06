@@ -40,7 +40,10 @@ UITableViewDataSource
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"widgesCellID"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"widgesCellID"];
-    }    
+    }
+    cell.backgroundColor =
+    (indexPath.row%2 == 1 ? [UIColor lightGrayColor] : [UIColor darkGrayColor]);
+
     cell.textLabel.text = self.widges[indexPath.row];
     return cell;
 }
@@ -61,12 +64,8 @@ UITableViewDataSource
                     @"EGImageSizeViewController",
                     @"EGWaveViewController",
                     @"EGSocketController",
-                    @"EGMicroPhoneViewController",
-                    @"EGVideoCaptureViewController",
-                    @"EGMixAudioViewController",
-                    @"EGMixVideoViewController",
-                    @"EGMixAudioVideoViewController",
                     @"EGLayerUsageController",
+                    @"EGAudio_VideoController"
                     ];
     }
     return _widges;
