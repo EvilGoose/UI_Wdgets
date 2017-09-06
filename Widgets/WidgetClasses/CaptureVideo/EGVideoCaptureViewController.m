@@ -97,10 +97,12 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
         //连接
     NSError *error = nil;
     
-    [_socket acceptOnPort:2345 error:&error];
+    [_socket acceptOnPort:2347 error:&error];
     
      if (error) {
-        NSLog(@"建立链接 error : %@",error);
+         dispatch_async(dispatch_get_main_queue(), ^{
+             [MBProgressHUD showError:@"无法建立socket链接"];
+         });
     }
     
     [_socket readDataWithTimeout:-1 tag:0];
@@ -375,14 +377,15 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
 
 - (void)onInputStart {
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"mtv" ofType:@"h264"];
-    inputStream = [[NSInputStream alloc] initWithFileAtPath:path];
+//    NSString *mtvPath = [[NSBundle mainBundle] pathForResource:@"mtv" ofType:@"h264"];
+    
+    inputStream = [[NSInputStream alloc] initWithFileAtPath:FILE_PATH];
     [inputStream open];
     inputSize = 0;
     inputMaxSize = self.mOpenGLView.height * self.mOpenGLView.width * 9 * 16;
     inputBuffer = malloc(inputMaxSize);
 }
-
+	
 - (void)onInputEnd {
     [inputStream close];
     inputStream = nil;
@@ -526,7 +529,7 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
                                                       &mDecodeSession);
                 CFRelease(attrs);
             } else {
-                NSLog(@"IOS VT: reset decoder session failed status=%d", status);
+                NSLog(@"iOS VT: reset decoder session failed status=%d", status);
             }
         }
     }
@@ -539,18 +542,27 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
     if (mDecodeSession) {
         CMBlockBufferRef blockBuffer = NULL;
         OSStatus status  = CMBlockBufferCreateWithMemoryBlock(kCFAllocatorDefault,
-                                                              (void*)packetBuffer, packetSize,
+                                                              (void*)packetBuffer,
+                                                              packetSize,
                                                               kCFAllocatorNull,
-                                                              NULL, 0, packetSize,
-                                                              0, &blockBuffer);
+                                                              NULL,
+                                                              0,
+                                                              packetSize,
+                                                              0,
+                                                              &blockBuffer);
         if(status == kCMBlockBufferNoErr) {
             CMSampleBufferRef sampleBuffer = NULL;
             const size_t sampleSizeArray[] = {packetSize};
             status = CMSampleBufferCreateReady(kCFAllocatorDefault,
                                                blockBuffer,
                                                mFormatDescription,
-                                               1, 0, NULL, 1, sampleSizeArray,
+                                               1,
+                                               0,
+                                               NULL,
+                                               1,
+                                               sampleSizeArray,
                                                &sampleBuffer);
+            
             if (status == kCMBlockBufferNoErr && sampleBuffer) {
                 VTDecodeFrameFlags flags = 0;
                 VTDecodeInfoFlags flagOut = 0;
@@ -563,11 +575,11 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
                                                                           &flagOut);
                 
                 if(decodeStatus == kVTInvalidSessionErr) {
-                    NSLog(@"IOS VT: Invalid session, reset decoder session");
+                    NSLog(@"iOS VT: Invalid session, reset decoder session");
                 } else if(decodeStatus == kVTVideoDecoderBadDataErr) {
-                    NSLog(@"IOS VT: decode failed status=%d(Bad data)", (int)decodeStatus);
+                    NSLog(@"iOS VT: decode failed status=%d(Bad data)", (int)decodeStatus);
                 } else if(decodeStatus != noErr) {
-                    NSLog(@"IOS VT: decode failed status=%d", (int)decodeStatus);
+                    NSLog(@"iOS VT: decode failed status=%d", (int)decodeStatus);
                 }
                  CFRelease(sampleBuffer);
             }
@@ -605,9 +617,8 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
     //连接成功
 -(void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port{
     dispatch_async(dispatch_get_main_queue(), ^{
-        [MBProgressHUD showSuccess:@"succeed!
-         "];
-     });
+        [MBProgressHUD showError:@"成功建立socket链接"];
+    });
 }
 
     //断开连接
