@@ -45,6 +45,7 @@
 		C48192961F60ED5C003AE073 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C481928F1F60ED5C003AE073 /* libavutil.a */; };
 		C48192971F60ED5C003AE073 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C48192901F60ED5C003AE073 /* libswresample.a */; };
 		C48192981F60ED5C003AE073 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C48192911F60ED5C003AE073 /* libswscale.a */; };
+		C48193221F60F5E5003AE073 /* EGFFMEPEGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48193211F60F5E4003AE073 /* EGFFMEPEGViewController.xib */; };
 		C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4C1F356D71003F06E6 /* EGTestViewController.m */; };
 		C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4F1F35965C003F06E6 /* EGIndicatorViewController.m */; };
 		C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF521F35989A003F06E6 /* GradientPeogressView.m */; };
@@ -288,6 +289,7 @@
 		C481928F1F60ED5C003AE073 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
 		C48192901F60ED5C003AE073 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		C48192911F60ED5C003AE073 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		C48193211F60F5E4003AE073 /* EGFFMEPEGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGFFMEPEGViewController.xib; sourceTree = "<group>"; };
 		C499EF4B1F356D71003F06E6 /* EGTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTestViewController.h; sourceTree = "<group>"; };
 		C499EF4C1F356D71003F06E6 /* EGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTestViewController.m; sourceTree = "<group>"; };
 		C499EF4E1F35965C003F06E6 /* EGIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGIndicatorViewController.h; sourceTree = "<group>"; };
@@ -991,6 +993,7 @@
 			children = (
 				C4EEB8981F5FD46800565FFC /* EGFFMPEGViewController.h */,
 				C4EEB8991F5FD46800565FFC /* EGFFMPEGViewController.m */,
+				C48193211F60F5E4003AE073 /* EGFFMEPEGViewController.xib */,
 			);
 			path = FFmpeg;
 			sourceTree = "<group>";
@@ -1125,6 +1128,7 @@
 				C4401FB11F5836F300581FE9 /* EGSocketController.xib in Resources */,
 				C4CC0BCC1F5A53EF00B3BBDC /* stocking.jpeg in Resources */,
 				C4EC487F1F355F1000942884 /* Main.storyboard in Resources */,
+				C48193221F60F5E5003AE073 /* EGFFMEPEGViewController.xib in Resources */,
 				C4CC0BE01F5A94F200B3BBDC /* heart.png in Resources */,
 				C47C6F331F514D5C00F7F653 /* EGImageSizeViewController.xib in Resources */,
 				C47C6F411F514E8C00F7F653 /* scenery1.jpg in Resources */,
