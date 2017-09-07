@@ -28,17 +28,17 @@
  */
 
 #include <errno.h>
-#include "samplefmt.h"
-#include "attributes.h"
-#include "avutil.h"
-#include "buffer.h"
-#include "cpu.h"
-#include "channel_layout.h"
-#include "dict.h"
-#include "frame.h"
-#include "log.h"
-#include "pixfmt.h"
-#include "rational.h"
+#include "libavutil/samplefmt.h"
+#include "libavutil/attributes.h"
+#include "libavutil/avutil.h"
+#include "libavutil/buffer.h"
+#include "libavutil/cpu.h"
+#include "libavutil/channel_layout.h"
+#include "libavutil/dict.h"
+#include "libavutil/frame.h"
+#include "libavutil/log.h"
+#include "libavutil/pixfmt.h"
+#include "libavutil/rational.h"
 
 #include "version.h"
 
@@ -1460,7 +1460,7 @@ enum AVPacketSideDataType {
      * transformation that needs to be applied to the decoded video frames for
      * correct presentation.
      *
-     * See display.h for a detailed description of the data.
+     * See libavutil/display.h for a detailed description of the data.
      */
     AV_PKT_DATA_DISPLAYMATRIX,
 

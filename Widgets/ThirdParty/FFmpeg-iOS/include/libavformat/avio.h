@@ -28,11 +28,11 @@
 
 #include <stdint.h>
 
-#include "common.h"
-#include "dict.h"
-#include "log.h"
+#include "libavutil/common.h"
+#include "libavutil/dict.h"
+#include "libavutil/log.h"
 
-#include "version.h"
+#include "libavformat/version.h"
 
 /**
  * Seeking works like for a local file.

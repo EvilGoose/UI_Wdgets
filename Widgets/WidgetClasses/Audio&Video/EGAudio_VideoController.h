@@ -1,5 +1,5 @@
 //
-//  EGAudio&VideoController.h
+//  EGAudio_VideoController.h.h
 //  Widgets
 //
 //  Created by EG on 2017/9/6.

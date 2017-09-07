@@ -1,12 +1,12 @@
 //
-//  EGAudio&VideoController.m
+//  EGAudio_VideoController.h.m
 //  Widgets
 //
 //  Created by EG on 2017/9/6.
 //  Copyright © 2017年 EGMade. All rights reserved.
 //
 
-#import "EGAudio&VideoController.h"
+#import "EGAudio_VideoController.h"
 
 @interface EGAudio_VideoController ()
 <
@@ -27,9 +27,10 @@ UITableViewDataSource
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     self.title = @"Audio&Video";
+	self.title = @"Audio&Video";
     self.view = self.tableView;
 }
+
 
 #pragma mark - delegate
 
@@ -38,7 +39,9 @@ UITableViewDataSource
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.navigationController pushViewController:[NSClassFromString(self.dataArray[indexPath.row]) new] animated:YES];
+    [self.navigationController pushViewController:
+     [NSClassFromString(self.dataArray[indexPath.row]) new]
+                                         animated:YES];
 }
 
 #pragma mark - data source
@@ -68,9 +71,7 @@ UITableViewDataSource
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[
-                       
-                       @"EGMicroPhoneViewController",
+        _dataArray = @[@"EGMicroPhoneViewController",
                        @"EGVideoCaptureViewController",
                        @"EGMixAudioViewController",
                        @"EGMixVideoViewController",
