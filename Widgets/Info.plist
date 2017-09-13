@@ -44,5 +44,7 @@
 	</array>
 	<key>UIViewGroupOpacity</key>
 	<true/>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 </dict>
 </plist>
