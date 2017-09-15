@@ -6,8 +6,8 @@
 //  Copyright © 2017年 EGMade. All rights reserved.
 //
 
-#import "EGBasicViewController.h"
+#import "EGTableViewController.h"
 
-@interface EGLayerUsageController : EGBasicViewController
+@interface EGLayerUsageController : EGTableViewController
 
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		254FFB80A1022A46D559E7B0 /* libPods-WidgetsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB6D33A159A456C34ACD48 /* libPods-WidgetsTests.a */; };
 		59C443C74DE593B850480013 /* libPods-WidgetsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */; };
+		C43D486A1F6B62E500BF03A8 /* EGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D48691F6B62E500BF03A8 /* EGTableViewController.m */; };
 		C4401FA61F5836C100581FE9 /* Movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA31F5836C100581FE9 /* Movie.mp4 */; };
 		C4401FA71F5836C100581FE9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA41F5836C100581FE9 /* Shader.fsh */; };
 		C4401FA81F5836C100581FE9 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA51F5836C100581FE9 /* Shader.vsh */; };
@@ -77,7 +78,6 @@
 		C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48681F3557CF00942884 /* EGBasicViewController.m */; };
 		C4EC48781F355E8D00942884 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC486A1F3557CF00942884 /* ViewController.m */; };
 		C4EC487B1F355E8D00942884 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A0E1F346D1600C78E37 /* main.m */; };
-		C4EC487F1F355F1000942884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EC487E1F355F1000942884 /* Main.storyboard */; };
 		C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48801F356BB100942884 /* EGSeperateScrollViewController.m */; };
 		C4EEB7CE1F5FBF3B00565FFC /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4EEB7CD1F5FBF3B00565FFC /* MBProgressHUD.bundle */; };
 		C4EEB8531F5FD19600565FFC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EEB8521F5FD19600565FFC /* libz.tbd */; };
@@ -124,6 +124,8 @@
 		3C095E3689F97A29EF51E993 /* Pods-WidgetsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WidgetsUITests/Pods-WidgetsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		481366FA6B0AC55743DAD056 /* Pods-Widgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Widgets/Pods-Widgets.debug.xcconfig"; sourceTree = "<group>"; };
 		5B06B64798A534068B82B7E5 /* libPods-Widgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43D48681F6B62E500BF03A8 /* EGTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTableViewController.h; sourceTree = "<group>"; };
+		C43D48691F6B62E500BF03A8 /* EGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTableViewController.m; sourceTree = "<group>"; };
 		C4401FA31F5836C100581FE9 /* Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Movie.mp4; path = ../Resources/Movie.mp4; sourceTree = "<group>"; };
 		C4401FA41F5836C100581FE9 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
 		C4401FA51F5836C100581FE9 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
@@ -343,7 +345,6 @@
 		C4EC48691F3557CF00942884 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C4EC486A1F3557CF00942884 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C4EC486F1F3557CF00942884 /* EGSeperateScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGSeperateScrollViewController.h; sourceTree = "<group>"; };
-		C4EC487E1F355F1000942884 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C4EC48801F356BB100942884 /* EGSeperateScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGSeperateScrollViewController.m; sourceTree = "<group>"; };
 		C4EEB7CD1F5FBF3B00565FFC /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		C4EEB8521F5FD19600565FFC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -892,9 +893,10 @@
 			children = (
 				C4EC48671F3557CF00942884 /* EGBasicViewController.h */,
 				C4EC48681F3557CF00942884 /* EGBasicViewController.m */,
+				C43D48681F6B62E500BF03A8 /* EGTableViewController.h */,
+				C43D48691F6B62E500BF03A8 /* EGTableViewController.m */,
 				C4EC48691F3557CF00942884 /* ViewController.h */,
 				C4EC486A1F3557CF00942884 /* ViewController.m */,
-				C4EC487E1F355F1000942884 /* Main.storyboard */,
 			);
 			name = Basic;
 			path = WidgetClasses/Basic;
@@ -1127,7 +1129,6 @@
 			files = (
 				C4401FB11F5836F300581FE9 /* EGSocketController.xib in Resources */,
 				C4CC0BCC1F5A53EF00B3BBDC /* stocking.jpeg in Resources */,
-				C4EC487F1F355F1000942884 /* Main.storyboard in Resources */,
 				C48193221F60F5E5003AE073 /* EGFFMEPEGViewController.xib in Resources */,
 				C4CC0BE01F5A94F200B3BBDC /* heart.png in Resources */,
 				C47C6F331F514D5C00F7F653 /* EGImageSizeViewController.xib in Resources */,
@@ -1346,6 +1347,7 @@
 				C45571701F5D707000AB1C95 /* EGTiledLayerViewController.m in Sources */,
 				C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */,
 				C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */,
+				C43D486A1F6B62E500BF03A8 /* EGTableViewController.m in Sources */,
 				C4CC0BCA1F5A51BB00B3BBDC /* EGLayerBasicViewController.m in Sources */,
 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,

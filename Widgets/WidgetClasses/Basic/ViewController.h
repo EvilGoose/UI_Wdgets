@@ -6,9 +6,9 @@
 //  Copyright © 2017年 EGMade. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "EGTableViewController.h"
 
-@interface ViewController : UITableViewController
+@interface ViewController : EGTableViewController
 
 
 @end

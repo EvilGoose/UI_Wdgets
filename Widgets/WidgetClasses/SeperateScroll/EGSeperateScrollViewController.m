@@ -30,14 +30,19 @@ UITableViewDataSource
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationController.navigationBar.hidden = YES;
     self.view = self.containerScrollView;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self.containerScrollView addSubview:self.topTableView];
     [self.containerScrollView addSubview:self.bottomTableView];
 }
 
 - (void)test {
     
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
