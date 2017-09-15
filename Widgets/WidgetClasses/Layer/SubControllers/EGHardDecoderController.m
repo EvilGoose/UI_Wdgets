@@ -80,7 +80,7 @@ const uint8_t *avc_find_startcode(const uint8_t *p, const uint8_t *end)
 static void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSStatus status, VTDecodeInfoFlags infoFlags, CVImageBufferRef imageBuffer, CMTime presentationTimeStamp, CMTime presentationDuration ) {
     
     if (status != noErr || imageBuffer == nil) {
-        NSLog(@"Error decompresssing frame at time: %.3f error: %d infoFlags: %u",
+        NSLog(@"Error decompresssing frame at time: %.3lld error: %d infoFlags: %u",
              presentationTimeStamp.value/presentationTimeStamp.timescale, status, infoFlags);
         return;
     }

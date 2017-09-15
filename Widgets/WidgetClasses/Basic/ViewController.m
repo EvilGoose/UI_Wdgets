@@ -23,7 +23,8 @@
                         @"EGWaveViewController",
                         @"EGSocketController",
                         @"EGLayerUsageController",
-                        @"EGAudio_VideoController"
+                        @"EGAudio_VideoController",
+                        @"EGAnimationsViewController"
     ];
 }
 

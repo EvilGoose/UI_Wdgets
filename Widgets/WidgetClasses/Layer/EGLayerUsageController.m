@@ -28,7 +28,8 @@
                         @"EGReplicatorLayerViewController",
                         @"EGScrollLayerViewController",
                         @"EGEmitterLayerViewController",
-                        @"EGEAGLLayerViewController"
+                        @"EGEAGLLayerViewController",
+                        @"EGPlayerLayerViewController"
                         ];
 }
 
