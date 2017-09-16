@@ -11,7 +11,6 @@
 		59C443C74DE593B850480013 /* libPods-WidgetsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */; };
 		C43D486A1F6B62E500BF03A8 /* EGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D48691F6B62E500BF03A8 /* EGTableViewController.m */; };
 		C43D486E1F6B6B8900BF03A8 /* EGAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D486D1F6B6B8900BF03A8 /* EGAnimationsViewController.m */; };
-		C43D48711F6B6E3D00BF03A8 /* EGPropertyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D48701F6B6E3D00BF03A8 /* EGPropertyAnimationViewController.m */; };
 		C43D48741F6B700E00BF03A8 /* EGPlayerLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D48731F6B700E00BF03A8 /* EGPlayerLayerViewController.m */; };
 		C4401FA61F5836C100581FE9 /* Movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA31F5836C100581FE9 /* Movie.mp4 */; };
 		C4401FA71F5836C100581FE9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C4401FA41F5836C100581FE9 /* Shader.fsh */; };
@@ -50,6 +49,11 @@
 		C48192971F60ED5C003AE073 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C48192901F60ED5C003AE073 /* libswresample.a */; };
 		C48192981F60ED5C003AE073 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C48192911F60ED5C003AE073 /* libswscale.a */; };
 		C48193221F60F5E5003AE073 /* EGFFMEPEGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48193211F60F5E4003AE073 /* EGFFMEPEGViewController.xib */; };
+		C492B5191F6CB1B800F61B5C /* EGPropertyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492B5181F6CB1B800F61B5C /* EGPropertyAnimationViewController.m */; };
+		C492B51D1F6CBD6800F61B5C /* EGObviousPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492B51C1F6CBD6800F61B5C /* EGObviousPropertyViewController.m */; };
+		C492B5201F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492B51F1F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.m */; };
+		C492B5241F6CF2FE00F61B5C /* EGKeyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492B5231F6CF2FE00F61B5C /* EGKeyAnimationViewController.m */; };
+		C492B5281F6CF8D600F61B5C /* EGVirtualAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492B5271F6CF8D600F61B5C /* EGVirtualAnimationViewController.m */; };
 		C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4C1F356D71003F06E6 /* EGTestViewController.m */; };
 		C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4F1F35965C003F06E6 /* EGIndicatorViewController.m */; };
 		C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF521F35989A003F06E6 /* GradientPeogressView.m */; };
@@ -131,8 +135,6 @@
 		C43D48691F6B62E500BF03A8 /* EGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTableViewController.m; sourceTree = "<group>"; };
 		C43D486C1F6B6B8900BF03A8 /* EGAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGAnimationsViewController.h; sourceTree = "<group>"; };
 		C43D486D1F6B6B8900BF03A8 /* EGAnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGAnimationsViewController.m; sourceTree = "<group>"; };
-		C43D486F1F6B6E3D00BF03A8 /* EGPropertyAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGPropertyAnimationViewController.h; sourceTree = "<group>"; };
-		C43D48701F6B6E3D00BF03A8 /* EGPropertyAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGPropertyAnimationViewController.m; sourceTree = "<group>"; };
 		C43D48721F6B700E00BF03A8 /* EGPlayerLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGPlayerLayerViewController.h; sourceTree = "<group>"; };
 		C43D48731F6B700E00BF03A8 /* EGPlayerLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGPlayerLayerViewController.m; sourceTree = "<group>"; };
 		C4401FA31F5836C100581FE9 /* Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Movie.mp4; path = ../Resources/Movie.mp4; sourceTree = "<group>"; };
@@ -301,6 +303,16 @@
 		C48192901F60ED5C003AE073 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		C48192911F60ED5C003AE073 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
 		C48193211F60F5E4003AE073 /* EGFFMEPEGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGFFMEPEGViewController.xib; sourceTree = "<group>"; };
+		C492B5171F6CB1B800F61B5C /* EGPropertyAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGPropertyAnimationViewController.h; sourceTree = "<group>"; };
+		C492B5181F6CB1B800F61B5C /* EGPropertyAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGPropertyAnimationViewController.m; sourceTree = "<group>"; };
+		C492B51B1F6CBD6800F61B5C /* EGObviousPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGObviousPropertyViewController.h; sourceTree = "<group>"; };
+		C492B51C1F6CBD6800F61B5C /* EGObviousPropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGObviousPropertyViewController.m; sourceTree = "<group>"; };
+		C492B51E1F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGKVCPropertyAnimationViewController.h; sourceTree = "<group>"; };
+		C492B51F1F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGKVCPropertyAnimationViewController.m; sourceTree = "<group>"; };
+		C492B5221F6CF2FE00F61B5C /* EGKeyAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGKeyAnimationViewController.h; sourceTree = "<group>"; };
+		C492B5231F6CF2FE00F61B5C /* EGKeyAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGKeyAnimationViewController.m; sourceTree = "<group>"; };
+		C492B5261F6CF8D600F61B5C /* EGVirtualAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGVirtualAnimationViewController.h; sourceTree = "<group>"; };
+		C492B5271F6CF8D600F61B5C /* EGVirtualAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGVirtualAnimationViewController.m; sourceTree = "<group>"; };
 		C499EF4B1F356D71003F06E6 /* EGTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTestViewController.h; sourceTree = "<group>"; };
 		C499EF4C1F356D71003F06E6 /* EGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTestViewController.m; sourceTree = "<group>"; };
 		C499EF4E1F35965C003F06E6 /* EGIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGIndicatorViewController.h; sourceTree = "<group>"; };
@@ -441,8 +453,10 @@
 			children = (
 				C43D486C1F6B6B8900BF03A8 /* EGAnimationsViewController.h */,
 				C43D486D1F6B6B8900BF03A8 /* EGAnimationsViewController.m */,
-				C43D486F1F6B6E3D00BF03A8 /* EGPropertyAnimationViewController.h */,
-				C43D48701F6B6E3D00BF03A8 /* EGPropertyAnimationViewController.m */,
+				C492B5251F6CF8C400F61B5C /* VirtualPropertyAnimation */,
+				C492B5211F6CF2DC00F61B5C /* KeyAnimation */,
+				C492B5161F6CB1B800F61B5C /* LayerPropertyAnimation */,
+				C492B51A1F6CBD1A00F61B5C /* ObviousAnimation */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -766,6 +780,44 @@
 				C48192911F60ED5C003AE073 /* libswscale.a */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		C492B5161F6CB1B800F61B5C /* LayerPropertyAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C492B5171F6CB1B800F61B5C /* EGPropertyAnimationViewController.h */,
+				C492B5181F6CB1B800F61B5C /* EGPropertyAnimationViewController.m */,
+			);
+			path = LayerPropertyAnimation;
+			sourceTree = "<group>";
+		};
+		C492B51A1F6CBD1A00F61B5C /* ObviousAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C492B51B1F6CBD6800F61B5C /* EGObviousPropertyViewController.h */,
+				C492B51C1F6CBD6800F61B5C /* EGObviousPropertyViewController.m */,
+				C492B51E1F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.h */,
+				C492B51F1F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.m */,
+			);
+			path = ObviousAnimation;
+			sourceTree = "<group>";
+		};
+		C492B5211F6CF2DC00F61B5C /* KeyAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C492B5221F6CF2FE00F61B5C /* EGKeyAnimationViewController.h */,
+				C492B5231F6CF2FE00F61B5C /* EGKeyAnimationViewController.m */,
+			);
+			path = KeyAnimation;
+			sourceTree = "<group>";
+		};
+		C492B5251F6CF8C400F61B5C /* VirtualPropertyAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C492B5261F6CF8D600F61B5C /* EGVirtualAnimationViewController.h */,
+				C492B5271F6CF8D600F61B5C /* EGVirtualAnimationViewController.m */,
+			);
+			path = VirtualPropertyAnimation;
 			sourceTree = "<group>";
 		};
 		C499EF4A1F356D68003F06E6 /* Test */ = {
@@ -1352,7 +1404,10 @@
 				C4EEB8931F5FD41D00565FFC /* EGOpenGLLayer.m in Sources */,
 				C4EEB8941F5FD41D00565FFC /* EGOpenGLView.m in Sources */,
 				C45571671F5D4C3100AB1C95 /* EGGradientLayerViewController.m in Sources */,
+				C492B5281F6CF8D600F61B5C /* EGVirtualAnimationViewController.m in Sources */,
 				C4D1B6C51F5A4BB900C13025 /* EGLayerUsageController.m in Sources */,
+				C492B5201F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.m in Sources */,
+				C492B5241F6CF2FE00F61B5C /* EGKeyAnimationViewController.m in Sources */,
 				C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */,
 				C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */,
 				C4CC0BF21F5AACB700B3BBDC /* EGCAShapeLayerViewController.m in Sources */,
@@ -1373,8 +1428,8 @@
 				C43D486A1F6B62E500BF03A8 /* EGTableViewController.m in Sources */,
 				C4CC0BCA1F5A51BB00B3BBDC /* EGLayerBasicViewController.m in Sources */,
 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
-				C43D48711F6B6E3D00BF03A8 /* EGPropertyAnimationViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
+				C492B51D1F6CBD6800F61B5C /* EGObviousPropertyViewController.m in Sources */,
 				C4EEB8861F5FD3F800565FFC /* EGMixAudioViewController.m in Sources */,
 				C4497CC81F5EDDF8005DF8A7 /* MBProgressHUD+Extension.m in Sources */,
 				C43D48741F6B700E00BF03A8 /* EGPlayerLayerViewController.m in Sources */,
@@ -1391,6 +1446,7 @@
 				C4401FB01F5836F300581FE9 /* EGSocketController.m in Sources */,
 				C4A300121F4E766500D23587 /* WRNavigationBar.m in Sources */,
 				C4EEB9991F5FD87400565FFC /* EGAudio_VideoController.m in Sources */,
+				C492B5191F6CB1B800F61B5C /* EGPropertyAnimationViewController.m in Sources */,
 				C4EEB8891F5FD3F800565FFC /* EGMixVideoViewController.m in Sources */,
 				C464AD0D1F3EC4D400341AAF /* EGNaviBarViewController.m in Sources */,
 				C4EC48811F356BB100942884 /* EGSeperateScrollViewController.m in Sources */,

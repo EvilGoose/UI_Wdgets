@@ -19,7 +19,10 @@
     // Do any additional setup after loading the view.
     
     self.datasArray = @[
-                        @"EGPropertyAnimationViewController"
+                        @"EGPropertyAnimationViewController",
+                        @"EGObviousPropertyViewController",
+                        @"EGKVCPropertyAnimationViewController",
+                        @"EGKeyAnimationViewController",
                         ];
 }
 
