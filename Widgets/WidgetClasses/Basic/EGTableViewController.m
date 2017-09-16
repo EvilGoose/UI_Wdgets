@@ -39,7 +39,7 @@ UITableViewDataSource
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:self.frame style:UITableViewStylePlain];
-        _tableView.backgroundColor = [UIColor whiteColor];
+        _tableView.backgroundColor = [UIColor darkGrayColor];
         _tableView.dataSource = self;
         _tableView.delegate = self;
     }

@@ -23,6 +23,8 @@
                         @"EGObviousPropertyViewController",
                         @"EGKVCPropertyAnimationViewController",
                         @"EGKeyAnimationViewController",
+                        @"EGVirtualAnimationViewController",
+                        @"EGGroupAnimationViewController"
                         ];
 }
 

@@ -54,6 +54,7 @@
 		C492B5201F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492B51F1F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.m */; };
 		C492B5241F6CF2FE00F61B5C /* EGKeyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492B5231F6CF2FE00F61B5C /* EGKeyAnimationViewController.m */; };
 		C492B5281F6CF8D600F61B5C /* EGVirtualAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492B5271F6CF8D600F61B5C /* EGVirtualAnimationViewController.m */; };
+		C492B52C1F6D081600F61B5C /* EGGroupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C492B52B1F6D081600F61B5C /* EGGroupAnimationViewController.m */; };
 		C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4C1F356D71003F06E6 /* EGTestViewController.m */; };
 		C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF4F1F35965C003F06E6 /* EGIndicatorViewController.m */; };
 		C499EF531F35989A003F06E6 /* GradientPeogressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C499EF521F35989A003F06E6 /* GradientPeogressView.m */; };
@@ -313,6 +314,8 @@
 		C492B5231F6CF2FE00F61B5C /* EGKeyAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGKeyAnimationViewController.m; sourceTree = "<group>"; };
 		C492B5261F6CF8D600F61B5C /* EGVirtualAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGVirtualAnimationViewController.h; sourceTree = "<group>"; };
 		C492B5271F6CF8D600F61B5C /* EGVirtualAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGVirtualAnimationViewController.m; sourceTree = "<group>"; };
+		C492B52A1F6D081600F61B5C /* EGGroupAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGGroupAnimationViewController.h; sourceTree = "<group>"; };
+		C492B52B1F6D081600F61B5C /* EGGroupAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGGroupAnimationViewController.m; sourceTree = "<group>"; };
 		C499EF4B1F356D71003F06E6 /* EGTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTestViewController.h; sourceTree = "<group>"; };
 		C499EF4C1F356D71003F06E6 /* EGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTestViewController.m; sourceTree = "<group>"; };
 		C499EF4E1F35965C003F06E6 /* EGIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGIndicatorViewController.h; sourceTree = "<group>"; };
@@ -453,6 +456,7 @@
 			children = (
 				C43D486C1F6B6B8900BF03A8 /* EGAnimationsViewController.h */,
 				C43D486D1F6B6B8900BF03A8 /* EGAnimationsViewController.m */,
+				C492B5291F6D080000F61B5C /* GroupAnimation */,
 				C492B5251F6CF8C400F61B5C /* VirtualPropertyAnimation */,
 				C492B5211F6CF2DC00F61B5C /* KeyAnimation */,
 				C492B5161F6CB1B800F61B5C /* LayerPropertyAnimation */,
@@ -818,6 +822,15 @@
 				C492B5271F6CF8D600F61B5C /* EGVirtualAnimationViewController.m */,
 			);
 			path = VirtualPropertyAnimation;
+			sourceTree = "<group>";
+		};
+		C492B5291F6D080000F61B5C /* GroupAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C492B52A1F6D081600F61B5C /* EGGroupAnimationViewController.h */,
+				C492B52B1F6D081600F61B5C /* EGGroupAnimationViewController.m */,
+			);
+			path = GroupAnimation;
 			sourceTree = "<group>";
 		};
 		C499EF4A1F356D68003F06E6 /* Test */ = {
@@ -1423,6 +1436,7 @@
 				C4497CC21F5ECB11005DF8A7 /* EGHardDecoderController.m in Sources */,
 				C4EEB89A1F5FD46800565FFC /* EGFFMPEGViewController.m in Sources */,
 				C45571701F5D707000AB1C95 /* EGTiledLayerViewController.m in Sources */,
+				C492B52C1F6D081600F61B5C /* EGGroupAnimationViewController.m in Sources */,
 				C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */,
 				C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */,
 				C43D486A1F6B62E500BF03A8 /* EGTableViewController.m in Sources */,
