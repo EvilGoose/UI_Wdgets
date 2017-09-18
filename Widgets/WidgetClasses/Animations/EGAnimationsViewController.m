@@ -24,7 +24,10 @@
                         @"EGKVCPropertyAnimationViewController",
                         @"EGKeyAnimationViewController",
                         @"EGVirtualAnimationViewController",
-                        @"EGGroupAnimationViewController"
+                        @"EGGroupAnimationViewController",
+                        @"EGTransitionViewController",
+                        @"EGImplicitTransitionViewController",
+                        @"EGCustomAnimationViewController",
                         ];
 }
 

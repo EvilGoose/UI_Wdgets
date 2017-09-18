@@ -81,6 +81,16 @@
 		C4CDA6441F53E26D005150A6 /* EGWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA6431F53E26D005150A6 /* EGWaveViewController.m */; };
 		C4CDA6471F53E283005150A6 /* EGWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CDA6461F53E283005150A6 /* EGWaveView.m */; };
 		C4D1B6C51F5A4BB900C13025 /* EGLayerUsageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1B6C41F5A4BB900C13025 /* EGLayerUsageController.m */; };
+		C4DC8E671F6FF45000974EF2 /* EGTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DC8E661F6FF45000974EF2 /* EGTransitionViewController.m */; };
+		C4DC8E6C1F6FF64300974EF2 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DC8E681F6FF64300974EF2 /* icon1.png */; };
+		C4DC8E6D1F6FF64300974EF2 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DC8E691F6FF64300974EF2 /* icon2.png */; };
+		C4DC8E6E1F6FF64300974EF2 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DC8E6A1F6FF64300974EF2 /* icon3.png */; };
+		C4DC8E6F1F6FF64300974EF2 /* icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DC8E6B1F6FF64300974EF2 /* icon4.png */; };
+		C4DC8E861F6FFDA900974EF2 /* EGAnimationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DC8E7F1F6FFDA900974EF2 /* EGAnimationTabBarController.m */; };
+		C4DC8E871F6FFDA900974EF2 /* EGFirstChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DC8E811F6FFDA900974EF2 /* EGFirstChildViewController.m */; };
+		C4DC8E881F6FFDA900974EF2 /* EGImplicitTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DC8E831F6FFDA900974EF2 /* EGImplicitTransitionViewController.m */; };
+		C4DC8E891F6FFDA900974EF2 /* EGSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DC8E851F6FFDA900974EF2 /* EGSecondViewController.m */; };
+		C4DC8E8D1F6FFDDB00974EF2 /* EGCustomAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DC8E8C1F6FFDDB00974EF2 /* EGCustomAnimationViewController.m */; };
 		C4EC48751F355E8D00942884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44E3A111F346D1600C78E37 /* AppDelegate.m */; };
 		C4EC48761F355E8D00942884 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48641F35578300942884 /* UIView+Extension.m */; };
 		C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC48681F3557CF00942884 /* EGBasicViewController.m */; };
@@ -361,6 +371,22 @@
 		C4CDA6461F53E283005150A6 /* EGWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGWaveView.m; sourceTree = "<group>"; };
 		C4D1B6C31F5A4BB900C13025 /* EGLayerUsageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGLayerUsageController.h; sourceTree = "<group>"; };
 		C4D1B6C41F5A4BB900C13025 /* EGLayerUsageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGLayerUsageController.m; sourceTree = "<group>"; };
+		C4DC8E651F6FF45000974EF2 /* EGTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTransitionViewController.h; sourceTree = "<group>"; };
+		C4DC8E661F6FF45000974EF2 /* EGTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTransitionViewController.m; sourceTree = "<group>"; };
+		C4DC8E681F6FF64300974EF2 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		C4DC8E691F6FF64300974EF2 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		C4DC8E6A1F6FF64300974EF2 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
+		C4DC8E6B1F6FF64300974EF2 /* icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon4.png; sourceTree = "<group>"; };
+		C4DC8E7E1F6FFDA900974EF2 /* EGAnimationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGAnimationTabBarController.h; sourceTree = "<group>"; };
+		C4DC8E7F1F6FFDA900974EF2 /* EGAnimationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGAnimationTabBarController.m; sourceTree = "<group>"; };
+		C4DC8E801F6FFDA900974EF2 /* EGFirstChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGFirstChildViewController.h; sourceTree = "<group>"; };
+		C4DC8E811F6FFDA900974EF2 /* EGFirstChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGFirstChildViewController.m; sourceTree = "<group>"; };
+		C4DC8E821F6FFDA900974EF2 /* EGImplicitTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGImplicitTransitionViewController.h; sourceTree = "<group>"; };
+		C4DC8E831F6FFDA900974EF2 /* EGImplicitTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGImplicitTransitionViewController.m; sourceTree = "<group>"; };
+		C4DC8E841F6FFDA900974EF2 /* EGSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGSecondViewController.h; sourceTree = "<group>"; };
+		C4DC8E851F6FFDA900974EF2 /* EGSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGSecondViewController.m; sourceTree = "<group>"; };
+		C4DC8E8B1F6FFDDB00974EF2 /* EGCustomAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGCustomAnimationViewController.h; sourceTree = "<group>"; };
+		C4DC8E8C1F6FFDDB00974EF2 /* EGCustomAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGCustomAnimationViewController.m; sourceTree = "<group>"; };
 		C4EC48621F35578300942884 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
 		C4EC48631F35578300942884 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		C4EC48641F35578300942884 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
@@ -456,11 +482,14 @@
 			children = (
 				C43D486C1F6B6B8900BF03A8 /* EGAnimationsViewController.h */,
 				C43D486D1F6B6B8900BF03A8 /* EGAnimationsViewController.m */,
+				C4DC8E8A1F6FFDCD00974EF2 /* CustomAnimation */,
+				C4DC8E7D1F6FFDA900974EF2 /* ImplicitTransitionAnimation */,
 				C492B5291F6D080000F61B5C /* GroupAnimation */,
 				C492B5251F6CF8C400F61B5C /* VirtualPropertyAnimation */,
 				C492B5211F6CF2DC00F61B5C /* KeyAnimation */,
 				C492B5161F6CB1B800F61B5C /* LayerPropertyAnimation */,
 				C492B51A1F6CBD1A00F61B5C /* ObviousAnimation */,
+				C4DC8E641F6FF43700974EF2 /* TransitionAnimation */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -584,6 +613,10 @@
 		C47C6F3D1F514E8C00F7F653 /* scenery */ = {
 			isa = PBXGroup;
 			children = (
+				C4DC8E681F6FF64300974EF2 /* icon1.png */,
+				C4DC8E691F6FF64300974EF2 /* icon2.png */,
+				C4DC8E6A1F6FF64300974EF2 /* icon3.png */,
+				C4DC8E6B1F6FF64300974EF2 /* icon4.png */,
 				C4CC0BDF1F5A94F200B3BBDC /* heart.png */,
 				C4401FA31F5836C100581FE9 /* Movie.mp4 */,
 				C47C6F3E1F514E8C00F7F653 /* scenery1.jpg */,
@@ -941,6 +974,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C4DC8E641F6FF43700974EF2 /* TransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C4DC8E651F6FF45000974EF2 /* EGTransitionViewController.h */,
+				C4DC8E661F6FF45000974EF2 /* EGTransitionViewController.m */,
+			);
+			path = TransitionAnimation;
+			sourceTree = "<group>";
+		};
+		C4DC8E7D1F6FFDA900974EF2 /* ImplicitTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C4DC8E7E1F6FFDA900974EF2 /* EGAnimationTabBarController.h */,
+				C4DC8E7F1F6FFDA900974EF2 /* EGAnimationTabBarController.m */,
+				C4DC8E801F6FFDA900974EF2 /* EGFirstChildViewController.h */,
+				C4DC8E811F6FFDA900974EF2 /* EGFirstChildViewController.m */,
+				C4DC8E821F6FFDA900974EF2 /* EGImplicitTransitionViewController.h */,
+				C4DC8E831F6FFDA900974EF2 /* EGImplicitTransitionViewController.m */,
+				C4DC8E841F6FFDA900974EF2 /* EGSecondViewController.h */,
+				C4DC8E851F6FFDA900974EF2 /* EGSecondViewController.m */,
+			);
+			path = ImplicitTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		C4DC8E8A1F6FFDCD00974EF2 /* CustomAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C4DC8E8B1F6FFDDB00974EF2 /* EGCustomAnimationViewController.h */,
+				C4DC8E8C1F6FFDDB00974EF2 /* EGCustomAnimationViewController.m */,
+			);
+			path = CustomAnimation;
+			sourceTree = "<group>";
+		};
 		C4EC48541F35576900942884 /* WidgetClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -1226,11 +1292,15 @@
 				C47C6F421F514E8C00F7F653 /* scenery3.jpg in Resources */,
 				C44E3A1D1F346D1600C78E37 /* LaunchScreen.storyboard in Resources */,
 				C4CC0BE51F5A97BF00B3BBDC /* Digits.png in Resources */,
+				C4DC8E6F1F6FF64300974EF2 /* icon4.png in Resources */,
 				C4EEB8871F5FD3F800565FFC /* EGMixAudioViewController.xib in Resources */,
+				C4DC8E6C1F6FF64300974EF2 /* icon1.png in Resources */,
 				C4401FA61F5836C100581FE9 /* Movie.mp4 in Resources */,
 				C4401FB51F58371D00581FE9 /* Audio1.m4a in Resources */,
 				C4CC0BCE1F5A544800B3BBDC /* car.png in Resources */,
+				C4DC8E6E1F6FF64300974EF2 /* icon3.png in Resources */,
 				C4EEB8961F5FD41D00565FFC /* EGVideoCaptureViewController.xib in Resources */,
+				C4DC8E6D1F6FF64300974EF2 /* icon2.png in Resources */,
 				C4CC0BD31F5A58D000B3BBDC /* icons.png in Resources */,
 				C4EEB7CE1F5FBF3B00565FFC /* MBProgressHUD.bundle in Resources */,
 				C4401FB61F58371D00581FE9 /* Audio2.mp3 in Resources */,
@@ -1430,6 +1500,7 @@
 				C4CDA6441F53E26D005150A6 /* EGWaveViewController.m in Sources */,
 				C4CC0BD81F5A77EE00B3BBDC /* EGCustomeDrawViewController.m in Sources */,
 				C4CC0BD11F5A586D00B3BBDC /* EGLayerContentRectViewController.m in Sources */,
+				C4DC8E8D1F6FFDDB00974EF2 /* EGCustomAnimationViewController.m in Sources */,
 				C4EEB8881F5FD3F800565FFC /* EGMixAudioVideoViewController.m in Sources */,
 				C455716D1F5D6BC500AB1C95 /* EGScrollLayerViewController.m in Sources */,
 				C4CC0BEB1F5AA27F00B3BBDC /* EGTransparentViewController.m in Sources */,
@@ -1444,11 +1515,13 @@
 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
 				C492B51D1F6CBD6800F61B5C /* EGObviousPropertyViewController.m in Sources */,
+				C4DC8E891F6FFDA900974EF2 /* EGSecondViewController.m in Sources */,
 				C4EEB8861F5FD3F800565FFC /* EGMixAudioViewController.m in Sources */,
 				C4497CC81F5EDDF8005DF8A7 /* MBProgressHUD+Extension.m in Sources */,
 				C43D48741F6B700E00BF03A8 /* EGPlayerLayerViewController.m in Sources */,
 				C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */,
 				C45571A41F5D84CD00AB1C95 /* EGEAGLLayerViewController.m in Sources */,
+				C4DC8E671F6FF45000974EF2 /* EGTransitionViewController.m in Sources */,
 				C4EEB8841F5FD3F800565FFC /* EGMicroPhoneHelper.m in Sources */,
 				C4EEB8951F5FD41D00565FFC /* EGVideoCaptureViewController.m in Sources */,
 				C4A300111F4E766500D23587 /* WRImageHelper.m in Sources */,
@@ -1459,7 +1532,10 @@
 				C4EEB8851F5FD3F800565FFC /* EGMicroPhoneViewController.m in Sources */,
 				C4401FB01F5836F300581FE9 /* EGSocketController.m in Sources */,
 				C4A300121F4E766500D23587 /* WRNavigationBar.m in Sources */,
+				C4DC8E881F6FFDA900974EF2 /* EGImplicitTransitionViewController.m in Sources */,
 				C4EEB9991F5FD87400565FFC /* EGAudio_VideoController.m in Sources */,
+				C4DC8E871F6FFDA900974EF2 /* EGFirstChildViewController.m in Sources */,
+				C4DC8E861F6FFDA900974EF2 /* EGAnimationTabBarController.m in Sources */,
 				C492B5191F6CB1B800F61B5C /* EGPropertyAnimationViewController.m in Sources */,
 				C4EEB8891F5FD3F800565FFC /* EGMixVideoViewController.m in Sources */,
 				C464AD0D1F3EC4D400341AAF /* EGNaviBarViewController.m in Sources */,
