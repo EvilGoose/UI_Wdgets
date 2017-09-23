@@ -744,6 +744,8 @@
 			isa = PBXGroup;
 			children = (
 				C474F8171F762BE700AC5B83 /* Reference */,
+				C474F8141F75FECD00AC5B83 /* EGRecoderManager.h */,
+				C474F8151F75FECD00AC5B83 /* EGRecoderManager.m */,
 				C474F8111F75F9B000AC5B83 /* EGComprehensiveController.h */,
 				C474F8121F75F9B000AC5B83 /* EGComprehensiveController.m */,
 				C474F8211F762CFE00AC5B83 /* EGComprehensiveController.xib */,
@@ -1260,8 +1262,6 @@
 		C4EEB8751F5FD3F700565FFC /* Microphone */ = {
 			isa = PBXGroup;
 			children = (
-				C474F8141F75FECD00AC5B83 /* EGRecoderManager.h */,
-				C474F8151F75FECD00AC5B83 /* EGRecoderManager.m */,
 				C4EEB8761F5FD3F700565FFC /* EGMicroPhoneHelper.h */,
 				C4EEB8771F5FD3F800565FFC /* EGMicroPhoneHelper.m */,
 				C4EEB8781F5FD3F800565FFC /* EGMicroPhoneViewController.h */,

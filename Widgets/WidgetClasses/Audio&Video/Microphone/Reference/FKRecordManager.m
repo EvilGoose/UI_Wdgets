@@ -10,9 +10,11 @@
 #import "FKRecordManager.h"
 #import "FKRecorder.h"
 #import "FKRecordUtils.h"
+#import <Photos/Photos.h>
 
 // 为FKRecordManager定义InternalUtilityMethods类别，增加一些新方法
 @interface FKRecordManager (InternalUtilityMethods)
+
 - (AVCaptureDevice *) cameraWithPosition:(AVCaptureDevicePosition)position;
 - (AVCaptureDevice *) frontFacingCamera;
 - (AVCaptureDevice *) backFacingCamera;
@@ -20,10 +22,12 @@
 - (NSURL *) tempFileURL;
 - (void) removeFile:(NSURL *)outputFileURL;
 - (void) copyFileToDocuments:(NSURL *)fileURL;
+
 @end
 
 @implementation FKRecordManager
-- (id) init
+
+- (instancetype) init
 {
 	if ([super init])
 	{
