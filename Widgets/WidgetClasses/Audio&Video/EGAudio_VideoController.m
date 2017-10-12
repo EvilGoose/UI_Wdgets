@@ -18,7 +18,8 @@
                         @"EGMixAudioViewController",
                         @"EGMixVideoViewController",
                         @"EGMixAudioVideoViewController",
-                        @"EGFFMPEGViewController"
+                        @"EGFFMPEGViewController",
+                        @"EGComprehensiveController"
                         ];
 }
 

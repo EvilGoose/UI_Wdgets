@@ -24,6 +24,10 @@
 	<string>请求相机使用权限</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>请求麦克风使用权限</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>请求相册访问权限</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>请求相册使用权限</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

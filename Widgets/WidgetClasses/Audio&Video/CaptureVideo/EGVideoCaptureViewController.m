@@ -10,18 +10,18 @@
 #import "EGVideoCaptureViewController.h"
 #import <VideoToolbox/VideoToolbox.h>
 #import <AVFoundation/AVFoundation.h>
-#import <GCDAsyncSocket.h>
 
 #import "MBProgressHUD+Extension.h"
 
 #import "EGOpenGLView.h"
 #import "EGOpenGLLayer.h"
 
-#define FILE_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"test.h264"]
+#define FILE_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"capture.h264"]
 
 @interface EGVideoCaptureViewController ()
-<AVCaptureVideoDataOutputSampleBufferDelegate,
-GCDAsyncSocketDelegate>
+<
+AVCaptureVideoDataOutputSampleBufferDelegate
+>
 {
     dispatch_queue_t captureQueue;
     dispatch_queue_t encodeQueue;
@@ -32,8 +32,10 @@ GCDAsyncSocketDelegate>
     dispatch_queue_t mDecodeQueue;
     VTDecompressionSessionRef mDecodeSession;
     CMFormatDescriptionRef  mFormatDescription;
+    
     uint8_t *mSPS;
     long mSPSSize;
+    
     uint8_t *mPPS;
     long mPPSSize;
     
@@ -44,9 +46,8 @@ GCDAsyncSocketDelegate>
     
     uint8_t*       packetBuffer;
     long           packetSize;
-
-    GCDAsyncSocket *_socket;
 }
+
 @property (nonatomic, strong) AVCaptureSession *captureSession; //负责输入和输出设备之间的数据传递
 
 @property (nonatomic, strong) AVCaptureDeviceInput *captureDeviceInput;//负责从AVCaptureDevice获得输入数据
@@ -73,16 +74,11 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
     //http://www.cocoachina.com/ios/20151123/14116.html
     //http://www.cocoachina.com/game/20141127/10335.html
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self.mOpenGLView.layer addSublayer:self.displayLayer];//use a layer
     
-    [self.mOpenGLView setupGL];//use g
+    [self.mOpenGLView setupGL];
     
     mDecodeQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     self.mDispalyLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateFrame)];
@@ -91,21 +87,6 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
 }
 
 - (IBAction)socketBuildAction:(UIButton *)sender {
-    _socket =
-    [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
-    
-        //连接
-    NSError *error = nil;
-    
-    [_socket acceptOnPort:2347 error:&error];
-    
-     if (error) {
-         dispatch_async(dispatch_get_main_queue(), ^{
-             [MBProgressHUD showError:@"无法建立socket链接"];
-         });
-    }
-    
-    [_socket readDataWithTimeout:-1 tag:0];
 
 }
 
@@ -152,13 +133,10 @@ const uint8_t lyStartCode[4] = {0, 0, 0, 1};
     
     self.captureDataOutput = [[AVCaptureVideoDataOutput alloc] init];
     [self.captureDataOutput setAlwaysDiscardsLateVideoFrames:NO];
-    
-    [self.captureDataOutput
-     setVideoSettings:
-     [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange]
-	forKey:(id)
-      kCVPixelBufferPixelFormatTypeKey]];
-    
+    [self.captureDataOutput setVideoSettings:[NSDictionary dictionaryWithObject:
+                                              [NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange]
+	                                                                         forKey:(id)
+                                              kCVPixelBufferPixelFormatTypeKey]];
     [self.captureDataOutput setSampleBufferDelegate:self queue:captureQueue];
     
     if ([self.captureSession canAddOutput:self.captureDataOutput]) {
@@ -612,29 +590,6 @@ void didDecompress(void *decompressionOutputRefCon, void *sourceFrameRefCon, OSS
         _displayLayer = [[EGOpenGLLayer alloc]initWithFrame:self.mOpenGLView.bounds];
     }
     return _displayLayer;
-}
-#pragma mark - delegate
-    //连接成功
--(void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [MBProgressHUD showError:@"成功建立socket链接"];
-    });
-}
-
-    //断开连接
--(void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if (err) {
-            
-         }else{
-             
-         }
-    });
-}
-
-    //读取数据
--(void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
-    
 }
 
 @end

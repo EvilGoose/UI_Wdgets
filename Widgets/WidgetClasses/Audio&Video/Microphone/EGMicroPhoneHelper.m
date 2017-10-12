@@ -91,7 +91,7 @@ SINGLETON_IMPLEMENTATION(EGMicroPhoneHelper)
 - (NSDictionary *)audioRecordingSettings{
     if (!_audioRecordingSettings) {
         
-        NSMutableDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:
+        NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
                                        //采样率  8000/11025/22050/44100/96000（影响音频的质量）
                                        [NSNumber numberWithFloat: 8000.0],AVSampleRateKey,
                                        // 音频格式
