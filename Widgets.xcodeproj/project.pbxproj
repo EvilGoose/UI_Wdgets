@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		254FFB80A1022A46D559E7B0 /* libPods-WidgetsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB6D33A159A456C34ACD48 /* libPods-WidgetsTests.a */; };
 		59C443C74DE593B850480013 /* libPods-WidgetsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */; };
+		911F0F341F8E0DC4008D4644 /* EGCallOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F0F331F8E0DC4008D4644 /* EGCallOutViewController.m */; };
+		91C9230D1F8E05EB00AB0FFF /* EGDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9230C1F8E05EB00AB0FFF /* EGDispatchViewController.m */; };
+		91C923101F8E063F00AB0FFF /* EGViewController_dispatch_block_t.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9230F1F8E063F00AB0FFF /* EGViewController_dispatch_block_t.m */; };
 		C43D486A1F6B62E500BF03A8 /* EGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D48691F6B62E500BF03A8 /* EGTableViewController.m */; };
 		C43D486E1F6B6B8900BF03A8 /* EGAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D486D1F6B6B8900BF03A8 /* EGAnimationsViewController.m */; };
 		C43D48741F6B700E00BF03A8 /* EGPlayerLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D48731F6B700E00BF03A8 /* EGPlayerLayerViewController.m */; };
@@ -142,6 +145,12 @@
 		3C095E3689F97A29EF51E993 /* Pods-WidgetsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WidgetsUITests/Pods-WidgetsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		481366FA6B0AC55743DAD056 /* Pods-Widgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Widgets/Pods-Widgets.debug.xcconfig"; sourceTree = "<group>"; };
 		5B06B64798A534068B82B7E5 /* libPods-Widgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		911F0F321F8E0DC4008D4644 /* EGCallOutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGCallOutViewController.h; sourceTree = "<group>"; };
+		911F0F331F8E0DC4008D4644 /* EGCallOutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGCallOutViewController.m; sourceTree = "<group>"; };
+		91C9230B1F8E05EB00AB0FFF /* EGDispatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGDispatchViewController.h; sourceTree = "<group>"; };
+		91C9230C1F8E05EB00AB0FFF /* EGDispatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGDispatchViewController.m; sourceTree = "<group>"; };
+		91C9230E1F8E063F00AB0FFF /* EGViewController_dispatch_block_t.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGViewController_dispatch_block_t.h; sourceTree = "<group>"; };
+		91C9230F1F8E063F00AB0FFF /* EGViewController_dispatch_block_t.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGViewController_dispatch_block_t.m; sourceTree = "<group>"; };
 		C43D48681F6B62E500BF03A8 /* EGTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTableViewController.h; sourceTree = "<group>"; };
 		C43D48691F6B62E500BF03A8 /* EGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTableViewController.m; sourceTree = "<group>"; };
 		C43D486C1F6B6B8900BF03A8 /* EGAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGAnimationsViewController.h; sourceTree = "<group>"; };
@@ -475,6 +484,19 @@
 				3C095E3689F97A29EF51E993 /* Pods-WidgetsUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		91C9230A1F8E05CD00AB0FFF /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				91C9230B1F8E05EB00AB0FFF /* EGDispatchViewController.h */,
+				91C9230C1F8E05EB00AB0FFF /* EGDispatchViewController.m */,
+				91C9230E1F8E063F00AB0FFF /* EGViewController_dispatch_block_t.h */,
+				91C9230F1F8E063F00AB0FFF /* EGViewController_dispatch_block_t.m */,
+				911F0F321F8E0DC4008D4644 /* EGCallOutViewController.h */,
+				911F0F331F8E0DC4008D4644 /* EGCallOutViewController.m */,
+			);
+			path = Dispatch;
 			sourceTree = "<group>";
 		};
 		C43D486B1F6B6B7C00BF03A8 /* Animations */ = {
@@ -1010,6 +1032,7 @@
 		C4EC48541F35576900942884 /* WidgetClasses */ = {
 			isa = PBXGroup;
 			children = (
+				91C9230A1F8E05CD00AB0FFF /* Dispatch */,
 				C4401FAC1F5836E000581FE9 /* Socket */,
 				C4CDA6411F53E256005150A6 /* WaveAnimation */,
 				C47C6F2E1F514D3400F7F653 /* ImageSize */,
@@ -1487,6 +1510,7 @@
 				C4EEB8931F5FD41D00565FFC /* EGOpenGLLayer.m in Sources */,
 				C4EEB8941F5FD41D00565FFC /* EGOpenGLView.m in Sources */,
 				C45571671F5D4C3100AB1C95 /* EGGradientLayerViewController.m in Sources */,
+				91C9230D1F8E05EB00AB0FFF /* EGDispatchViewController.m in Sources */,
 				C492B5281F6CF8D600F61B5C /* EGVirtualAnimationViewController.m in Sources */,
 				C4D1B6C51F5A4BB900C13025 /* EGLayerUsageController.m in Sources */,
 				C492B5201F6CC00A00F61B5C /* EGKVCPropertyAnimationViewController.m in Sources */,
@@ -1512,6 +1536,7 @@
 				C4EC48771F355E8D00942884 /* EGBasicViewController.m in Sources */,
 				C43D486A1F6B62E500BF03A8 /* EGTableViewController.m in Sources */,
 				C4CC0BCA1F5A51BB00B3BBDC /* EGLayerBasicViewController.m in Sources */,
+				91C923101F8E063F00AB0FFF /* EGViewController_dispatch_block_t.m in Sources */,
 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
 				C492B51D1F6CBD6800F61B5C /* EGObviousPropertyViewController.m in Sources */,
@@ -1546,6 +1571,7 @@
 				C4CC0BE31F5A971F00B3BBDC /* EGStretchFilterViewController.m in Sources */,
 				C43D486E1F6B6B8900BF03A8 /* EGAnimationsViewController.m in Sources */,
 				C4EC487B1F355E8D00942884 /* main.m in Sources */,
+				911F0F341F8E0DC4008D4644 /* EGCallOutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

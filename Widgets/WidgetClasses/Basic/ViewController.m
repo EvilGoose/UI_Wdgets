@@ -25,7 +25,8 @@
                         @"EGSocketController",
                         @"EGLayerUsageController",
                         @"EGAudio_VideoController",
-                        @"EGAnimationsViewController"
+                        @"EGAnimationsViewController",
+                        @"EGDispatchViewController"
     ];
 }
 
