@@ -13,7 +13,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.datasArray = @[@"EGMicroPhoneViewController",
+    self.datasArray = @[
+                        @"EGAVPlayerViewController",
+                        @"EGMicroPhoneViewController",
                         @"EGVideoCaptureViewController",
                         @"EGMixAudioViewController",
                         @"EGMixVideoViewController",

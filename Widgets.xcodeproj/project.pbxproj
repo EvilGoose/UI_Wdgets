@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		254FFB80A1022A46D559E7B0 /* libPods-WidgetsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB6D33A159A456C34ACD48 /* libPods-WidgetsTests.a */; };
+		524212761F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524212751F96F894003AFB87 /* EGAVPlayerViewController.m */; };
+		524212771F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524212751F96F894003AFB87 /* EGAVPlayerViewController.m */; };
+		524212781F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524212751F96F894003AFB87 /* EGAVPlayerViewController.m */; };
+		5242127A1F96F8FD003AFB87 /* video_welcome.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 524212791F96F8FD003AFB87 /* video_welcome.mp4 */; };
 		59C443C74DE593B850480013 /* libPods-WidgetsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */; };
 		911F0F341F8E0DC4008D4644 /* EGCallOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F0F331F8E0DC4008D4644 /* EGCallOutViewController.m */; };
 		91C9230D1F8E05EB00AB0FFF /* EGDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9230C1F8E05EB00AB0FFF /* EGDispatchViewController.m */; };
@@ -191,6 +195,9 @@
 		27FB6D33A159A456C34ACD48 /* libPods-WidgetsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WidgetsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C095E3689F97A29EF51E993 /* Pods-WidgetsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WidgetsUITests/Pods-WidgetsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		481366FA6B0AC55743DAD056 /* Pods-Widgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Widgets/Pods-Widgets.debug.xcconfig"; sourceTree = "<group>"; };
+		524212741F96F894003AFB87 /* EGAVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGAVPlayerViewController.h; sourceTree = "<group>"; };
+		524212751F96F894003AFB87 /* EGAVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGAVPlayerViewController.m; sourceTree = "<group>"; };
+		524212791F96F8FD003AFB87 /* video_welcome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_welcome.mp4; sourceTree = "<group>"; };
 		5B06B64798A534068B82B7E5 /* libPods-Widgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		911F0F321F8E0DC4008D4644 /* EGCallOutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGCallOutViewController.h; sourceTree = "<group>"; };
 		911F0F331F8E0DC4008D4644 /* EGCallOutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGCallOutViewController.m; sourceTree = "<group>"; };
@@ -585,6 +592,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		524212731F96F889003AFB87 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				524212741F96F894003AFB87 /* EGAVPlayerViewController.h */,
+				524212751F96F894003AFB87 /* EGAVPlayerViewController.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
 		91C9230A1F8E05CD00AB0FFF /* Dispatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,6 +634,7 @@
 		C4401FA21F5836C100581FE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				524212791F96F8FD003AFB87 /* video_welcome.mp4 */,
 				C47C6F3D1F514E8C00F7F653 /* scenery */,
 				C4401FB21F58371D00581FE9 /* Audio1.m4a */,
 				C4401FB31F58371D00581FE9 /* Audio2.mp3 */,
@@ -1271,6 +1288,7 @@
 			children = (
 				C4EEB9971F5FD87400565FFC /* EGAudio_VideoController.h */,
 				C4EEB9981F5FD87400565FFC /* EGAudio_VideoController.m */,
+				524212731F96F889003AFB87 /* AVPlayer */,
 				C474F8101F75F98B00AC5B83 /* ComprehensiveUsage */,
 				C4EEB8971F5FD42E00565FFC /* FFmpeg */,
 				C4EEB88A1F5FD41D00565FFC /* CaptureVideo */,
@@ -1474,6 +1492,7 @@
 			files = (
 				C474F8221F762CFE00AC5B83 /* EGComprehensiveController.xib in Resources */,
 				C4401FB11F5836F300581FE9 /* EGSocketController.xib in Resources */,
+				5242127A1F96F8FD003AFB87 /* video_welcome.mp4 in Resources */,
 				C4CC0BCC1F5A53EF00B3BBDC /* stocking.jpeg in Resources */,
 				C48193221F60F5E5003AE073 /* EGFFMEPEGViewController.xib in Resources */,
 				C4CC0BE01F5A94F200B3BBDC /* heart.png in Resources */,
@@ -1747,13 +1766,14 @@
 				C474F8131F75F9B000AC5B83 /* EGComprehensiveController.m in Sources */,
 				C43D486A1F6B62E500BF03A8 /* EGTableViewController.m in Sources */,
 				C4CC0BCA1F5A51BB00B3BBDC /* EGLayerBasicViewController.m in Sources */,
- 				91C923101F8E063F00AB0FFF /* EGViewController_dispatch_block_t.m in Sources */,
- 				C474F81E1F762BEF00AC5B83 /* FKRecordManager.m in Sources */,
- 				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
+				91C923101F8E063F00AB0FFF /* EGViewController_dispatch_block_t.m in Sources */,
+				C474F81E1F762BEF00AC5B83 /* FKRecordManager.m in Sources */,
+				C499EF501F35965C003F06E6 /* EGIndicatorViewController.m in Sources */,
 				C4EC48781F355E8D00942884 /* ViewController.m in Sources */,
 				C474F81F1F762BEF00AC5B83 /* FKRecorder.m in Sources */,
 				C492B51D1F6CBD6800F61B5C /* EGObviousPropertyViewController.m in Sources */,
 				C4DC8E891F6FFDA900974EF2 /* EGSecondViewController.m in Sources */,
+				524212761F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */,
 				C4EEB8861F5FD3F800565FFC /* EGMixAudioViewController.m in Sources */,
 				C4497CC81F5EDDF8005DF8A7 /* MBProgressHUD+Extension.m in Sources */,
 				C43D48741F6B700E00BF03A8 /* EGPlayerLayerViewController.m in Sources */,
@@ -1794,6 +1814,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524212771F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */,
 				C44E3A281F346D1600C78E37 /* WidgetsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1802,6 +1823,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524212781F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */,
 				C44E3A331F346D1600C78E37 /* WidgetsUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
