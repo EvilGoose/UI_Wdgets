@@ -16,8 +16,10 @@ UITableViewDataSource
 
 /**table view*/
 @property (nonatomic, strong)UITableView *tableView;
+
 /**frame*/
 @property (nonatomic, assign)CGRect frame;
+
 @end
 
 @implementation EGTableViewController
@@ -28,6 +30,10 @@ UITableViewDataSource
         self.frame = frame;
     }
     return self;
+}
+
+- (void)reloadData {
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad {
@@ -53,7 +59,11 @@ UITableViewDataSource
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.navigationController pushViewController:[NSClassFromString(self.datasArray[indexPath.row]) new] animated:YES];
+    if (self.selectedFeedBack) {
+        self.selectedFeedBack(indexPath);
+    }else {
+        [self.navigationController pushViewController:[NSClassFromString(self.datasArray[indexPath.row]) new] animated:YES];
+    }
 }
 
 #pragma mark - data source

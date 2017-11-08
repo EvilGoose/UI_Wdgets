@@ -26,7 +26,9 @@
                         @"EGLayerUsageController",
                         @"EGAudio_VideoController",
                         @"EGAnimationsViewController",
-                        @"EGDispatchViewController"
+                        @"EGDispatchViewController",
+                        @"EGGuesturesViewController",
+                        @"EGDataReloadViewController"
     ];
 }
 

@@ -12,6 +12,16 @@
 		524212771F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524212751F96F894003AFB87 /* EGAVPlayerViewController.m */; };
 		524212781F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524212751F96F894003AFB87 /* EGAVPlayerViewController.m */; };
 		5242127A1F96F8FD003AFB87 /* video_welcome.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 524212791F96F8FD003AFB87 /* video_welcome.mp4 */; };
+		52531E1B1F9DD4B600C3B342 /* EGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52531E1A1F9DD4B600C3B342 /* EGNavigationController.m */; };
+		527BDF721FA86390005DBCC9 /* EGDataReloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527BDF711FA86390005DBCC9 /* EGDataReloadViewController.m */; };
+		527BDF731FA86390005DBCC9 /* EGDataReloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527BDF711FA86390005DBCC9 /* EGDataReloadViewController.m */; };
+		527BDF741FA86390005DBCC9 /* EGDataReloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527BDF711FA86390005DBCC9 /* EGDataReloadViewController.m */; };
+		529732A41F9DCF9200C0667B /* EGGuesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529732A31F9DCF9200C0667B /* EGGuesturesViewController.m */; };
+		529732A51F9DCF9200C0667B /* EGGuesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529732A31F9DCF9200C0667B /* EGGuesturesViewController.m */; };
+		529732A61F9DCF9200C0667B /* EGGuesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529732A31F9DCF9200C0667B /* EGGuesturesViewController.m */; };
+		529732A91F9DCFC900C0667B /* EGValidEdgePopGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529732A81F9DCFC900C0667B /* EGValidEdgePopGestureController.m */; };
+		529732AA1F9DCFC900C0667B /* EGValidEdgePopGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529732A81F9DCFC900C0667B /* EGValidEdgePopGestureController.m */; };
+		529732AB1F9DCFC900C0667B /* EGValidEdgePopGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529732A81F9DCFC900C0667B /* EGValidEdgePopGestureController.m */; };
 		59C443C74DE593B850480013 /* libPods-WidgetsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F302DFB61A5D0DE3AFA9A /* libPods-WidgetsUITests.a */; };
 		911F0F341F8E0DC4008D4644 /* EGCallOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F0F331F8E0DC4008D4644 /* EGCallOutViewController.m */; };
 		91C9230D1F8E05EB00AB0FFF /* EGDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9230C1F8E05EB00AB0FFF /* EGDispatchViewController.m */; };
@@ -198,6 +208,14 @@
 		524212741F96F894003AFB87 /* EGAVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGAVPlayerViewController.h; sourceTree = "<group>"; };
 		524212751F96F894003AFB87 /* EGAVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGAVPlayerViewController.m; sourceTree = "<group>"; };
 		524212791F96F8FD003AFB87 /* video_welcome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_welcome.mp4; sourceTree = "<group>"; };
+		52531E191F9DD4B600C3B342 /* EGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGNavigationController.h; sourceTree = "<group>"; };
+		52531E1A1F9DD4B600C3B342 /* EGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGNavigationController.m; sourceTree = "<group>"; };
+		527BDF701FA86390005DBCC9 /* EGDataReloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGDataReloadViewController.h; sourceTree = "<group>"; };
+		527BDF711FA86390005DBCC9 /* EGDataReloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGDataReloadViewController.m; sourceTree = "<group>"; };
+		529732A21F9DCF9200C0667B /* EGGuesturesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGGuesturesViewController.h; sourceTree = "<group>"; };
+		529732A31F9DCF9200C0667B /* EGGuesturesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGGuesturesViewController.m; sourceTree = "<group>"; };
+		529732A71F9DCFC900C0667B /* EGValidEdgePopGestureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGValidEdgePopGestureController.h; sourceTree = "<group>"; };
+		529732A81F9DCFC900C0667B /* EGValidEdgePopGestureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGValidEdgePopGestureController.m; sourceTree = "<group>"; };
 		5B06B64798A534068B82B7E5 /* libPods-Widgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		911F0F321F8E0DC4008D4644 /* EGCallOutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGCallOutViewController.h; sourceTree = "<group>"; };
 		911F0F331F8E0DC4008D4644 /* EGCallOutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGCallOutViewController.m; sourceTree = "<group>"; };
@@ -599,6 +617,26 @@
 				524212751F96F894003AFB87 /* EGAVPlayerViewController.m */,
 			);
 			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		527BDF6F1FA86373005DBCC9 /* GeneralViews */ = {
+			isa = PBXGroup;
+			children = (
+				527BDF701FA86390005DBCC9 /* EGDataReloadViewController.h */,
+				527BDF711FA86390005DBCC9 /* EGDataReloadViewController.m */,
+			);
+			path = GeneralViews;
+			sourceTree = "<group>";
+		};
+		529732A11F9DCF7200C0667B /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				529732A21F9DCF9200C0667B /* EGGuesturesViewController.h */,
+				529732A31F9DCF9200C0667B /* EGGuesturesViewController.m */,
+				529732A71F9DCFC900C0667B /* EGValidEdgePopGestureController.h */,
+				529732A81F9DCFC900C0667B /* EGValidEdgePopGestureController.m */,
+			);
+			path = Gestures;
 			sourceTree = "<group>";
 		};
 		91C9230A1F8E05CD00AB0FFF /* Dispatch */ = {
@@ -1216,6 +1254,8 @@
 		C4EC48541F35576900942884 /* WidgetClasses */ = {
 			isa = PBXGroup;
 			children = (
+				527BDF6F1FA86373005DBCC9 /* GeneralViews */,
+				529732A11F9DCF7200C0667B /* Gestures */,
 				91C9230A1F8E05CD00AB0FFF /* Dispatch */,
 				C4401FAC1F5836E000581FE9 /* Socket */,
 				C4CDA6411F53E256005150A6 /* WaveAnimation */,
@@ -1252,6 +1292,8 @@
 		C4EC48661F3557CF00942884 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				52531E191F9DD4B600C3B342 /* EGNavigationController.h */,
+				52531E1A1F9DD4B600C3B342 /* EGNavigationController.m */,
 				C4EC48671F3557CF00942884 /* EGBasicViewController.h */,
 				C4EC48681F3557CF00942884 /* EGBasicViewController.m */,
 				C43D48681F6B62E500BF03A8 /* EGTableViewController.h */,
@@ -1776,6 +1818,7 @@
 				524212761F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */,
 				C4EEB8861F5FD3F800565FFC /* EGMixAudioViewController.m in Sources */,
 				C4497CC81F5EDDF8005DF8A7 /* MBProgressHUD+Extension.m in Sources */,
+				527BDF721FA86390005DBCC9 /* EGDataReloadViewController.m in Sources */,
 				C43D48741F6B700E00BF03A8 /* EGPlayerLayerViewController.m in Sources */,
 				C499EF4D1F356D71003F06E6 /* EGTestViewController.m in Sources */,
 				C45571A41F5D84CD00AB1C95 /* EGEAGLLayerViewController.m in Sources */,
@@ -1783,7 +1826,9 @@
 				C4EEB8841F5FD3F800565FFC /* EGMicroPhoneHelper.m in Sources */,
 				C4EEB8951F5FD41D00565FFC /* EGVideoCaptureViewController.m in Sources */,
 				C4A300111F4E766500D23587 /* WRImageHelper.m in Sources */,
+				529732A91F9DCFC900C0667B /* EGValidEdgePopGestureController.m in Sources */,
 				C499EF561F35993F003F06E6 /* UIColor+PDExtension.m in Sources */,
+				529732A41F9DCF9200C0667B /* EGGuesturesViewController.m in Sources */,
 				C4CDA6471F53E283005150A6 /* EGWaveView.m in Sources */,
 				C47C6F321F514D5C00F7F653 /* EGImageSizeViewController.m in Sources */,
 				C4CC0BDB1F5A7A0600B3BBDC /* EGGraphicsGeometryViewController.m in Sources */,
@@ -1791,6 +1836,7 @@
 				C4401FB01F5836F300581FE9 /* EGSocketController.m in Sources */,
 				C4A300121F4E766500D23587 /* WRNavigationBar.m in Sources */,
 				C4DC8E881F6FFDA900974EF2 /* EGImplicitTransitionViewController.m in Sources */,
+				52531E1B1F9DD4B600C3B342 /* EGNavigationController.m in Sources */,
 				C4EEB9991F5FD87400565FFC /* EGAudio_VideoController.m in Sources */,
 				C4DC8E871F6FFDA900974EF2 /* EGFirstChildViewController.m in Sources */,
 				C4DC8E861F6FFDA900974EF2 /* EGAnimationTabBarController.m in Sources */,
@@ -1814,6 +1860,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527BDF731FA86390005DBCC9 /* EGDataReloadViewController.m in Sources */,
+				529732A51F9DCF9200C0667B /* EGGuesturesViewController.m in Sources */,
+				529732AA1F9DCFC900C0667B /* EGValidEdgePopGestureController.m in Sources */,
 				524212771F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */,
 				C44E3A281F346D1600C78E37 /* WidgetsTests.m in Sources */,
 			);
@@ -1823,6 +1872,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527BDF741FA86390005DBCC9 /* EGDataReloadViewController.m in Sources */,
+				529732A61F9DCF9200C0667B /* EGGuesturesViewController.m in Sources */,
+				529732AB1F9DCFC900C0667B /* EGValidEdgePopGestureController.m in Sources */,
 				524212781F96F894003AFB87 /* EGAVPlayerViewController.m in Sources */,
 				C44E3A331F346D1600C78E37 /* WidgetsUITests.m in Sources */,
 			);

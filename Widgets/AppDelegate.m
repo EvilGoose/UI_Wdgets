@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EGNavigationController.h"
 #import "ViewController.h"
 
 @interface AppDelegate ()
@@ -19,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:SCREEN_BOUNDS];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    self.window.rootViewController = [[EGNavigationController alloc] initWithRootViewController:[ViewController new]];
     [self.window makeKeyAndVisible];
     
     return YES;
